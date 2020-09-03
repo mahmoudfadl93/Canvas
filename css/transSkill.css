@@ -223,6 +223,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 5vh;
 }
 
 .container-canvas .body-content .image-all-together {
@@ -428,7 +429,7 @@ body {
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon {
-  background: yellow;
+  background: #FFE33E;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon-median {
@@ -448,7 +449,7 @@ body {
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-orange .hexagon {
-  background: orange;
+  background: #FF9000;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-orange .hexagon-large:last-child {
@@ -462,23 +463,23 @@ body {
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-green .hexagon {
-  background: #28a524;
+  background: #9FC914;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-green .hexagon-large:last-child {
   margin-top: 2vh;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-Purple {
+.container-canvas .body-content .trans-shapes .hexagon-bule {
   right: 7.5vw;
   padding-top: 7vh;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-Purple .hexagon {
-  background: Purple;
+.container-canvas .body-content .trans-shapes .hexagon-bule .hexagon {
+  background: #5053A3;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-Purple .hexagon-large:last-child {
+.container-canvas .body-content .trans-shapes .hexagon-bule .hexagon-large:last-child {
   position: relative;
   top: 10px;
 }
@@ -489,7 +490,7 @@ body {
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon {
-  background: #cc0050;
+  background: #A3395E;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-small {
@@ -821,6 +822,307 @@ body {
   color: #fff;
 }
 
+.container-canvas .body-content .shapes-circle {
+  width: 90vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 11;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-yellew {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  left: 6vw;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-yellew .shapes-circle-content {
+  border: 15px solid #FCDF21;
+  width: 22vw;
+  height: 43vh;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-orange {
+  position: relative;
+  left: 8vw;
+  top: 15vh;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-orange .shapes-circle-content {
+  border: 10px solid #FF9000;
+  width: 12vw;
+  height: 25vh;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body .shapes-circle-content {
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+  text-align: center;
+}
+
+.container-canvas .body-content .shapes-circle .shapes-circle-body .shapes-circle-content p {
+  font-size: 1.3vw;
+}
+
+.container-canvas .body-content .shapes-circle .image-content img {
+  width: 50vw;
+}
+
+.container-canvas .body-content .images-body {
+  width: 90vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 11;
+}
+
+.container-canvas .body-content .images-body .image-content {
+  height: 100%;
+}
+
+.container-canvas .body-content .images-body .image-content img {
+  height: 100%;
+}
+
+.container-canvas .body-content .commitments-body {
+  width: 90vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 11;
+  text-align: center;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle {
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+  text-align: center;
+  border: 10px solid #fff;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
+  width: 25vw;
+  height: 50vh;
+  padding: 15px;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white .commitment-content {
+  border: 3px dashed #333;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white .commitment-content p {
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.small-circle {
+  width: 5vw;
+  height: 10vh;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
+  width: 12vw;
+  height: 24vh;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-orange {
+  background-color: #FFAA00;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-green {
+  background-color: #9EC813;
+}
+
+.container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-red {
+  background-color: #A3395E;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5vh;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule .commitment-content {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule .small-circle.commitment-circle-orange {
+  margin-top: 20vh;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule .small-circle.commitment-circle-green {
+  margin-right: 2vw;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule .small-circle.commitment-circle-red {
+  margin-bottom: 20vh;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point {
+  color: #FFAA00;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(2) {
+  margin-left: 12vw;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point {
+  color: #9EC813;
+}
+
+.container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point {
+  color: #A3395E;
+}
+
+.container-canvas .body-content .commitments-body .right-content .rule-point {
+  background-color: #fff;
+  padding: 25px 15px;
+  width: 26vw;
+  margin-left: 2vw;
+}
+
+.container-canvas .body-content .commitments-body .right-content .rule-point h2 {
+  text-align: left;
+  font-size: 1.2vw;
+  margin-bottom: 1vh;
+}
+
+.container-canvas .body-content .commitments-body .right-content .rule-point ul li p {
+  text-align: left;
+  font-size: 1vw;
+}
+
+.container-canvas .body-content .contact-us {
+  width: 90vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 11;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 4vw;
+}
+
+.container-canvas .body-content .contact-us h1 {
+  font-size: 5vw;
+  color: #fff;
+  margin-bottom: 3vh;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item {
+  padding: 20px 15px;
+  margin-bottom: 1.9vh;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item p {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(1) {
+  background-color: #FCDF21;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(2) {
+  background-color: #9FC914;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(3) {
+  background-color: #A3395E;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(4) {
+  background-color: #661433;
+}
+
+.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(5) {
+  background-color: #5053A3;
+}
+
 /* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
@@ -828,10 +1130,228 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #02203b;
-  background-image: url("./../img/canvasBG.jpg");
+  background: #394046;
+  background: linear-gradient(45deg, #394046 0%, #4c6279 100%) !important;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 10.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 10.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 10.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 10.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: .7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .7;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: .7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .7;
+  }
+}
+
+.parallax-wrapper {
+  overflow: hidden;
+}
+
+.parallax-wrapper #parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-wrapper #parallax > div {
+  mix-blend-mode: screen;
+  background-blend-mode: screen;
+}
+
+.parallax-wrapper #parallax {
+  position: fixed !important;
+  mix-blend-mode: color-dodge;
+  background-blend-mode: screen;
+}
+
+.parallax-wrapper #parallax div span {
+  position: absolute;
+  background-image: url("/img/light.jpg");
+  width: 190px;
+  background-size: cover;
+  z-index: 2;
+  display: block;
+  background-blend-mode: color;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  background-repeat: no-repeat;
+}
+
+.parallax-wrapper .ligt1 {
+  background-position: top center;
+  height: 75px;
+  left: 70vw;
+  top: 70vh;
+  -webkit-animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
+          animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
+}
+
+.parallax-wrapper .ligt2 {
+  background-position: 0 -75px;
+  height: 100px;
+  left: 76vw;
+  top: 60vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear;
+          animation: rotate 8s 0.9s infinite linear;
+}
+
+.parallax-wrapper .ligt3 {
+  background-position: 0 -175px;
+  height: 120px;
+  left: 63vw;
+  top: 80vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+}
+
+.parallax-wrapper .ligt4 {
+  background-position: 0 -290px;
+  height: 70px;
+  left: 83vw;
+  top: 80vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear;
+          animation: rotate 8s 0.9s infinite linear;
+}
+
+.parallax-wrapper .ligt5 {
+  background-position: 0 -350px;
+  height: 150px;
+  left: 85vw;
+  top: 82vh;
+  animation: rotate 8s 0.9s infinite linear reverse;
+}
+
+.parallax-wrapper .ligt6 {
+  background-position: 0 -500px;
+  height: 100px;
+  left: 55vw;
+  top: 72vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear;
+          animation: rotate 8s 0.9s infinite linear;
+}
+
+.parallax-wrapper .ligt7 {
+  background-position: 0 -600px;
+  height: 120px;
+  left: 25vw;
+  top: 72vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+}
+
+.parallax-wrapper .ligt8 {
+  background-position: 0 -720px;
+  height: 100px;
+  left: 15vw;
+  top: 52vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear, opacity 6000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear, opacity 6000ms linear infinite;
+}
+
+.parallax-wrapper .ligt9 {
+  background-position: 0 -820px;
+  height: 150px;
+  left: 10vw;
+  top: 62vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
+}
+
+.parallax-wrapper .ligt10 {
+  background-position: 0 -970px;
+  height: 100px;
+  left: 10vw;
+  top: 42vh;
+  -webkit-animation: rotate 16s 1.9s infinite linear, opacity 3000ms linear infinite;
+          animation: rotate 16s 1.9s infinite linear, opacity 3000ms linear infinite;
+}
+
+.parallax-wrapper .ligt11 {
+  background-position: 0 -1070px;
+  height: 100px;
+  left: 20vw;
+  top: 42vh;
+  animation: rotate 8s 0.5s infinite linear reverse;
+}
+
+.parallax-wrapper .ligt12 {
+  background-position: 0 -1170px;
+  height: 100px;
+  left: 35vw;
+  top: 75vh;
+  -webkit-animation: rotate 8s 0.9s infinite linear;
+          animation: rotate 8s 0.9s infinite linear;
+}
+
+.parallax-wrapper .ligt13 {
+  width: 1090px !important;
+  background-position: 0 -5580px;
+  height: 1000px;
+  left: -170px;
+  top: calc(100vh - 400px);
+  /* animation: rotate 528s 5.9s infinite linear reverse; */
+  -webkit-filter: blur(42px) !important;
+          filter: blur(42px) !important;
+}
+
+.parallax-wrapper .ligt14 {
+  width: 1090px !important;
+  background-position: 0 -2920px;
+  height: 1000px;
+  left: 40vw;
+  top: calc(100vh - 260px);
+  /* animation: rotate 528s 5.9s infinite linear reverse; */
+  -webkit-filter: blur(42px) !important;
+          filter: blur(42px) !important;
+}
+
+.parallax-wrapper .ligt15 {
+  width: 1090px !important;
+  background-position: 0 -2920px;
+  height: 1000px;
+  left: calc( 100vw - 640px);
+  top: calc(100vh - 860px);
+  /* animation: rotate 528s 5.9s infinite linear reverse; */
+  -webkit-filter: blur(42px) !important;
+          filter: blur(42px) !important;
 }
 /*# sourceMappingURL=transSkill.css.map */
