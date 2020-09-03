@@ -748,7 +748,7 @@ body {
 
 .container-canvas .body-content .Outsource-Payroll-sections .details-header {
   text-align: center;
-  margin: 4vh 0 5vh 0;
+  margin: 5vh 0 10vh 0;
 }
 
 .container-canvas .body-content .Outsource-Payroll-sections .details-header h3 {
@@ -1080,6 +1080,7 @@ body {
   font-size: 5vw;
   color: #fff;
   margin-bottom: 3vh;
+  width: 35vw;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list {
@@ -1091,6 +1092,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px;
+  width: 35vw;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item {
@@ -1117,10 +1119,6 @@ body {
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(4) {
   background-color: #661433;
-}
-
-.container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(5) {
-  background-color: #5053A3;
 }
 
 /* ---- particles.js container ---- */

@@ -601,7 +601,7 @@ body {
             padding: 0;
             .details-header {
                 text-align: center;
-                margin: 4vh 0 5vh 0;
+                margin: 5vh 0 10vh 0;
                 h3 {
                     font-size: 5vw;
                     color: #fff;
@@ -748,17 +748,10 @@ body {
             &.small-circle{
               width: 5vw;
               height: 10vh;
-              .commitment-content{
-               
-              }
             }
             &.mediam-circle{
               width: 12vw;
               height: 24vh;
-             
-              .commitment-content{
-          
-              }
             }
             &.commitment-circle-orange{
               background-color: #FFAA00;
@@ -769,9 +762,6 @@ body {
             &.commitment-circle-red{
               background-color: #A3395E;
             }
-          }
-          .left-content{
-
           }
           .right-content{
             .commitment-rule{
@@ -846,11 +836,13 @@ body {
             font-size: 5vw;
             color: #fff;
             margin-bottom: 3vh;
+            width: 35vw;
           }
           .contact-us-list{
             display:flex;
             flex-direction: column;
             padding:5px;
+            width: 35vw;
             .contact-us-item{
               padding: 20px 15px;
               margin-bottom: 1.9vh;
@@ -870,9 +862,6 @@ body {
               }
               &:nth-child(4){
                 background-color: #661433;
-              }
-              &:nth-child(5){
-                background-color:#5053A3;
               }
             }
           }
