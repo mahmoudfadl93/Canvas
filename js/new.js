@@ -55,10 +55,12 @@ window.onload = () => {
         gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
     })
     $("#HowToObtainIt").on("click", () => {
-        gsap.to("#secThree", { opacity: 1, top: 0, delay: 0.5, duration: 0, position: 'absolute' });
+        gsap.to("#secThree", { opacity: 1, top: 0, delay: 0.5, duration: 0 });
         gsap.to(".details-content ", { height: '80vh', delay: 1, duration: 0.5 });
         gsap.to(".detail-obtain-it .details-header", { height: 'auto', delay: 2.5, duration: 0.5 });
-        gsap.to(".content-body .image-with-title", { height: 'auto', opacity: 1, delay: 5, duration: 0.5 });
+        gsap.to(".content-body .image-with-title.Service", { opacity: 1, delay: 3.0, duration: 0.5 });
+        gsap.to(".content-body .image-with-title.Software", { opacity: 1, delay: 3.4, duration: 0.5 });
+        gsap.to(".content-body .image-with-title.Hybrid", { opacity: 1, delay: 3.8, duration: 0.5 });
 
         gsap.to(".detail-obtain-it i", { opacity: 1, delay: 3.5, duration: 0.5 });
         gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
@@ -88,6 +90,20 @@ window.onload = () => {
     })
 
     $("#secThree .detail-obtain-it i").on("click", () => {
+
+
+
+
+
+        gsap.to("#secThree", { opacity: 1, top: 0, delay: 0.5, duration: 0 });
+        gsap.to(".content-body .image-with-title.Service", { opacity: 0, delay: 0.2, duration: 0.5 });
+        gsap.to(".content-body .image-with-title.Software", { opacity: 0, delay: 0.4, duration: 0.5 });
+        gsap.to(".content-body .image-with-title.Hybrid", { opacity: 0, delay: 0.6, duration: 0.5 });
+        gsap.to(".detail-obtain-it .details-header", { height: 0, delay: 1.0, duration: 0.5 });
+        gsap.to(".details-content ", { height: '0vh', delay: 1.5, duration: 0.5 });
+        gsap.to("#secThree ", { top: "100vh", delay: 2, duration: 0.5 });
+
+
 
 
         gsap.to("#secOne", { opacity: 1, top: 0, height: '100vh', delay: 1.5, duration: 0, });
