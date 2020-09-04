@@ -46,18 +46,22 @@ window.onload = () => {
         gsap.to("#secOne", { opacity: 1, top: 0, delay: 1.3, duration: 0, height: 0, margin: 0 });
 
     })
+
+    // view who we are Slide
     $("#whoWeAre").on("click", () => {
         gsap.to("#secTwo", { opacity: 1, top: 0, delay: 1.5, duration: 0, position: 'absolute' });
         gsap.to(".detail-who", { height: '80vh', delay: 2, duration: 0.5 });
         gsap.to(".detail-who .details-header", { height: 'auto', delay: 2.5, duration: 0.5 });
-        gsap.to(".detail-who .details-body", { height: 'auto', delay: 3, duration: 0.5 });
+        gsap.to(".detail-who .details-body", { height: 'auto', delay: 3.5, duration: 0.5 });
         gsap.to(".detail-who i", { opacity: 1, delay: 3.5, duration: 0.5 });
         gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
     })
+
+    // view How To Obtain It Slide
     $("#HowToObtainIt").on("click", () => {
         gsap.to("#secThree", { opacity: 1, top: 0, delay: 0.5, duration: 0 });
         gsap.to(".details-content ", { height: '80vh', delay: 1, duration: 0.5 });
-        gsap.to(".detail-obtain-it .details-header", { height: 'auto', delay: 2.5, duration: 0.5 });
+        gsap.to(".detail-obtain-it .details-header", { height: 'auto', delay: 1.5, duration: 0.5 });
         gsap.to(".content-body .image-with-title.Service", { opacity: 1, delay: 3.0, duration: 0.5 });
         gsap.to(".content-body .image-with-title.Software", { opacity: 1, delay: 3.4, duration: 0.5 });
         gsap.to(".content-body .image-with-title.Hybrid", { opacity: 1, delay: 3.8, duration: 0.5 });
@@ -91,10 +95,6 @@ window.onload = () => {
 
     $("#secThree .detail-obtain-it i").on("click", () => {
 
-
-
-
-
         gsap.to("#secThree", { opacity: 1, top: 0, delay: 0.5, duration: 0 });
         gsap.to(".content-body .image-with-title.Service", { opacity: 0, delay: 0.2, duration: 0.5 });
         gsap.to(".content-body .image-with-title.Software", { opacity: 0, delay: 0.4, duration: 0.5 });
@@ -122,6 +122,14 @@ window.onload = () => {
 
 
     })
+
+    let SVG = ` <svg viewBox="0 0 477.862 477.862" >
+		<path d="M187.722,102.856V17.062C187.719,7.636,180.076-0.003,170.65,0c-4.834,0.001-9.44,2.053-12.676,5.644L4.375,176.311 c-5.617,6.256-5.842,15.67-0.529,22.187l153.6,187.733c5.968,7.295,16.72,8.371,24.016,2.403c3.952-3.233,6.249-8.066,6.26-13.172 v-85.043c134.827,4.386,218.965,62.02,256.888,175.787c2.326,6.96,8.841,11.653,16.179,11.656c0.92,0.003,1.84-0.072,2.748-0.222 c8.256-1.347,14.319-8.479,14.319-16.845C477.855,259.818,356.87,112.174,187.722,102.856z"/>
+    </svg> `
+    let backIcon = document.querySelectorAll(".icon--placeholder");
+    for (var i = 0; i < backIcon.length; i++) {
+        backIcon[i].innerHTML = SVG;
+    }
 
 
 }
