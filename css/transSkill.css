@@ -320,11 +320,11 @@
 }
 
 .container-canvas .body-content .details-content > i {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 40px;
-  left: 0;
+  left: 50px;
   opacity: 0;
   fill: #fff;
   cursor: pointer;
@@ -524,104 +524,46 @@
   font-size: 2vw;
 }
 
-.container-canvas .body-content .Outsource-Payroll {
-  padding: 0;
+.container-canvas .body-content div.Outsource-Payroll img {
+  width: 100%;
 }
 
-.container-canvas .body-content .Outsource-Payroll .details-header {
-  text-align: center;
-  margin: 4vh 0 5vh 0;
-}
-
-.container-canvas .body-content .Outsource-Payroll .details-header h3 {
-  font-size: 5vw;
-  color: #fff;
-}
-
-.container-canvas .body-content .Outsource-Payroll .details-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container-canvas .body-content div.Outsource-Payroll div.details-body {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px 160px 160px 160px 160px;
+      grid-template-columns: 160px 160px 160px 160px 160px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 130px;
+  overflow: visible !important;
 }
 
-.container-canvas .body-content .Outsource-Payroll .details-body .shapes-container.shapes-top {
-  margin-bottom: 10vh;
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div {
+  display: -ms-grid;
+  display: grid;
 }
 
-.container-canvas .body-content .Outsource-Payroll .details-body .shapes-container.shapes-bottom {
-  margin-top: 20vh;
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div img {
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.container-canvas .body-content .Outsource-Payroll .details-body .shapes-container .shapes-image {
-  width: 230px;
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div img:hover {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
-.container-canvas .body-content .Outsource-Payroll .details-body .shapes-container .shapes-image img {
-  width: 280px;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections {
-  padding: 0;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-header {
-  text-align: center;
-  margin: 5vh 0 10vh 0;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-header h3 {
-  font-size: 5vw;
-  color: #fff;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-body .shapes-container {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-body .content-body {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 3vw;
-}
-
-.container-canvas .body-content .Outsource-Payroll-sections .details-body .content-body p {
-  font-size: 2.3vw;
-  color: #fff;
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div:nth-child(odd) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .container-canvas .body-content .content-business-intro {
