@@ -507,8 +507,8 @@
 }
 
 .container-canvas .body-content .details-content-with-image .side-content {
-  width: 0;
-  height: 100%;
+  width: 55%;
+  height: 0;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -704,6 +704,20 @@
           align-items: center;
   z-index: 11;
   text-align: center;
+}
+
+.container-canvas .body-content .commitments-body > i {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  opacity: 0;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.container-canvas .body-content .commitments-body > i.icon--placeholder-back {
+  top: 15px;
+  left: 15px;
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle {
