@@ -42,7 +42,7 @@
   margin-bottom: 5vh;
 }
 
-.container-canvas .body-content.hiden {
+.container-canvas .body-content.hidden {
   overflow: hidden;
   position: absolute;
   top: 100vh;
@@ -226,8 +226,8 @@
   background-color: #fff;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
@@ -243,7 +243,7 @@
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon {
-  background: #FFE33E;
+  background: #ffe33e;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon-median {
@@ -263,7 +263,7 @@
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-orange .hexagon {
-  background: #FF9000;
+  background: #ff9000;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-orange .hexagon-large:last-child {
@@ -276,7 +276,7 @@
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-green .hexagon {
-  background: #9FC914;
+  background: #9fc914;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-green .hexagon-large:last-child {
@@ -288,7 +288,7 @@
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-blue .hexagon {
-  background: #5053A3;
+  background: #5053a3;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-blue .hexagon-large:last-child {
@@ -301,7 +301,7 @@
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon {
-  background: #A3395E;
+  background: #a3395e;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-small {
@@ -323,14 +323,17 @@
 }
 
 .container-canvas .body-content .details-content > i {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
-  top: 40px;
-  left: 50px;
   opacity: 0;
   fill: #fff;
   cursor: pointer;
+}
+
+.container-canvas .body-content .details-content > i.icon--placeholder-back {
+  top: 15px;
+  left: 15px;
 }
 
 .container-canvas .body-content .details-content {
@@ -449,6 +452,7 @@
   opacity: 0;
   margin: 5vh 3.4vw 0 3.4vw;
   position: relative;
+  cursor: pointer;
 }
 
 .container-canvas .body-content .detail-obtain-it .content-body .images-content.image-with-title .title-body {
@@ -473,6 +477,10 @@
   display: flex;
   padding: 0;
   width: 80vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container-canvas .body-content .details-content-with-image .images-content {
@@ -493,12 +501,13 @@
 
 .container-canvas .body-content .details-content-with-image .images-content .image-all-together img {
   border-radius: 0;
-  width: 400px;
-  height: 380px;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content {
-  width: 55%;
+  width: 0;
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -506,6 +515,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 3vw;
+  opacity: 0;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header {
@@ -519,12 +529,14 @@
   font-size: 1.5vw;
 }
 
-.container-canvas .body-content .details-content-with-image .side-content .content-body {
-  margin-top: 5vh;
+.container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
+  font-size: 1.6vw;
 }
 
-.container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
-  font-size: 2vw;
+.container-canvas .body-content .details-content-with-image.obtain-childs .side-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container-canvas .body-content div.Outsource-Payroll img {
@@ -554,8 +566,8 @@
   opacity: 0;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .container-canvas .body-content div.Outsource-Payroll div.details-body > div img:hover {
@@ -614,7 +626,7 @@
 }
 
 .container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-yellew .shapes-circle-content {
-  border: 15px solid #FCDF21;
+  border: 15px solid #fcdf21;
   width: 22vw;
   height: 43vh;
 }
@@ -626,7 +638,7 @@
 }
 
 .container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-orange .shapes-circle-content {
-  border: 10px solid #FF9000;
+  border: 10px solid #ff9000;
   width: 12vw;
   height: 25vh;
 }
@@ -739,7 +751,7 @@
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white .commitment-content:before {
-  content: '';
+  content: "";
   position: absolute;
   height: calc(100% + 10px);
   width: calc(100% + 10px);
@@ -783,22 +795,22 @@
 
 .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
   width: 0;
-  height: 250px;
+  height: 200px;
   opacity: 0;
   -webkit-box-shadow: 0 0 25px 1px #00000050;
           box-shadow: 0 0 25px 1px #00000050;
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-orange {
-  background-color: #FFAA00;
+  background-color: #ffaa00;
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-green {
-  background-color: #9EC813;
+  background-color: #9ec813;
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-red {
-  background-color: #A3395E;
+  background-color: #a3395e;
 }
 
 .container-canvas .body-content .commitments-body .right-content {
@@ -858,7 +870,7 @@
 }
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point {
-  color: #FFAA00;
+  color: #ffaa00;
 }
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(2) {
@@ -866,11 +878,11 @@
 }
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point {
-  color: #9EC813;
+  color: #9ec813;
 }
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point {
-  color: #A3395E;
+  color: #a3395e;
 }
 
 .container-canvas .body-content .commitments-body .right-content .rule-point {
@@ -918,10 +930,13 @@
 }
 
 .container-canvas .body-content .contact-us h1 {
-  font-size: 5vw;
+  font-size: 60px;
   color: #fff;
-  margin-bottom: 3vh;
-  width: 35vw;
+  margin-bottom: 20px;
+  width: 500px;
+  opacity: 0;
+  position: relative;
+  left: 113%;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list {
@@ -939,6 +954,9 @@
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item {
   padding: 20px 15px;
   margin-bottom: 1.9vh;
+  position: relative;
+  top: 155%;
+  opacity: 0;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item p {
@@ -947,15 +965,15 @@
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(1) {
-  background-color: #FCDF21;
+  background-color: #fcdf21;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(2) {
-  background-color: #9FC914;
+  background-color: #9fc914;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(3) {
-  background-color: #A3395E;
+  background-color: #a3395e;
 }
 
 .container-canvas .body-content .contact-us .contact-us-list .contact-us-item:nth-child(4) {
@@ -1014,25 +1032,25 @@
 
 @-webkit-keyframes opacity {
   0% {
-    opacity: .7;
+    opacity: 0.7;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
 @keyframes opacity {
   0% {
-    opacity: .7;
+    opacity: 0.7;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -1120,8 +1138,8 @@
   height: 75px;
   left: 70vw;
   top: 70vh;
-  -webkit-animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
-          animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
+  -webkit-animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
+          animation: rotate 10s 0.5s infinite linear reverse, opacity 2500ms linear infinite;
 }
 
 .parallax-wrapper .ligt2 {
@@ -1138,8 +1156,8 @@
   height: 120px;
   left: 63vw;
   top: 80vh;
-  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
-          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
 }
 
 .parallax-wrapper .ligt4 {
@@ -1173,8 +1191,8 @@
   height: 120px;
   left: 25vw;
   top: 72vh;
-  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
-          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 4000ms linear infinite;
 }
 
 .parallax-wrapper .ligt8 {
@@ -1191,8 +1209,8 @@
   height: 150px;
   left: 10vw;
   top: 62vh;
-  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
-          animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
+  -webkit-animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
+          animation: rotate 8s 0.9s infinite linear reverse, opacity 8000ms linear infinite;
 }
 
 .parallax-wrapper .ligt10 {
@@ -1247,7 +1265,7 @@
   width: 1090px !important;
   background-position: 0 -2920px;
   height: 1000px;
-  left: calc( 100vw - 640px);
+  left: calc(100vw - 640px);
   top: calc(100vh - 860px);
   /* animation: rotate 528s 5.9s infinite linear reverse; */
   -webkit-filter: blur(42px) !important;
