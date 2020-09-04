@@ -336,6 +336,16 @@
   left: 15px;
 }
 
+.container-canvas .body-content .details-content > i.icon--placeholder-home {
+  top: 15px;
+  left: 15px;
+}
+
+.container-canvas .body-content .details-content > i.icon--placeholder-home + .icon--placeholder-back {
+  top: 50px;
+  left: 15px;
+}
+
 .container-canvas .body-content .details-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,18 +525,27 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 3vw;
-  opacity: 0;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header {
   background: #ddd;
-  width: auto;
+  width: 250px;
   display: inline-block;
   padding: 25px;
+  position: relative;
+  left: 150%;
+  opacity: 0;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header h3 {
   font-size: 1.5vw;
+}
+
+.container-canvas .body-content .details-content-with-image .side-content .content-body {
+  margin-top: 70px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
@@ -537,6 +556,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.container-canvas .body-content .details-content-with-image.Software-as-a-service .side-content .content-header {
+  width: 400px;
 }
 
 .container-canvas .body-content div.Outsource-Payroll img {

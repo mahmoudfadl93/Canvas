@@ -269,14 +269,21 @@
         width: 35px;
         height: 35px;
         position: absolute;
-
         opacity: 0;
         fill: #fff;
         cursor: pointer;
-        &.icon--placeholder-back{
+        &.icon--placeholder-back {
+          top: 15px;
+          left: 15px;
+        }
+        &.icon--placeholder-home {
             top: 15px;
             left: 15px;
-        }
+          }
+          &.icon--placeholder-home  + .icon--placeholder-back{
+            top: 50px;
+            left: 15px;
+          }
       }
     }
     // fourth page
@@ -407,17 +414,23 @@
         display: grid;
         align-items: center;
         padding: 0 3vw;
-        opacity: 0;
         .content-header {
           background: #ddd;
-          width: auto;
+          width: 250px;
           display: inline-block;
           padding: 25px;
+          position: relative;
+          left: 150%;
+          opacity: 0;
           h3 {
             font-size: 1.5vw;
           }
         }
         .content-body {
+            margin-top: 70px;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
           .content-prag {
             p {
               font-size: 1.6vw;
@@ -425,10 +438,17 @@
           }
         }
       }
-      &.obtain-childs{
+      &.obtain-childs {
         .side-content {
-            align-items: flex-start;
+          align-items: flex-start;
         }
+      }
+      &.Software-as-a-service{
+        .side-content {
+            .content-header {
+              width:400px;
+            }
+          }
       }
     }
     div.Outsource-Payroll {
@@ -550,9 +570,9 @@
         opacity: 0;
         fill: #fff;
         cursor: pointer;
-        &.icon--placeholder-back{
-            top: 15px;
-            left: 15px;
+        &.icon--placeholder-back {
+          top: 15px;
+          left: 15px;
         }
       }
       .commitment-circle {
