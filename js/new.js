@@ -82,6 +82,21 @@ window.onload = () => {
         gsap.to(".Outsource-Payroll i", { opacity: 1, delay: 3.5, duration: 0.5 });
         gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
     })
+
+
+    // view How's my journey
+    $("#HowsMyJourney").on("click", () => {
+        gsap.to("#secFive", { opacity: 1, top: 0, delay: 1.5, duration: 0, position: 'absolute' });
+        gsap.to(".detail-whosjourney", { height: '80vh', delay: 2, duration: 0.5 });
+        gsap.to(".detail-whosjourney .details-header", { height: 'auto', delay: 2.5, duration: 0.5 });
+        gsap.to(".detail-whosjourney .details-body", { height: 'auto', delay: 3.5, duration: 0.5 });
+        gsap.to(".detail-whosjourney i", { opacity: 1, delay: 3.5, duration: 0.5 });
+        gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
+    })
+
+
+
+
     $("#secTwo .detail-who i").on("click", () => {
         gsap.to(".detail-who i", { opacity: 0, duration: 0.5, scale: 1.5 });
         gsap.to(".details-body", { height: 0, delay: 0.6, duration: 0.5 });
@@ -163,6 +178,31 @@ window.onload = () => {
 
     })
 
+
+
+    $("#secFive .detail-whosjourney i").on("click", () => {
+        gsap.to(".detail-whosjourney i", { opacity: 0, duration: 0.5, scale: 1.5 });
+        gsap.to(".details-body", { height: 0, delay: 0.6, duration: 0.5 });
+        gsap.to(".details-header", { height: 0, delay: 1.0, duration: 0.5 });
+        gsap.to(".detail-whosjourney", { height: '0vh', delay: 1.2, duration: 0.5 });
+        gsap.to("#secTwo", { opacity: 0, top: '100vh', delay: 1.5, duration: 0 });
+
+        gsap.to("#secOne", { opacity: 1, top: 0, height: '100vh', delay: 1.5, duration: 0, });
+        gsap.to(".hexagon-yellew .hexagon.hexagon-median", { delay: 1.2, scale: 1 });
+        gsap.to(".hexagon-yellew .hexagon.hexagon-large.with-prag", { delay: 1.3, scale: 1 });
+        gsap.to(".hexagon-yellew .hexagon.hexagon-small", { delay: 1.3, scale: 1 });
+        gsap.to(".hexagon-orange .hexagon.hexagon-large.empty", { delay: 1.5, scale: 1 });
+        gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag", { delay: 1.4, scale: 1 });
+        gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", { delay: 1.6, scale: 1 });
+        gsap.to(".hexagon-green .hexagon.hexagon-large.empty", { delay: 1.7, scale: 1 });
+        gsap.to(".hexagon-blue .hexagon.hexagon-large.with-prag", { delay: 1.8, scale: 1 });
+        gsap.to(".hexagon-blue .hexagon.hexagon-large.empty", { delay: 1.9, scale: 1 });
+        gsap.to(".hexagon-red .hexagon.hexagon-median", { delay: 2.0, scale: 1 });
+        gsap.to(".hexagon-red .hexagon.hexagon-large.with-prag", { delay: 2.1, scale: 1 });
+        gsap.to(".hexagon-red .hexagon.hexagon-small", { delay: 2.2, scale: 1 });
+
+
+    })
 
 
 
