@@ -508,8 +508,6 @@ body {
 }
 
 .container-canvas .body-content .details-content {
-  background-color: #ddddddba;
-  padding: 0 100px;
   width: 85vw;
   height: 80vh;
   z-index: 11;
@@ -602,15 +600,15 @@ body {
           align-items: center;
 }
 
+.container-canvas .body-content .detail-obtain-it h3 {
+  font-size: 3vw;
+  color: #fff;
+}
+
 .container-canvas .body-content .detail-obtain-it .content-header {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-left: 5vw;
-}
-
-.container-canvas .body-content .detail-obtain-it .content-header h3 {
-  font-size: 3vw;
-  color: #fff;
 }
 
 .container-canvas .body-content .detail-obtain-it .content-body {

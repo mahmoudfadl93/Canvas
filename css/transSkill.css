@@ -1,213 +1,29 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
 * {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  list-style: none;
+          box-sizing: border-box;
 }
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+#secMain {
+  min-width: 90vw;
+  min-height: 99vh;
 }
 
-body {
-  line-height: 1;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  text-decoration: none;
-}
-
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input,
-select {
-  vertical-align: middle;
-}
-
-li {
-  list-style: none;
-}
-
-/* =============================================================================
-        My CSS
-        ========================================================================== */
-/* ---- base ---- */
-html,
-body {
-  width: 100%;
-  height: 100%;
-  background: #111;
-}
-
-html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-  font: normal 75% Arial, Helvetica, sans-serif;
+#secOne {
+  opacity: 0;
+  top: 100vh;
+  position: absolute;
 }
 
 .container-canvas {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.container-canvas::after {
-  content: "Trans Skills";
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  font-size: 14vw;
-  z-index: 1;
-  color: rgba(255, 255, 255, 0.295);
-  text-transform: uppercase;
-  text-align: center;
-  opacity: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .container-canvas .body-content {
@@ -226,6 +42,11 @@ body {
   margin-bottom: 5vh;
 }
 
+.container-canvas .body-content.hiden {
+  position: absolute;
+  top: 100vh;
+}
+
 .container-canvas .body-content .image-all-together {
   width: 100%;
   height: 100%;
@@ -240,44 +61,6 @@ body {
   z-index: 111;
 }
 
-.container-canvas .body-content .image-all-together span.one {
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 0;
-}
-
-.container-canvas .body-content .image-all-together span.two {
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 0;
-}
-
-.container-canvas .body-content .image-all-together span.three {
-  bottom: 0;
-  right: 0;
-  width: 3px;
-  height: 0;
-}
-
-.container-canvas .body-content .image-all-together span.four {
-  top: 0;
-  right: 0;
-  height: 3px;
-  width: 0;
-}
-
-.container-canvas .body-content .image-all-together:hover span.one,
-.container-canvas .body-content .image-all-together:hover span.three {
-  height: 100%;
-}
-
-.container-canvas .body-content .image-all-together:hover span.two,
-.container-canvas .body-content .image-all-together:hover span.four {
-  width: 100%;
-}
-
 .container-canvas .body-content .image-all-together img {
   width: 100%;
   height: 100%;
@@ -285,8 +68,9 @@ body {
 }
 
 .container-canvas .body-content .paragraph-content {
-  width: 80vw;
-  height: 80vh;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,8 +80,39 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #fff;
   z-index: 11;
+}
+
+.container-canvas .body-content .paragraph-content .span--wrapper {
+  display: contents;
+  animation: scale 3s 0.5s infinite linear reverse;
+}
+
+.container-canvas .body-content .paragraph-content .span--wrapper span {
+  -webkit-animation: opacity 2500ms linear infinite;
+          animation: opacity 2500ms linear infinite;
+}
+
+.container-canvas .body-content .paragraph-content div {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container-canvas .body-content .paragraph-content div button,
+.container-canvas .body-content .paragraph-content div a {
+  opacity: 0;
+  cursor: pointer;
+  margin: 50px;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ffffff;
+}
+
+.container-canvas .body-content .paragraph-content div button:hover,
+.container-canvas .body-content .paragraph-content div a:hover {
+  border: 2px solid #ffffff50;
 }
 
 .container-canvas .body-content .paragraph-content h2 {
@@ -318,19 +133,29 @@ body {
   text-transform: uppercase;
 }
 
+.container-canvas .body-content .paragraph-content span {
+  background: rgba(255, 255, 255, 0.999);
+  border: 1px solid #fff;
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+}
+
 .container-canvas .body-content .trans-shapes {
-  width: 90vw;
+  width: 100vw;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 11;
+  z-index: 8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 177px 330px 200px 330px 187px;
+      grid-template-columns: 177px 330px 200px 330px 187px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-arrow-left {
@@ -358,31 +183,27 @@ body {
   width: 15px;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-shape {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
-}
-
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: relative;
+  /*
+                    &.hexagon-large {
+                        width: 17vw;
+                        height: 30vh;
+                    }
+                    &.hexagon-median {
+                        width: 8vw;
+                        height: 16vh;
+                    }
+                    &.hexagon-small {
+                        width: 5vw;
+                        height: 10vh;
+                    } */
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag {
-  padding: 10px;
+  padding: 18px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag .hexagon-content {
@@ -400,32 +221,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .8s;
+  transition: .8s;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
+.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag .hexagon-content:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag .hexagon-content p {
-  font-size: 20px;
   font-weight: 800;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
-  width: 17vw;
-  height: 30vh;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
-  width: 8vw;
-  height: 16vh;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
-  width: 5vw;
-  height: 10vh;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-yellew {
-  left: 4vw;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon {
@@ -458,7 +269,6 @@ body {
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-green {
-  right: 3.5vw;
   padding-bottom: 25.6vh;
 }
 
@@ -470,23 +280,21 @@ body {
   margin-top: 2vh;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-bule {
-  right: 7.5vw;
+.container-canvas .body-content .trans-shapes .hexagon-blue {
   padding-top: 7vh;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-bule .hexagon {
+.container-canvas .body-content .trans-shapes .hexagon-blue .hexagon {
   background: #5053A3;
 }
 
-.container-canvas .body-content .trans-shapes .hexagon-bule .hexagon-large:last-child {
+.container-canvas .body-content .trans-shapes .hexagon-blue .hexagon-large:last-child {
   position: relative;
   top: 10px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red {
   padding-bottom: 18vh;
-  right: 11vw;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon {
@@ -496,7 +304,6 @@ body {
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-small {
   position: relative;
   top: 5vh;
-  margin-right: 3vw;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-median {
@@ -505,15 +312,25 @@ body {
 }
 
 .container-canvas .body-content .details-content {
-  background-color: #ddddddba;
-  padding: 0 100px;
   width: 85vw;
-  height: 80vh;
+  height: 0;
+  background: #ffffff30;
   z-index: 11;
   position: relative;
 }
 
-.container-canvas .body-content .detail-who {
+.container-canvas .body-content .details-content > i {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  opacity: 0;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.container-canvas .body-content .details-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,17 +346,17 @@ body {
           align-items: flex-start;
 }
 
-.container-canvas .body-content .detail-who .details-header {
+.container-canvas .body-content .details-content .details-header {
   position: relative;
   bottom: 65px;
 }
 
-.container-canvas .body-content .detail-who .details-header h3 {
+.container-canvas .body-content .details-content .details-header h3 {
   font-size: 5vw;
   color: #fff;
 }
 
-.container-canvas .body-content .detail-who .details-body p {
+.container-canvas .body-content .details-content .details-body p {
   font-size: 2.3vw;
   color: #fff;
 }
@@ -623,7 +440,8 @@ body {
 
 .container-canvas .body-content .detail-obtain-it .content-body .images-content.image-with-title {
   width: 17vw;
-  height: 31vh;
+  height: 0;
+  opacity: 0;
   margin: 5vh 3.4vw 0 3.4vw;
   position: relative;
 }
@@ -655,9 +473,8 @@ body {
 .container-canvas .body-content .details-content-with-image .images-content {
   width: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -678,6 +495,11 @@ body {
 .container-canvas .body-content .details-content-with-image .side-content {
   width: 55%;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 3vw;
 }
 
@@ -1178,6 +1000,52 @@ body {
   }
   100% {
     opacity: .7;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
