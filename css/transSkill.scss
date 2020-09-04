@@ -293,7 +293,8 @@
             .content-body {
                 width: 100%;
                 height: auto;
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 justify-content: space-between;
                 align-items: flex-start;
                 margin-top: 8vh;
@@ -325,13 +326,14 @@
                 }
             }
             .content-body {
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 justify-content: space-around;
                 align-items: center;
                 .images-content {
                     &.image-with-title {
-                        width: 17vw;
-                        // height: 31vh;
+                        // width: 17vw;
+                        height: 31vh !important;
                         height: 0;
                         opacity: 0;
                         margin: 5vh 3.4vw 0 3.4vw;

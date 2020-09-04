@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.container-canvas .body-content .detail-who {
+.container-canvas .body-content .details-content {
   background: #ffffff30;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -12,8 +12,8 @@
   height: 0px;
 }
 
-.container-canvas .body-content .detail-who .details-body,
-.container-canvas .body-content .detail-who .details-header {
+.container-canvas .body-content .details-content .details-body,
+.container-canvas .body-content .details-content .details-header {
   overflow: hidden;
   height: 0;
 }
