@@ -277,13 +277,22 @@
           left: 15px;
         }
         &.icon--placeholder-home {
-            top: 15px;
-            left: 15px;
-          }
-          &.icon--placeholder-home  + .icon--placeholder-back{
-            top: 50px;
-            left: 15px;
-          }
+          top: 15px;
+          left: 15px;
+        }
+        &.icon--placeholder-pre {
+          bottom: 15px;
+          left: 15px;
+          transform: rotate(180deg);
+        }
+        &.icon--placeholder-next {
+          bottom: 15px;
+          right: 15px;
+        }
+        &.icon--placeholder-home + .icon--placeholder-back {
+          top: 50px;
+          left: 15px;
+        }
       }
     }
     // fourth page
@@ -427,10 +436,10 @@
           }
         }
         .content-body {
-            margin-top: 70px;
-            height: 0;
-            opacity: 0;
-            overflow: hidden;
+          margin-top: 70px;
+          height: 0;
+          opacity: 0;
+          overflow: hidden;
           .content-prag {
             p {
               font-size: 1.6vw;
@@ -443,12 +452,12 @@
           align-items: flex-start;
         }
       }
-      &.Software-as-a-service{
+      &.Software-as-a-service {
         .side-content {
-            .content-header {
-              width:400px;
-            }
+          .content-header {
+            width: 400px;
           }
+        }
       }
     }
     div.Outsource-Payroll {

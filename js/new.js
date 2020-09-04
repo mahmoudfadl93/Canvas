@@ -151,12 +151,8 @@ window.onload = () => {
             <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"/>
     </svg>
     `;
-  let SVG_next = `
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>`;
-
-  let SVG_pre = `
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>`;
-
+  let SVG_next = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg>`;
+  let SVG_pre = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg>`;
   const SVG_home = `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h18v-10h3zm-5 8h-14v-10.26l7-6.912 7 6.99v10.182zm-5-1h-4v-6h4v6z"/></svg>`;
   let SVG = ` <svg viewBox="0 0 477.862 477.862" >
@@ -971,6 +967,8 @@ window.onload = () => {
   //   Child Elements
 
   //   how we can obtain childs
+
+
   $(".images-content.image-with-title").on("click", () => {
     gsap.to("#secThree .details-content ", {
       height: "0",
@@ -1004,47 +1002,51 @@ window.onload = () => {
     });
   });
 
+  let showobtainChildFirst = function(){
+    gsap.to("#obtainChildFirst", {
+        opacity: 1,
+        top: 0,
+        delay: 1,
+        duration: 1.2,
+        position: "absolute",
+      });
+      gsap.to("#obtainChildFirst i", {
+        opacity: 1,
+        delay: 1.3,
+        duration: 1.5,
+      });
+  
+      gsap.to("#obtainChildFirst .details-content ", {
+        height: "80vh",
+        delay: 1,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildFirst img", {
+        opacity: 1,
+        width: "400px",
+        height: "380px",
+        delay: 1.9,
+        duration: 1.5,
+      });
+  
+      gsap.to("#obtainChildFirst .side-content .content-header", {
+        opacity: 1,
+        left: 0,
+        delay: 2.6,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildFirst .side-content .content-body", {
+        opacity: 1,
+        height: "auto",
+        delay: 2.8,
+        duration: 2,
+      });
+  
+  };
+
   // ManagedService
   $("#ManagedService").on("click", () => {
-    gsap.to("#obtainChildFirst", {
-      opacity: 1,
-      top: 0,
-      delay: 1,
-      duration: 1.2,
-      position: "absolute",
-    });
-    gsap.to("#obtainChildFirst i", {
-      opacity: 1,
-      delay: 1.3,
-      duration: 1.5,
-    });
-
-    gsap.to("#obtainChildFirst .details-content ", {
-      height: "80vh",
-      delay: 1,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildFirst img", {
-      opacity: 1,
-      width: "400px",
-      height: "380px",
-      delay: 1.9,
-      duration: 1.5,
-    });
-
-    gsap.to("#obtainChildFirst .side-content .content-header", {
-      opacity: 1,
-      left: 0,
-      delay: 2.6,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildFirst .side-content .content-body", {
-      opacity: 1,
-      height: "auto",
-      delay: 2.8,
-      duration: 2,
-    });
-
+    showobtainChildFirst();
     gsap.to("#secThree", {
       opacity: 0,
       top: "100vh",
@@ -1052,47 +1054,52 @@ window.onload = () => {
       duration: 0.9,
     });
   });
+
+
+  let showobtainChildSecond = function(){
+    gsap.to("#obtainChildSecond", {
+        opacity: 1,
+        top: 0,
+        delay: 1,
+        duration: 1.2,
+        position: "absolute",
+      });
+      gsap.to("#obtainChildSecond i", {
+        opacity: 1,
+        delay: 1.3,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildSecond .details-content ", {
+        height: "80vh",
+        delay: 1,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildSecond img", {
+        opacity: 1,
+        width: "400px",
+        height: "380px",
+        delay: 1.9,
+        duration: 1.5,
+      });
+  
+      gsap.to("#obtainChildSecond .side-content .content-header", {
+        opacity: 1,
+        left: 0,
+        delay: 2.6,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildSecond .side-content .content-body", {
+        opacity: 1,
+        height: "auto",
+        delay: 2.8,
+        duration: 2,
+      });
+  
+  };
 
   // Software
   $("#Software").on("click", () => {
-    gsap.to("#obtainChildSecond", {
-      opacity: 1,
-      top: 0,
-      delay: 1,
-      duration: 1.2,
-      position: "absolute",
-    });
-    gsap.to("#obtainChildSecond i", {
-      opacity: 1,
-      delay: 1.3,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildSecond .details-content ", {
-      height: "80vh",
-      delay: 1,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildSecond img", {
-      opacity: 1,
-      width: "400px",
-      height: "380px",
-      delay: 1.9,
-      duration: 1.5,
-    });
-
-    gsap.to("#obtainChildSecond .side-content .content-header", {
-      opacity: 1,
-      left: 0,
-      delay: 2.6,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildSecond .side-content .content-body", {
-      opacity: 1,
-      height: "auto",
-      delay: 2.8,
-      duration: 2,
-    });
-
+    showobtainChildSecond();
     gsap.to("#secThree", {
       opacity: 0,
       top: "100vh",
@@ -1101,45 +1108,48 @@ window.onload = () => {
     });
   });
 
+  let showobtainChildThird = function(){
+    gsap.to("#obtainChildThird", {
+        opacity: 1,
+        top: 0,
+        delay: 1,
+        duration: 1.2,
+        position: "absolute",
+      });
+      gsap.to("#obtainChildThird i", {
+        opacity: 1,
+        delay: 1.3,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildThird .details-content ", {
+        height: "80vh",
+        delay: 1,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildThird img", {
+        opacity: 1,
+        width: "400px",
+        height: "380px",
+        delay: 1.9,
+        duration: 1.5,
+      });
+  
+      gsap.to("#obtainChildThird .side-content .content-header", {
+        opacity: 1,
+        left: 0,
+        delay: 2.6,
+        duration: 1.5,
+      });
+      gsap.to("#obtainChildThird .side-content .content-body", {
+        opacity: 1,
+        height: "auto",
+        delay: 2.8,
+        duration: 2,
+      });
+  };
   // Hybrid
   $("#Hybrid").on("click", () => {
-    gsap.to("#obtainChildThird", {
-      opacity: 1,
-      top: 0,
-      delay: 1,
-      duration: 1.2,
-      position: "absolute",
-    });
-    gsap.to("#obtainChildThird i", {
-      opacity: 1,
-      delay: 1.3,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildThird .details-content ", {
-      height: "80vh",
-      delay: 1,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildThird img", {
-      opacity: 1,
-      width: "400px",
-      height: "380px",
-      delay: 1.9,
-      duration: 1.5,
-    });
-
-    gsap.to("#obtainChildThird .side-content .content-header", {
-      opacity: 1,
-      left: 0,
-      delay: 2.6,
-      duration: 1.5,
-    });
-    gsap.to("#obtainChildThird .side-content .content-body", {
-      opacity: 1,
-      height: "auto",
-      delay: 2.8,
-      duration: 2,
-    });
+    showobtainChildThird();
 
     gsap.to("#secThree", {
       opacity: 0,
@@ -1157,6 +1167,61 @@ window.onload = () => {
     }, 1500);
   });
 
+  //            obtain-childs-container next prev
+  //           show   obtainChildSecond
+
+  
+  //            obtain-childs-container next
+  $("#obtainChildFirst i.icon--placeholder-next").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildSecond();
+    }, 1500);
+  });
+
+  //           show   obtainChildThird
+  $("#obtainChildSecond i.icon--placeholder-next").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildThird();
+    }, 1500);
+  });
+
+   //        show   obtainChildThird
+   $("#obtainChildThird i.icon--placeholder-next").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildFirst();
+    }, 1500);
+  });
+
+  
+  //            obtain-childs-container next
+ //        show   showobtainChildThird
+  $("#obtainChildFirst i.icon--placeholder-pre").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildThird();
+        
+    }, 1500);
+  });
+
+  //           show   showobtainChildFirst
+  $("#obtainChildSecond i.icon--placeholder-pre").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildFirst();
+    }, 1500);
+  });
+
+   //        show   showobtainChildSecond
+   $("#obtainChildThird i.icon--placeholder-pre").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+        showobtainChildSecond();
+    }, 1500);
+  });
+  //            obtain-childs-container next prev
   //     -                        -        go Home From Child of Children      -----------------
   $(".obtain-childs-container i.icon--placeholder-home").on("click", () => {
     hideObtainChildsContainer();
