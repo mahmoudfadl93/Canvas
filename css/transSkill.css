@@ -103,7 +103,9 @@
 .container-canvas .body-content .paragraph-content div a {
   opacity: 0;
   cursor: pointer;
-  margin: 50px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
   padding: 10px 20px;
   background: transparent;
   color: #fff;
@@ -538,7 +540,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 130px;
+  height: 190px;
   overflow: visible !important;
 }
 

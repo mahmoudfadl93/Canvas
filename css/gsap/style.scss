@@ -84,3 +84,39 @@
     font-size: 30px;
     font-weight: 800;
 }
+
+.myButt {
+    outline: none;
+    border: none;
+    padding: 20px;
+    display: block;
+    margin: 50px auto;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.5s ease;
+}
+
+.one {
+    border-color: #fff;
+    overflow: hidden;
+    color: #fff;
+    .insider {
+        background-color: #fff;
+        width: 100%;
+        height: 20px;
+        position: absolute !important;
+        left: -135px;
+        transform: rotateZ(45deg);
+    }
+    &:hover {
+        border-color: #fff;
+        color: #fff;
+        .insider {
+            transition: all 0.3s ease;
+            left: 135px;
+        }
+    }
+}

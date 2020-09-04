@@ -75,7 +75,9 @@
                 a {
                     opacity: 0;
                     cursor: pointer;
-                    margin: 50px;
+                    margin: 50px auto;
+                    overflow: hidden;
+                    position: relative;
                     padding: 10px 20px;
                     background: transparent;
                     color: #fff;
@@ -411,7 +413,7 @@
                 grid-template-columns: 160px 160px 160px 160px 160px;
                 width: 100%;
                 justify-content: center;
-                height: 130px;
+                height: 190px;
                 overflow: visible !important;
                 >div {
                     img {
