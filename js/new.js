@@ -95,6 +95,36 @@ window.onload = () => {
     })
 
 
+    // view How's my journey
+    $("#WhatsYourCommitment").on("click", () => {
+        gsap.to("#secSix", { opacity: 1, top: 0, delay: 1.5, duration: 0, position: 'absolute' });
+        gsap.to(".commitment-content p", { opacity: 1, delay: 3, duration: 0.5 });
+        gsap.to(".commitment-circle.commitment-circle-white", { scale: 1, delay: 2.0, ease: Elastic.easeOut, duration: 1.5 });
+        gsap.to("#secSix .commitments-body .right-content", { width: 'auto', delay: 3.5, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .small-circle", { width: '85px', delay: 3.5, duration: 0 });
+        gsap.to("#secSix .commitments-body .small-circle", { opacity: '1', delay: 3.6, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .mediam-circle", { width: '250px', delay: 2.0, duration: 0 });
+        gsap.to("#secSix .commitments-body .mediam-circle", { opacity: '1', delay: 3.6, duration: 0.5 });
+
+
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", { opacity: '1', width: '26vw', delay: 4.7, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", { opacity: '1', height: 'auto', delay: 5.2, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div", { opacity: '1', width: '26vw', delay: 5.7, duration: 0.5 });
+
+
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", { opacity: '1', width: '26vw', delay: 5.0, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", { opacity: '1', height: 'auto', delay: 5.5, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", { opacity: '1', width: '26vw', delay: 6, duration: 0.5 });
+
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", { opacity: '1', width: '26vw', delay: 5.3, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", { opacity: '1', height: 'auto', delay: 5.8, duration: 0.5 });
+        gsap.to("#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div", { opacity: '1', width: '26vw', delay: 6.3, duration: 0.5 });
+        // gsap.to("#secSix .commitments-body .right-content .rule-point", { opacity: '1', delay: 4, duration: 0.5 });
+        // gsap.to(".commitments-body i", { opacity: 1, delay: 3.5, duration: 0.5 });
+        gsap.to("#secOne", { opacity: 0, top: '100vh', delay: 3.6, duration: 0 });
+    })
+
+
 
 
     $("#secTwo .detail-who i").on("click", () => {
@@ -185,7 +215,7 @@ window.onload = () => {
         gsap.to(".details-body", { height: 0, delay: 0.6, duration: 0.5 });
         gsap.to(".details-header", { height: 0, delay: 1.0, duration: 0.5 });
         gsap.to(".detail-whosjourney", { height: '0vh', delay: 1.2, duration: 0.5 });
-        gsap.to("#secTwo", { opacity: 0, top: '100vh', delay: 1.5, duration: 0 });
+        gsap.to("#secFive", { opacity: 0, top: '100vh', delay: 1.5, duration: 0 });
 
         gsap.to("#secOne", { opacity: 1, top: 0, height: '100vh', delay: 1.5, duration: 0, });
         gsap.to(".hexagon-yellew .hexagon.hexagon-median", { delay: 1.2, scale: 1 });
