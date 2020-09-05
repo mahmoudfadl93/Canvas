@@ -616,6 +616,10 @@
           align-items: end;
 }
 
+.container-canvas .body-content div.Outsource-Payroll div.details-body .shapes-image {
+  cursor: pointer;
+}
+
 .container-canvas .body-content .content-business-intro {
   width: 90vw;
   height: 90vh;

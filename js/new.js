@@ -966,8 +966,7 @@ window.onload = () => {
   });
   //   Child Elements
 
-  //   how we can obtain childs
-
+  //   how we can obtain childs -------------------------------------
 
   $(".images-content.image-with-title").on("click", () => {
     gsap.to("#secThree .details-content ", {
@@ -1002,46 +1001,45 @@ window.onload = () => {
     });
   });
 
-  let showobtainChildFirst = function(){
+  let showobtainChildFirst = function () {
     gsap.to("#obtainChildFirst", {
-        opacity: 1,
-        top: 0,
-        delay: 1,
-        duration: 1.2,
-        position: "absolute",
-      });
-      gsap.to("#obtainChildFirst i", {
-        opacity: 1,
-        delay: 1.3,
-        duration: 1.5,
-      });
-  
-      gsap.to("#obtainChildFirst .details-content ", {
-        height: "80vh",
-        delay: 1,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildFirst img", {
-        opacity: 1,
-        width: "400px",
-        height: "380px",
-        delay: 1.9,
-        duration: 1.5,
-      });
-  
-      gsap.to("#obtainChildFirst .side-content .content-header", {
-        opacity: 1,
-        left: 0,
-        delay: 2.6,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildFirst .side-content .content-body", {
-        opacity: 1,
-        height: "auto",
-        delay: 2.8,
-        duration: 2,
-      });
-  
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+    gsap.to("#obtainChildFirst i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+
+    gsap.to("#obtainChildFirst .details-content ", {
+      height: "80vh",
+      delay: 1,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildFirst img", {
+      opacity: 1,
+      width: "400px",
+      height: "380px",
+      delay: 1.9,
+      duration: 1.5,
+    });
+
+    gsap.to("#obtainChildFirst .side-content .content-header", {
+      opacity: 1,
+      left: 0,
+      delay: 2.6,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildFirst .side-content .content-body", {
+      opacity: 1,
+      height: "auto",
+      delay: 2.8,
+      duration: 2,
+    });
   };
 
   // ManagedService
@@ -1055,46 +1053,44 @@ window.onload = () => {
     });
   });
 
-
-  let showobtainChildSecond = function(){
+  let showobtainChildSecond = function () {
     gsap.to("#obtainChildSecond", {
-        opacity: 1,
-        top: 0,
-        delay: 1,
-        duration: 1.2,
-        position: "absolute",
-      });
-      gsap.to("#obtainChildSecond i", {
-        opacity: 1,
-        delay: 1.3,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildSecond .details-content ", {
-        height: "80vh",
-        delay: 1,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildSecond img", {
-        opacity: 1,
-        width: "400px",
-        height: "380px",
-        delay: 1.9,
-        duration: 1.5,
-      });
-  
-      gsap.to("#obtainChildSecond .side-content .content-header", {
-        opacity: 1,
-        left: 0,
-        delay: 2.6,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildSecond .side-content .content-body", {
-        opacity: 1,
-        height: "auto",
-        delay: 2.8,
-        duration: 2,
-      });
-  
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+    gsap.to("#obtainChildSecond i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildSecond .details-content ", {
+      height: "80vh",
+      delay: 1,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildSecond img", {
+      opacity: 1,
+      width: "400px",
+      height: "380px",
+      delay: 1.9,
+      duration: 1.5,
+    });
+
+    gsap.to("#obtainChildSecond .side-content .content-header", {
+      opacity: 1,
+      left: 0,
+      delay: 2.6,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildSecond .side-content .content-body", {
+      opacity: 1,
+      height: "auto",
+      delay: 2.8,
+      duration: 2,
+    });
   };
 
   // Software
@@ -1108,44 +1104,44 @@ window.onload = () => {
     });
   });
 
-  let showobtainChildThird = function(){
+  let showobtainChildThird = function () {
     gsap.to("#obtainChildThird", {
-        opacity: 1,
-        top: 0,
-        delay: 1,
-        duration: 1.2,
-        position: "absolute",
-      });
-      gsap.to("#obtainChildThird i", {
-        opacity: 1,
-        delay: 1.3,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildThird .details-content ", {
-        height: "80vh",
-        delay: 1,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildThird img", {
-        opacity: 1,
-        width: "400px",
-        height: "380px",
-        delay: 1.9,
-        duration: 1.5,
-      });
-  
-      gsap.to("#obtainChildThird .side-content .content-header", {
-        opacity: 1,
-        left: 0,
-        delay: 2.6,
-        duration: 1.5,
-      });
-      gsap.to("#obtainChildThird .side-content .content-body", {
-        opacity: 1,
-        height: "auto",
-        delay: 2.8,
-        duration: 2,
-      });
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+    gsap.to("#obtainChildThird i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildThird .details-content ", {
+      height: "80vh",
+      delay: 1,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildThird img", {
+      opacity: 1,
+      width: "400px",
+      height: "380px",
+      delay: 1.9,
+      duration: 1.5,
+    });
+
+    gsap.to("#obtainChildThird .side-content .content-header", {
+      opacity: 1,
+      left: 0,
+      delay: 2.6,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildThird .side-content .content-body", {
+      opacity: 1,
+      height: "auto",
+      delay: 2.8,
+      duration: 2,
+    });
   };
   // Hybrid
   $("#Hybrid").on("click", () => {
@@ -1170,12 +1166,11 @@ window.onload = () => {
   //            obtain-childs-container next prev
   //           show   obtainChildSecond
 
-  
   //            obtain-childs-container next
   $("#obtainChildFirst i.icon--placeholder-next").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildSecond();
+      showobtainChildSecond();
     }, 1500);
   });
 
@@ -1183,26 +1178,24 @@ window.onload = () => {
   $("#obtainChildSecond i.icon--placeholder-next").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildThird();
+      showobtainChildThird();
     }, 1500);
   });
 
-   //        show   obtainChildThird
-   $("#obtainChildThird i.icon--placeholder-next").on("click", () => {
+  //        show   obtainChildThird
+  $("#obtainChildThird i.icon--placeholder-next").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildFirst();
+      showobtainChildFirst();
     }, 1500);
   });
 
-  
   //            obtain-childs-container next
- //        show   showobtainChildThird
+  //        show   showobtainChildThird
   $("#obtainChildFirst i.icon--placeholder-pre").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildThird();
-        
+      showobtainChildThird();
     }, 1500);
   });
 
@@ -1210,15 +1203,15 @@ window.onload = () => {
   $("#obtainChildSecond i.icon--placeholder-pre").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildFirst();
+      showobtainChildFirst();
     }, 1500);
   });
 
-   //        show   showobtainChildSecond
-   $("#obtainChildThird i.icon--placeholder-pre").on("click", () => {
+  //        show   showobtainChildSecond
+  $("#obtainChildThird i.icon--placeholder-pre").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-        showobtainChildSecond();
+      showobtainChildSecond();
     }, 1500);
   });
   //            obtain-childs-container next prev
@@ -1231,4 +1224,42 @@ window.onload = () => {
   });
 
   //     -                        -        go Home From Child of Children      -----------------
+
+  //   how we can obtain childs -------------------------------------
+
+  //   Why Outsource Your Payroll? -------------------------------------
+
+  $("#BusinessGrowthEnsured").on("click", () => {
+    gsap.to("#OutsourcePayrollFirst", {
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+
+    gsap.to("#OutsourcePayrollFirst i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFirst .details-content ", {
+      height: "80vh",
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFirst .details-header", {
+      height: "auto",
+      delay: 1.5,
+      duration: 1.5,
+    });
+    gsap.to("#secFour", {
+      opacity: 0,
+      top: "100vh",
+      delay: 0,
+      duration: 0.9,
+    });
+  });
+
+  //  Why Outsource Your Payroll? -------------------------------------
 };
