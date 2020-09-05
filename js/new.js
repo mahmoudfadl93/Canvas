@@ -1,8 +1,8 @@
 window.onload = () => {
   //  define actions
 
-  ///         showsecone ------------------------
-  var showsecone = function () {
+  ///         show sec one ------------------------
+  let showsecone = function () {
     gsap.to("#secOne", {
       opacity: 1,
       top: 0,
@@ -59,10 +59,10 @@ window.onload = () => {
       scale: 1,
     });
   };
-  ///         showsecone ------------------------
+  ///         show sec one ------------------------
 
-  ///         showsecThree ------------------------
-  var showsecThree = function () {
+  ///         show sec Three ------------------------
+  let showsecThree = function () {
     gsap.to("#secThree", {
       opacity: 1,
       top: 0,
@@ -81,21 +81,29 @@ window.onload = () => {
     });
     gsap.to(".content-body .image-with-title.Service", {
       opacity: 1,
+      height: "31vh",
       delay: 3.0,
       duration: 0.5,
     });
     gsap.to(".content-body .image-with-title.Software", {
       opacity: 1,
+      height: "31vh",
       delay: 3.4,
       duration: 0.5,
     });
     gsap.to(".content-body .image-with-title.Hybrid", {
       opacity: 1,
+      height: "31vh",
       delay: 3.8,
       duration: 0.5,
     });
 
-    gsap.to(".detail-obtain-it i.icon--placeholder-back", {
+    gsap.to(".detail-obtain-it i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to(".detail-obtain-it p.title-back", {
       opacity: 1,
       delay: 3.5,
       duration: 0.5,
@@ -107,10 +115,57 @@ window.onload = () => {
       duration: 0,
     });
   };
-  ///         showsecThree ------------------------
+  ///         show sec Three ------------------------
 
-  var hideObtainChildsContainer = function () {
+  ///         show sec Four  ------------------------
+  let showsecFour =  function () {
+    gsap.to("#secFour", {
+      opacity: 1,
+      top: 0,
+      delay: 0.5,
+      duration: 0,
+    });
+    gsap.to("#secFour .details-content ", {
+      height: "80vh",
+      delay: 1,
+      duration: 0.5,
+    });
+    gsap.to(".Outsource-Payroll .details-header", {
+      height: "auto",
+      delay: 1.5,
+      duration: 0.5,
+    });
+    gsap.to(".Outsource-Payroll .details-body", {
+      height: "270px",
+      delay: 2.0,
+      duration: 1.5,
+    });
+    gsap.to(".Outsource-Payroll .details-body img", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
+    });
+
+    gsap.to(".Outsource-Payroll i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to(".Payroll p.title-back", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+  };
+  ///         show sec Four  ------------------------
+  ///         hide Obtain Childs Container ------------------------
+  let hideObtainChildsContainer = function () {
     gsap.to(".obtain-childs-container i", {
+      opacity: 0,
+      delay: 0.2,
+      duration: 1.5,
+    });
+    gsap.to(".obtain-childs-container p.title-back", {
       opacity: 0,
       delay: 0.2,
       duration: 1.5,
@@ -146,6 +201,139 @@ window.onload = () => {
       duration: 1,
     });
   };
+  ///         hide Obtain Childs Container  ------------------------
+
+  ///         hide Image With Title ------------------------
+  let hideImageWithTitle = function () {
+    gsap.to("#secThree i", {
+      opacity: 0,
+      duration: 1.5,
+    });
+
+    gsap.to("#secThree p.title-back", {
+      opacity: 0,
+      duration: 1.5,
+    });
+    gsap.to(".detail-obtain-it .details-header", {
+      height: "0",
+      delay: 0.3,
+      duration: 1.5,
+    });
+
+    gsap.to("#secThree .content-body .image-with-title.Service", {
+      height: 0,
+      opacity: 0,
+      delay: 0.6,
+      duration: 1.5,
+    });
+    gsap.to("#secThree .content-body .image-with-title.Software", {
+      height: 0,
+      opacity: 0,
+      delay: 0.9,
+      duration: 1.5,
+    });
+    gsap.to("#secThree .content-body .image-with-title.Hybrid", {
+      height: 0,
+      opacity: 0,
+      delay: 1.2,
+      duration: 1.5,
+    });
+    gsap.to("#secThree .details-content ", {
+      height: "0",
+      delay: 2,
+      duration: 1.5,
+    });
+    gsap.to("#secThree", {
+      opacity: 0,
+      top: "100vh",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  };
+  ///         hide Image With Title  ------------------------
+
+  ///      hide   Why Outsource Your Payroll  ------------------------
+  let hideOutsourcePayroll = function () {
+    gsap.to(".Outsource-Payroll i", {
+      opacity: 0,
+      duration: 1.0,
+    });
+    gsap.to(".Outsource-Payroll p.title-back", {
+      opacity: 0,
+      duration: 1.0,
+    });
+    gsap.to("#secFour", {
+      opacity: 0,
+      top: "100vh",
+      delay: 3.5,
+      duration: 0,
+    });
+    gsap.to(".Outsource-Payroll.details-content ", {
+      height: "0vh",
+      delay: 1.5,
+      duration: 0.5,
+    });
+    gsap.to(".Outsource-Payroll .details-header", {
+      height: 0,
+      delay: 1.5,
+      duration: 1.5,
+    });
+    gsap.to(".Outsource-Payroll .details-body", {
+      height: "130px",
+      delay: 0.7,
+      duration: 2,
+    });
+    gsap.to(".Outsource-Payroll .details-body img", {
+      delay: 0.3,
+      duration: 0.5,
+      opacity: 0,
+    });
+
+    gsap.to(".Outsource-Payroll .details-header", {
+      height: 0,
+      delay: 1.0,
+      duration: 0.5,
+    });
+  };
+  ///       hide  Why Outsource Your Payroll  ------------------------
+
+ ///       hide  Why Outsource Your Payroll  Childern------------------------
+ let hideOutsourcePayrollChildern = function (){
+  gsap.to(".Outsource-Payrolls-container i", {
+    opacity: 0,
+    delay: 0.3,
+    duration: 1.5,
+  });
+  gsap.to(".Outsource-Payrolls-container p.title-back", {
+    opacity: 0,
+    delay: 0.6,
+    duration: 1.5,
+  });
+
+  gsap.to(".Outsource-Payrolls-container  .details-body", {
+    height: "auto",
+    delay: 0.9,
+    duration: 1.5,
+  });
+  
+  gsap.to(".Outsource-Payrolls-container .details-content ", {
+    height: 0,
+    delay: 1.2,
+    duration: 1.5,
+  });
+
+  gsap.to(".Outsource-Payrolls-container", {
+    opacity: 0,
+    top: "100vh",
+    delay: 1.5,
+    duration: 1.5,
+  });
+ };
+  ///       hide  Why Outsource Your Payroll Childern ------------------------
+
+
+
+
 
   let SVG_close = `<svg viewBox="0 0 512.001 512.001" >
             <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"/>
@@ -160,19 +348,19 @@ window.onload = () => {
     </svg> `;
 
   let backIcon = document.querySelectorAll(".icon--placeholder-back");
-  for (var i = 0; i < backIcon.length; i++) {
+  for (let i = 0; i < backIcon.length; i++) {
     backIcon[i].innerHTML = SVG;
   }
   let nextIcon = document.querySelectorAll(".icon--placeholder-next");
-  for (var i = 0; i < nextIcon.length; i++) {
+  for (let i = 0; i < nextIcon.length; i++) {
     nextIcon[i].innerHTML = SVG_next;
   }
   let preIcon = document.querySelectorAll(".icon--placeholder-pre");
-  for (var i = 0; i < preIcon.length; i++) {
+  for (let i = 0; i < preIcon.length; i++) {
     preIcon[i].innerHTML = SVG_pre;
   }
   let homeIcon = document.querySelectorAll(".icon--placeholder-home");
-  for (var i = 0; i < homeIcon.length; i++) {
+  for (let i = 0; i < homeIcon.length; i++) {
     homeIcon[i].innerHTML = SVG_home;
   }
 
@@ -378,7 +566,12 @@ window.onload = () => {
       delay: 3.5,
       duration: 0.5,
     });
-    gsap.to(".detail-who i.icon--placeholder-back", {
+    gsap.to(".detail-who i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to(".detail-who p.title-back", {
       opacity: 1,
       delay: 3.5,
       duration: 0.5,
@@ -411,21 +604,29 @@ window.onload = () => {
     });
     gsap.to("#secThree .content-body .image-with-title.Service", {
       opacity: 1,
+      height: "31vh",
       delay: 3.0,
       duration: 0.5,
     });
     gsap.to("#secThree .content-body .image-with-title.Software", {
       opacity: 1,
+      height: "31vh",
       delay: 3.4,
       duration: 0.5,
     });
     gsap.to("#secThree .content-body .image-with-title.Hybrid", {
       opacity: 1,
+      height: "31vh",
       delay: 3.8,
       duration: 0.5,
     });
 
-    gsap.to(".detail-obtain-it i.icon--placeholder-back", {
+    gsap.to(".detail-obtain-it i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to(".detail-obtain-it p.title-back", {
       opacity: 1,
       delay: 3.5,
       duration: 0.5,
@@ -440,38 +641,7 @@ window.onload = () => {
 
   // view Outsource Our Payroll Slide
   $("#OutsourceOurPayroll").on("click", () => {
-    gsap.to("#secFour", {
-      opacity: 1,
-      top: 0,
-      delay: 0.5,
-      duration: 0,
-    });
-    gsap.to("#secFour .details-content ", {
-      height: "80vh",
-      delay: 1,
-      duration: 0.5,
-    });
-    gsap.to(".Outsource-Payroll .details-header", {
-      height: "auto",
-      delay: 1.5,
-      duration: 0.5,
-    });
-    gsap.to(".Outsource-Payroll .details-body", {
-      height: "270px",
-      delay: 2.0,
-      duration: 1.5,
-    });
-    gsap.to(".Outsource-Payroll .details-body img", {
-      delay: 2.0,
-      duration: 1.5,
-      opacity: 1,
-    });
-
-    gsap.to(".Outsource-Payroll i.icon--placeholder-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
+    showsecFour();
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -504,11 +674,17 @@ window.onload = () => {
       delay: 3.5,
       duration: 0.5,
     });
-    gsap.to(".detail-whosjourney i.icon--placeholder-back", {
+    gsap.to(".detail-whosjourney i", {
       opacity: 1,
       delay: 3.5,
       duration: 0.5,
     });
+    gsap.to(".detail-whosjourney p.title-back", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -526,7 +702,12 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
-    gsap.to("#secSix i.icon--placeholder-back", {
+    gsap.to("#secSix i", {
+      opacity: 1,
+      delay: 4,
+      duration: 0.5,
+    });
+    gsap.to("#secSix p.title-back", {
       opacity: 1,
       delay: 4,
       duration: 0.5,
@@ -670,6 +851,16 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
+    gsap.to("#secSeven i", {
+      opacity: 1,
+      delay: 4,
+      duration: 0.5,
+    });
+    gsap.to("#secSeven p.title-back", {
+      opacity: 1,
+      delay: 4,
+      duration: 0.5,
+    });
     gsap.to("#secSeven .contact-us h1", {
       opacity: "1",
       delay: 2,
@@ -708,8 +899,12 @@ window.onload = () => {
     });
   });
 
-  $("#secTwo .detail-who i.icon--placeholder-back").on("click", () => {
-    gsap.to(".detail-who i.icon--placeholder-back", {
+  $("#secTwo .detail-who i.icon--placeholder-home").on("click", () => {
+    gsap.to(".detail-who i", {
+      opacity: 0,
+      duration: 0.5,
+    });
+    gsap.to(".detail-who p.title-back", {
       opacity: 0,
       duration: 0.5,
     });
@@ -735,96 +930,31 @@ window.onload = () => {
       duration: 0,
     });
 
-    showsecone();
+    setTimeout(() => {
+      showsecone();
+    }, 500);
   });
 
-  $("#secThree .detail-obtain-it i.icon--placeholder-back").on("click", () => {
-    gsap.to(".detail-obtain-it i.icon--placeholder-back", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    gsap.to("#secThree", {
-      opacity: 1,
-      top: 0,
-      delay: 0.5,
-      duration: 0,
-    });
-    gsap.to("#secThree .content-body .image-with-title.Service", {
-      opacity: 0,
-      delay: 0.2,
-      duration: 0.5,
-    });
-    gsap.to("#secThree.content-body .image-with-title.Software", {
-      opacity: 0,
-      delay: 0.4,
-      duration: 0.5,
-    });
-    gsap.to("#secThree .content-body .image-with-title.Hybrid", {
-      opacity: 0,
-      delay: 0.6,
-      duration: 0.5,
-    });
-    gsap.to(".detail-obtain-it .details-header", {
-      height: 0,
-      delay: 1.0,
-      duration: 0.5,
-    });
-    gsap.to(".detail-obtain-it.details-content ", {
-      height: "0vh",
-      delay: 1.5,
-      duration: 0.5,
-    });
-    gsap.to("#secThree ", {
-      top: "100vh",
-      delay: 2,
-      duration: 0.5,
-    });
-    showsecone();
+  $("#secThree .detail-obtain-it i.icon--placeholder-home").on("click", () => {
+    hideImageWithTitle();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
   });
 
-  $("#secFour .Outsource-Payroll i.icon--placeholder-back").on("click", () => {
-    gsap.to(".Outsource-Payroll i.icon--placeholder-back", {
-      opacity: 0,
-      duration: 1.0,
-    });
-    gsap.to("#secFour", {
-      opacity: 0,
-      top: "100vh",
-      delay: 3.5,
-      duration: 0,
-    });
-    gsap.to(".Outsource-Payroll.details-content ", {
-      height: "0vh",
-      delay: 1.5,
-      duration: 0.5,
-    });
-    gsap.to(".Outsource-Payroll .details-header", {
-      height: 0,
-      delay: 1.5,
-      duration: 1.5,
-    });
-    gsap.to(".Outsource-Payroll .details-body", {
-      height: "130px",
-      delay: 0.7,
-      duration: 2,
-    });
-    gsap.to(".Outsource-Payroll .details-body img", {
-      delay: 0.3,
-      duration: 0.5,
-      opacity: 0,
-    });
-
-    gsap.to(".Outsource-Payroll .details-header", {
-      height: 0,
-      delay: 1.0,
-      duration: 0.5,
-    });
-
-    showsecone();
+  $("#secFour .Outsource-Payroll i.icon--placeholder-home").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showsecone();
+    }, 500);
   });
 
-  $("#secFive .detail-whosjourney i.icon--placeholder-back").on("click", () => {
-    gsap.to(".detail-whosjourney i.icon--placeholder-back", {
+  $("#secFive .detail-whosjourney i.icon--placeholder-home").on("click", () => {
+    gsap.to(".detail-whosjourney i", {
+      opacity: 0,
+      duration: 0.5,
+    });
+    gsap.to(".detail-whosjourney p.title-back", {
       opacity: 0,
       duration: 0.5,
     });
@@ -849,11 +979,13 @@ window.onload = () => {
       delay: 1.5,
       duration: 0,
     });
-    showsecone();
+    setTimeout(() => {
+      showsecone();
+    }, 500);
   });
 
   // view How's my journey
-  $("#secSix i.icon--placeholder-back").on("click", () => {
+  $("#secSix i.icon--placeholder-home").on("click", () => {
     gsap.to(".commitment-content p", {
       opacity: 0,
       delay: 0.1,
@@ -964,42 +1096,80 @@ window.onload = () => {
       showsecone();
     }, 1000);
   });
-  //   Child Elements
 
-  //   how we can obtain childs -------------------------------------
-
-  $(".images-content.image-with-title").on("click", () => {
-    gsap.to("#secThree .details-content ", {
-      height: "0",
-      delay: 3,
-      duration: 2.5,
-    });
-
-    gsap.to("#secThree i.icon--placeholder-back", {
+  $("#secSeven i.icon--placeholder-home").on("click", () => {
+    gsap.to("#secSeven", {
       opacity: 0,
-      duration: 0.5,
+      top: "100vh",
+      delay: 4,
+      duration: 0,
     });
-    gsap.to(".detail-obtain-it .details-header", {
-      height: "0",
+    gsap.to("#secSeven i", {
+      opacity: 0,
+      delay: 0.2,
+      duration: 1.5,
+    });
+    gsap.to("#secSeven p.title-back", {
+      opacity: 0,
+      delay: 0.2,
+      duration: 1.5,
+    });
+    gsap.to("#secSeven .contact-us h1", {
+      opacity: 0,
+      delay: 0.4,
+      duration: 1.5,
+      left: "113%",
+    });
+    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(1)", {
+      opacity: 0,
+      delay: 1.2,
+      duration: 1.5,
+      top: "155%",
+    });
+    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(2)", {
+      opacity: 0,
       delay: 1,
-      duration: 1,
+      duration: 1.5,
+      top: "155%",
     });
-    gsap.to("#secThree .content-body .image-with-title.Service", {
+    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(3)", {
       opacity: 0,
-      delay: 1.5,
-      duration: 0.5,
+      delay: 0.8,
+      duration: 1.5,
+      top: "155%",
     });
-    gsap.to("#secThree .content-body .image-with-title.Software", {
+    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(4)", {
       opacity: 0,
-      delay: 2,
-      duration: 0.5,
+      delay: 0.6,
+      duration: 1.5,
+      top: "155%",
     });
-    gsap.to("#secThree .content-body .image-with-title.Hybrid", {
-      opacity: 0,
-      delay: 2.5,
-      duration: 0.5,
-    });
+
+    setTimeout(() => {
+      showsecone();
+    }, 700);
   });
+
+
+
+  //   Child Elements
+  //     -                        -        go Home From Child of Children      -----------------
+  $(".obtain-childs-container i.icon--placeholder-home").on("click", () => {
+    hideObtainChildsContainer();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
+  });
+
+  $(".Outsource-Payrolls-container i.icon--placeholder-home").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
+  });
+
+  //     -                        -        go Home From Child of Children      -----------------
+  //   how we can obtain childs -------------------------------------
 
   let showobtainChildFirst = function () {
     gsap.to("#obtainChildFirst", {
@@ -1010,6 +1180,12 @@ window.onload = () => {
       position: "absolute",
     });
     gsap.to("#obtainChildFirst i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+
+    gsap.to("#obtainChildFirst p.title-back", {
       opacity: 1,
       delay: 1.3,
       duration: 1.5,
@@ -1044,13 +1220,10 @@ window.onload = () => {
 
   // ManagedService
   $("#ManagedService").on("click", () => {
-    showobtainChildFirst();
-    gsap.to("#secThree", {
-      opacity: 0,
-      top: "100vh",
-      delay: 0,
-      duration: 0.9,
-    });
+    hideImageWithTitle();
+    setTimeout(() => {
+      showobtainChildFirst();
+    }, 2000);
   });
 
   let showobtainChildSecond = function () {
@@ -1062,6 +1235,11 @@ window.onload = () => {
       position: "absolute",
     });
     gsap.to("#obtainChildSecond i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildSecond p.title-back", {
       opacity: 1,
       delay: 1.3,
       duration: 1.5,
@@ -1095,13 +1273,10 @@ window.onload = () => {
 
   // Software
   $("#Software").on("click", () => {
-    showobtainChildSecond();
-    gsap.to("#secThree", {
-      opacity: 0,
-      top: "100vh",
-      delay: 0,
-      duration: 0.9,
-    });
+    hideImageWithTitle();
+    setTimeout(() => {
+      showobtainChildSecond();
+    }, 2000);
   });
 
   let showobtainChildThird = function () {
@@ -1113,6 +1288,11 @@ window.onload = () => {
       position: "absolute",
     });
     gsap.to("#obtainChildThird i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#obtainChildThird p.title-back", {
       opacity: 1,
       delay: 1.3,
       duration: 1.5,
@@ -1145,18 +1325,14 @@ window.onload = () => {
   };
   // Hybrid
   $("#Hybrid").on("click", () => {
-    showobtainChildThird();
-
-    gsap.to("#secThree", {
-      opacity: 0,
-      top: "100vh",
-      delay: 0,
-      duration: 0.9,
-    });
+    hideImageWithTitle();
+    setTimeout(() => {
+      showobtainChildThird();
+    }, 2000);
   });
 
   //  obtain-childs-container hide
-  $(".obtain-childs-container i.icon--placeholder-back").on("click", () => {
+  $(".obtain-childs-container .title-back").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
       showsecThree();
@@ -1215,21 +1391,13 @@ window.onload = () => {
     }, 1500);
   });
   //            obtain-childs-container next prev
-  //     -                        -        go Home From Child of Children      -----------------
-  $(".obtain-childs-container i.icon--placeholder-home").on("click", () => {
-    hideObtainChildsContainer();
-    setTimeout(() => {
-      showsecone();
-    }, 1500);
-  });
 
-  //     -                        -        go Home From Child of Children      -----------------
 
   //   how we can obtain childs -------------------------------------
 
   //   Why Outsource Your Payroll? -------------------------------------
 
-  $("#BusinessGrowthEnsured").on("click", () => {
+  let showOutsourcePayrollFirst = function () {
     gsap.to("#OutsourcePayrollFirst", {
       opacity: 1,
       top: 0,
@@ -1243,6 +1411,11 @@ window.onload = () => {
       delay: 1.3,
       duration: 1.5,
     });
+    gsap.to("#OutsourcePayrollFirst p.title-back", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
     gsap.to("#OutsourcePayrollFirst .details-content ", {
       height: "80vh",
       delay: 1.1,
@@ -1250,16 +1423,223 @@ window.onload = () => {
     });
     gsap.to("#OutsourcePayrollFirst .details-header", {
       height: "auto",
-      delay: 1.5,
+      delay: 2.1,
       duration: 1.5,
     });
-    gsap.to("#secFour", {
-      opacity: 0,
-      top: "100vh",
-      delay: 0,
-      duration: 0.9,
+    gsap.to("#OutsourcePayrollFirst .details-header", {
+      height: 0,
+      delay: 4.5,
+      duration: 2,
     });
+    gsap.to("#OutsourcePayrollFirst  .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  }
+  let showOutsourcePayrollSecond = function () {
+    gsap.to("#OutsourcePayrollSecond", {
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+
+    gsap.to("#OutsourcePayrollSecond i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollSecond p.title-back", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollSecond .details-content ", {
+      height: "80vh",
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollSecond .details-header", {
+      height: "auto",
+      delay: 2.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollSecond .details-header", {
+      height: 0,
+      delay: 4.5,
+      duration: 2,
+    });
+    gsap.to("#OutsourcePayrollSecond  .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  };
+  let showOutsourcePayrollThird = function () {
+    gsap.to("#OutsourcePayrollThird", {
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+
+    gsap.to("#OutsourcePayrollThird i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollThird p.title-back", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollThird .details-content ", {
+      height: "80vh",
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollThird .details-header", {
+      height: "auto",
+      delay: 2.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollThird .details-header", {
+      height: 0,
+      delay: 4.5,
+      duration: 2,
+    });
+    gsap.to("#OutsourcePayrollThird  .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  };
+  let showOutsourcePayrollFourth = function () {
+    gsap.to("#OutsourcePayrollFourth", {
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+
+    gsap.to("#OutsourcePayrollFourth i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFourth p.title-back", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFourth .details-content ", {
+      height: "80vh",
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFourth .details-header", {
+      height: "auto",
+      delay: 2.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFourth .details-header", {
+      height: 0,
+      delay: 4.5,
+      duration: 2,
+    });
+    gsap.to("#OutsourcePayrollFourth  .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  };
+  let showOutsourcePayrollFifth = function () {
+    gsap.to("#OutsourcePayrollFifth", {
+      opacity: 1,
+      top: 0,
+      delay: 1,
+      duration: 1.2,
+      position: "absolute",
+    });
+
+    gsap.to("#OutsourcePayrollFifth i", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFifth p.title-back", {
+      opacity: 1,
+      delay: 1.3,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFifth .details-content ", {
+      height: "80vh",
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFifth .details-header", {
+      height: "auto",
+      delay: 2.1,
+      duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFifth .details-header", {
+      height: 0,
+      delay: 4.5,
+      duration: 2,
+    });
+    gsap.to("#OutsourcePayrollFifth  .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 1.5,
+    });
+  };
+
+
+  $("#BusinessGrowthEnsured").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showOutsourcePayrollFirst();
+    }, 1000); 
   });
+  $("#TechnologicalAdvantage").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showOutsourcePayrollSecond();
+    }, 1000); 
+  });
+  $("#CostEffective").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showOutsourcePayrollThird();
+    }, 1000); 
+  });
+  $("#MoreSafetysecurity").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showOutsourcePayrollFourth();
+    }, 1000); 
+  });
+  $("#BetterCompliance").on("click", () => {
+    hideOutsourcePayroll();
+    setTimeout(() => {
+      showOutsourcePayrollFifth();
+    }, 1000); 
+  });
+
+
+  //  Why Outsource Your Payroll? -------------------------------------
+
+  $(".Outsource-Payrolls-container .title-back").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showsecFour();
+    }, 1500);
+  });
+    //  Why Outsource Your Payroll? -------------------------------------
 
   //  Why Outsource Your Payroll? -------------------------------------
 };

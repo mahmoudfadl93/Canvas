@@ -331,11 +331,6 @@
   cursor: pointer;
 }
 
-.container-canvas .body-content .details-content > i.icon--placeholder-back {
-  top: 15px;
-  left: 15px;
-}
-
 .container-canvas .body-content .details-content > i.icon--placeholder-home {
   top: 15px;
   left: 15px;
@@ -353,9 +348,23 @@
   right: 15px;
 }
 
-.container-canvas .body-content .details-content > i.icon--placeholder-home + .icon--placeholder-back {
-  top: 50px;
-  left: 15px;
+.container-canvas .body-content .details-content p.title-back {
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+}
+
+.container-canvas .body-content .details-content p.title-back::before {
+  content: "/";
+  position: absolute;
+  left: -19px;
+  top: 2px;
 }
 
 .container-canvas .body-content .details-content {
@@ -469,7 +478,6 @@
 }
 
 .container-canvas .body-content .detail-obtain-it .content-body .images-content.image-with-title {
-  height: 31vh !important;
   height: 0;
   opacity: 0;
   margin: 5vh 3.4vw 0 3.4vw;
@@ -620,6 +628,30 @@
   cursor: pointer;
 }
 
+.container-canvas .body-content .Outsource-Payroll-sections {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-canvas .body-content .Outsource-Payroll-sections .details-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-canvas .body-content .Outsource-Payroll-sections .details-body .shapes-container .shapes-image img {
+  width: 280px;
+}
+
+.container-canvas .body-content .Outsource-Payroll-sections .details-body .content-body {
+  padding: 5px 100px;
+}
+
 .container-canvas .body-content .content-business-intro {
   width: 90vw;
   height: 90vh;
@@ -754,9 +786,28 @@
   cursor: pointer;
 }
 
-.container-canvas .body-content .commitments-body > i.icon--placeholder-back {
+.container-canvas .body-content .commitments-body > i.icon--placeholder-home {
   top: 15px;
   left: 15px;
+}
+
+.container-canvas .body-content .commitments-body p.title-back {
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+}
+
+.container-canvas .body-content .commitments-body p.title-back::before {
+  content: "/";
+  position: absolute;
+  left: -19px;
+  top: 2px;
 }
 
 .container-canvas .body-content .commitments-body .commitment-circle {
@@ -980,6 +1031,39 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 4vw;
+}
+
+.container-canvas .body-content .contact-us > i {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  opacity: 0;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.container-canvas .body-content .contact-us > i.icon--placeholder-home {
+  top: 15px;
+  left: 15px;
+}
+
+.container-canvas .body-content .contact-us p.title-back {
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+}
+
+.container-canvas .body-content .contact-us p.title-back::before {
+  content: "/";
+  position: absolute;
+  left: -19px;
+  top: 2px;
 }
 
 .container-canvas .body-content .contact-us h1 {
