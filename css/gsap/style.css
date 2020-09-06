@@ -37,11 +37,11 @@
 }
 
 .hexagon-yellew .hexagon.hexagon-median {
-  width: 180px;
+  width: 140px;
+  height: 125px;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   justify-self: flex-end;
-  height: 150px;
 }
 
 .hexagon-yellew .hexagon.hexagon-small {
@@ -58,8 +58,8 @@
 .hexagon-green .hexagon.hexagon-large.with-prag,
 .hexagon-orange .hexagon.hexagon-large,
 .hexagon-orange .hexagon.hexagon-large.with-prag {
-  width: 320px;
-  height: 278px;
+  width: 275px;
+  height: 250px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -72,8 +72,8 @@
 }
 
 .hexagon-red .hexagon.hexagon-median {
-  width: 180px;
-  height: 160px;
+  width: 140px;
+  height: 125px;
   justify-self: baseline;
   margin: -11px 15px 16px 34px;
 }
@@ -86,7 +86,7 @@
 }
 
 .hexagon-content p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
 }
 

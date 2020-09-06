@@ -127,12 +127,12 @@
 
     .trans-shapes {
       width: 100vw;
-      height: 100%;
+      height: 90%;
       justify-content: center;
       align-items: center;
       z-index: 8;
       display: grid;
-      grid-template-columns: 177px 330px 200px 330px 187px;
+      grid-template-columns: 220px 275px 190px 275px 190px;
 
       .hexagon-arrow-left {
         position: absolute;
@@ -550,13 +550,13 @@
 
     div.Outsource-Payroll {
       img {
-        width: 100%;
+        width: 80%;
       }
 
       div.details-body {
         height: auto;
         display: grid;
-        grid-template-columns: 160px 160px 160px 160px 160px;
+        grid-template-columns: 200px 200px 200px 200px 200px;
         width: 100%;
         justify-content: center;
         height: 190px;
@@ -574,10 +574,11 @@
           }
 
           display: grid;
+          align-items: end;
         }
 
         >div:nth-child(odd) {
-          align-items: end;
+          align-items: start;
         }
 
         .shapes-image {

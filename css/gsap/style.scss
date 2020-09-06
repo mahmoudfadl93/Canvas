@@ -32,10 +32,12 @@
     height: 275px;
   }
   .hexagon.hexagon-median {
-    width: 180px;
+    width: 140px;
+    height: 125px;
+    -webkit-transform: scale(0);
     transform: scale(0);
     justify-self: flex-end;
-    height: 150px;
+   
   }
   .hexagon.hexagon-small {
     width: 104px;
@@ -53,8 +55,8 @@
     // transition: .5s;
     &.hexagon-large,
     &.hexagon-large.with-prag {
-      width: 320px;
-      height: 278px;
+      width: 275px;
+      height: 250px;
       justify-self: center;
     }
     // &:hover {
@@ -68,8 +70,8 @@
 
 .hexagon-red {
   .hexagon.hexagon-median {
-    width: 180px;
-    height: 160px;
+    width: 140px;
+    height: 125px;
     justify-self: baseline;
     margin: -11px 15px 16px 34px;
   }
@@ -81,7 +83,7 @@
 }
 
 .hexagon-content p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
 }
 

@@ -232,6 +232,29 @@ window.onload = () => {
 
   ///         hide sec five  ------------------------
 
+  ///         hide sec five second part ------------------------
+  let hidesecFivesecondpart = function () {
+    gsap.to("#secFiveSecondPart .my-journey", {
+      height: 0,
+      delay: 1.6,
+      duration: 1,
+    });
+
+    gsap.to("#secFiveSecondPart i", {
+      opacity: 0,
+      delay: 1.5,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart", {
+      opacity: 0,
+      top: "100vh",
+      delay: 1,
+      duration: 1.5,
+    });
+  };
+
+  ///         hide sec five second part  ------------------------
   ///         hide Obtain Childs Container ------------------------
   let hideObtainChildsContainer = function () {
     gsap.to(".obtain-childs-container i", {
@@ -730,6 +753,7 @@ window.onload = () => {
       duration: 0,
     });
   });
+
   // view How's my journey
 
   // view How's my journey second
@@ -743,6 +767,7 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
+
     gsap.to("#secFiveSecondPart .my-journey", {
       height: "85vh",
       delay: 1.6,
@@ -754,11 +779,14 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#secFiveSecondPart p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 1.5,
-    });
+  });
+
+  $("#secFiveSecondPart i.icon--placeholder-pre").on("click", () => {
+    hidesecFivesecondpart();
+
+    setTimeout(() => {
+      showsecFive();
+    }, 1500);
   });
   // view How's my journey second
 
@@ -771,21 +799,25 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
+
     gsap.to("#secSix i", {
       opacity: 1,
       delay: 4,
       duration: 0.5,
     });
+
     gsap.to("#secSix p.title-back", {
       opacity: 1,
       delay: 4,
       duration: 0.5,
     });
+
     gsap.to(".commitment-content p", {
       opacity: 1,
       delay: 3,
       duration: 0.5,
     });
+
     gsap.to(".commitment-circle.commitment-circle-white", {
       scale: 1,
       delay: 2.0,
@@ -1023,6 +1055,13 @@ window.onload = () => {
     setTimeout(() => {
       showsecone();
     }, 500);
+  });
+
+  $("#secFiveSecondPart i.icon--placeholder-home").on("click", () => {
+    hidesecFivesecondpart();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
   });
 
   // view How's my journey
