@@ -743,17 +743,22 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
+    gsap.to("#secFiveSecondPart .my-journey", {
+      height: "85vh",
+      delay: 1.6,
+      duration: 1.5,
+    });
+
     gsap.to("#secFiveSecondPart i", {
       opacity: 1,
       delay: 3.5,
-      duration: 0.5,
+      duration: 1.5,
     });
     gsap.to("#secFiveSecondPart p.title-back", {
       opacity: 1,
       delay: 3.5,
-      duration: 0.5,
+      duration: 1.5,
     });
-
   });
   // view How's my journey second
 

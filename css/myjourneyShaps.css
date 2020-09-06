@@ -1,17 +1,41 @@
-.body--info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-  grid-template-columns: auto auto auto;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  max-width: 80vw;
-  grid-gap: 10px;
-  position: relative;
-  max-height: 80vh;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.body--info > i {
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.my-journey {
+  width: 90vw;
+  height: 0;
+  background: transparent;
+  z-index: 11;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-journey > i {
   width: 35px;
   height: 35px;
   position: absolute;
@@ -20,24 +44,24 @@
   cursor: pointer;
 }
 
-.body--info > i.icon--placeholder-home {
+.my-journey > i.icon--placeholder-home {
   top: 15px;
   left: 15px;
 }
 
-.body--info > i.icon--placeholder-pre {
+.my-journey > i.icon--placeholder-pre {
   bottom: 15px;
   left: 15px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.body--info > i.icon--placeholder-next {
+.my-journey > i.icon--placeholder-next {
   bottom: 15px;
   right: 15px;
 }
 
-.body--info p.title-back {
+.my-journey p.title-back {
   color: #fff;
   font-size: 20px;
   width: auto;
@@ -49,11 +73,23 @@
   opacity: 0;
 }
 
-.body--info p.title-back::before {
+.my-journey p.title-back::before {
   content: "/";
   position: absolute;
   left: -19px;
   top: 2px;
+}
+
+.body--info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 73%;
+  grid-gap: 10px;
+  height: 94%;
 }
 
 .body--info > div {
@@ -96,13 +132,13 @@
 }
 
 .body--info .info--inner-wrapper svg {
-  width: 242.267px;
-  height: 242.267px;
+  width: 200px;
+  height: 200px;
 }
 
 .body--info .info--inner-wrapper span.circle {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
