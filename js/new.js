@@ -118,7 +118,7 @@ window.onload = () => {
   ///         show sec Three ------------------------
 
   ///         show sec Four  ------------------------
-  let showsecFour =  function () {
+  let showsecFour = function () {
     gsap.to("#secFour", {
       opacity: 1,
       top: 0,
@@ -297,43 +297,39 @@ window.onload = () => {
   };
   ///       hide  Why Outsource Your Payroll  ------------------------
 
- ///       hide  Why Outsource Your Payroll  Childern------------------------
- let hideOutsourcePayrollChildern = function (){
-  gsap.to(".Outsource-Payrolls-container i", {
-    opacity: 0,
-    delay: 0.3,
-    duration: 1.5,
-  });
-  gsap.to(".Outsource-Payrolls-container p.title-back", {
-    opacity: 0,
-    delay: 0.6,
-    duration: 1.5,
-  });
+  ///       hide  Why Outsource Your Payroll  Childern------------------------
+  let hideOutsourcePayrollChildern = function () {
+    gsap.to(".Outsource-Payrolls-container i", {
+      opacity: 0,
+      delay: 0.3,
+      duration: 1.5,
+    });
+    gsap.to(".Outsource-Payrolls-container p.title-back", {
+      opacity: 0,
+      delay: 0.6,
+      duration: 1.5,
+    });
 
-  gsap.to(".Outsource-Payrolls-container  .details-body", {
-    height: "auto",
-    delay: 0.9,
-    duration: 1.5,
-  });
-  
-  gsap.to(".Outsource-Payrolls-container .details-content ", {
-    height: 0,
-    delay: 1.2,
-    duration: 1.5,
-  });
+    gsap.to(".Outsource-Payrolls-container  .details-body", {
+      height: "auto",
+      delay: 0.9,
+      duration: 1.5,
+    });
 
-  gsap.to(".Outsource-Payrolls-container", {
-    opacity: 0,
-    top: "100vh",
-    delay: 1.5,
-    duration: 1.5,
-  });
- };
+    gsap.to(".Outsource-Payrolls-container .details-content ", {
+      height: 0,
+      delay: 1.2,
+      duration: 1.5,
+    });
+
+    gsap.to(".Outsource-Payrolls-container", {
+      opacity: 0,
+      top: "100vh",
+      delay: 1.5,
+      duration: 1.5,
+    });
+  };
   ///       hide  Why Outsource Your Payroll Childern ------------------------
-
-
-
-
 
   let SVG_close = `<svg viewBox="0 0 512.001 512.001" >
             <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"/>
@@ -1150,8 +1146,6 @@ window.onload = () => {
     }, 700);
   });
 
-
-
   //   Child Elements
   //     -                        -        go Home From Child of Children      -----------------
   $(".obtain-childs-container i.icon--placeholder-home").on("click", () => {
@@ -1161,12 +1155,15 @@ window.onload = () => {
     }, 1500);
   });
 
-  $(".Outsource-Payrolls-container i.icon--placeholder-home").on("click", () => {
-    hideOutsourcePayrollChildern();
-    setTimeout(() => {
-      showsecone();
-    }, 1500);
-  });
+  $(".Outsource-Payrolls-container i.icon--placeholder-home").on(
+    "click",
+    () => {
+      hideOutsourcePayrollChildern();
+      setTimeout(() => {
+        showsecone();
+      }, 1500);
+    }
+  );
 
   //     -                        -        go Home From Child of Children      -----------------
   //   how we can obtain childs -------------------------------------
@@ -1341,8 +1338,8 @@ window.onload = () => {
 
   //            obtain-childs-container next prev
   //           show   obtainChildSecond
-
   //            obtain-childs-container next
+
   $("#obtainChildFirst i.icon--placeholder-next").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
@@ -1392,7 +1389,6 @@ window.onload = () => {
   });
   //            obtain-childs-container next prev
 
-
   //   how we can obtain childs -------------------------------------
 
   //   Why Outsource Your Payroll? -------------------------------------
@@ -1436,7 +1432,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-  }
+  };
   let showOutsourcePayrollSecond = function () {
     gsap.to("#OutsourcePayrollSecond", {
       opacity: 1,
@@ -1598,38 +1594,36 @@ window.onload = () => {
     });
   };
 
-
   $("#BusinessGrowthEnsured").on("click", () => {
     hideOutsourcePayroll();
     setTimeout(() => {
       showOutsourcePayrollFirst();
-    }, 1000); 
+    }, 1000);
   });
   $("#TechnologicalAdvantage").on("click", () => {
     hideOutsourcePayroll();
     setTimeout(() => {
       showOutsourcePayrollSecond();
-    }, 1000); 
+    }, 1000);
   });
   $("#CostEffective").on("click", () => {
     hideOutsourcePayroll();
     setTimeout(() => {
       showOutsourcePayrollThird();
-    }, 1000); 
+    }, 1000);
   });
   $("#MoreSafetysecurity").on("click", () => {
     hideOutsourcePayroll();
     setTimeout(() => {
       showOutsourcePayrollFourth();
-    }, 1000); 
+    }, 1000);
   });
   $("#BetterCompliance").on("click", () => {
     hideOutsourcePayroll();
     setTimeout(() => {
       showOutsourcePayrollFifth();
-    }, 1000); 
+    }, 1000);
   });
-
 
   //  Why Outsource Your Payroll? -------------------------------------
 
@@ -1639,7 +1633,97 @@ window.onload = () => {
       showsecFour();
     }, 1500);
   });
-    //  Why Outsource Your Payroll? -------------------------------------
+
+  //           Why Outsource Your Payroll? next prev
+
+  //           show   Why Outsource Your Payroll?  next
+  //            showOutsourcePayrollSecond
+  $("#OutsourcePayrollFirst i.icon--placeholder-next").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollSecond();
+    }, 1500);
+  });
+
+  //           show   showOutsourcePayrollThird
+  $("#OutsourcePayrollSecond i.icon--placeholder-next").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollThird();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollFourth
+  $("#OutsourcePayrollThird i.icon--placeholder-next").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFourth();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollFifth
+  $("#OutsourcePayrollFourth i.icon--placeholder-next").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFifth();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollFirst
+  $("#OutsourcePayrollFifth i.icon--placeholder-next").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFirst();
+    }, 1500);
+  });
+
+  //           show   Why Outsource Your Payroll?  next
+
+  //           show   Why Outsource Your Payroll?  prev
+
+  //            showOutsourcePayrollFifth
+  $("#OutsourcePayrollFirst i.icon--placeholder-pre").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFifth();
+    }, 1500);
+  });
+
+  //           show   showOutsourcePayrollFirst
+  $("#OutsourcePayrollSecond i.icon--placeholder-pre").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFirst();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollSecond
+  $("#OutsourcePayrollThird i.icon--placeholder-pre").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollSecond();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollThird
+  $("#OutsourcePayrollFourth i.icon--placeholder-pre").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollThird();
+    }, 1500);
+  });
+
+  //        show   showOutsourcePayrollFourth
+  $("#OutsourcePayrollFifth i.icon--placeholder-pre").on("click", () => {
+    hideOutsourcePayrollChildern();
+    setTimeout(() => {
+      showOutsourcePayrollFourth();
+    }, 1500);
+  });
+
+  //           show   Why Outsource Your Payroll?  prev
+
+  //           show   Why Outsource Your Payroll?  next prev
 
   //  Why Outsource Your Payroll? -------------------------------------
 };
