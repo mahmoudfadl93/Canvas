@@ -158,6 +158,80 @@ window.onload = () => {
     });
   };
   ///         show sec Four  ------------------------
+
+  ///         show sec five  ------------------------
+
+  let showsecFive = function () {
+    gsap.to("#secFive", {
+      opacity: 1,
+      top: 0,
+      delay: 1.5,
+      duration: 0,
+      position: "absolute",
+    });
+    gsap.to(".detail-whosjourney", {
+      height: "80vh",
+      delay: 2,
+      duration: 0.5,
+    });
+    gsap.to(".detail-whosjourney .details-header", {
+      height: "auto",
+      delay: 2.5,
+      duration: 0.5,
+    });
+    gsap.to(".detail-whosjourney .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to(".detail-whosjourney i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    // gsap.to(".detail-whosjourney p.title-back", {
+    //   opacity: 1,
+    //   delay: 3.5,
+    //   duration: 0.5,
+    // });
+  };
+  ///         show sec five  ------------------------
+
+  ///         hide sec five  ------------------------
+  let hidesecFive = function () {
+    gsap.to(".detail-whosjourney i", {
+      opacity: 0,
+      duration: 0.5,
+    });
+    // gsap.to(".detail-whosjourney p.title-back", {
+    //   opacity: 0,
+    //   duration: 0.5,
+    // });
+    gsap.to(".details-body", {
+      height: 0,
+      delay: 0.6,
+      duration: 0.5,
+    });
+    gsap.to(".details-header", {
+      height: 0,
+      delay: 1.0,
+      duration: 0.5,
+    });
+    gsap.to(".detail-whosjourney", {
+      height: "0vh",
+      delay: 1.2,
+      duration: 0.5,
+    });
+    gsap.to("#secFive", {
+      opacity: 0,
+      top: "100vh",
+      delay: 1.5,
+      duration: 0,
+    });
+  };
+
+  ///         hide sec five  ------------------------
+
   ///         hide Obtain Childs Container ------------------------
   let hideObtainChildsContainer = function () {
     gsap.to(".obtain-childs-container i", {
@@ -648,39 +722,7 @@ window.onload = () => {
 
   // view How's my journey
   $("#HowsMyJourney").on("click", () => {
-    gsap.to("#secFive", {
-      opacity: 1,
-      top: 0,
-      delay: 1.5,
-      duration: 0,
-      position: "absolute",
-    });
-    gsap.to(".detail-whosjourney", {
-      height: "80vh",
-      delay: 2,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney .details-header", {
-      height: "auto",
-      delay: 2.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney .details-body", {
-      height: "auto",
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney i", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-
+    showsecFive();
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -688,8 +730,34 @@ window.onload = () => {
       duration: 0,
     });
   });
-
   // view How's my journey
+
+  // view How's my journey second
+  $("#secFive i.icon--placeholder-next").on("click", () => {
+    hidesecFive();
+
+    gsap.to("#secFiveSecondPart", {
+      opacity: 1,
+      top: 0,
+      delay: 1.5,
+      duration: 0,
+      position: "absolute",
+    });
+    gsap.to("#secFiveSecondPart i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+    gsap.to("#secFiveSecondPart p.title-back", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+
+  });
+  // view How's my journey second
+
+  // view Whats Your Commitment
   $("#WhatsYourCommitment").on("click", () => {
     gsap.to("#secSix", {
       opacity: 1,
@@ -946,35 +1014,7 @@ window.onload = () => {
   });
 
   $("#secFive .detail-whosjourney i.icon--placeholder-home").on("click", () => {
-    gsap.to(".detail-whosjourney i", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney p.title-back", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    gsap.to(".details-body", {
-      height: 0,
-      delay: 0.6,
-      duration: 0.5,
-    });
-    gsap.to(".details-header", {
-      height: 0,
-      delay: 1.0,
-      duration: 0.5,
-    });
-    gsap.to(".detail-whosjourney", {
-      height: "0vh",
-      delay: 1.2,
-      duration: 0.5,
-    });
-    gsap.to("#secFive", {
-      opacity: 0,
-      top: "100vh",
-      delay: 1.5,
-      duration: 0,
-    });
+    hidesecFive();
     setTimeout(() => {
       showsecone();
     }, 500);

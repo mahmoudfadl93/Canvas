@@ -1,0 +1,260 @@
+.body--info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 80vw;
+  grid-gap: 10px;
+  position: relative;
+  max-height: 80vh;
+}
+
+.body--info > i {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  opacity: 0;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.body--info > i.icon--placeholder-home {
+  top: 15px;
+  left: 15px;
+}
+
+.body--info > i.icon--placeholder-pre {
+  bottom: 15px;
+  left: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.body--info > i.icon--placeholder-next {
+  bottom: 15px;
+  right: 15px;
+}
+
+.body--info p.title-back {
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+}
+
+.body--info p.title-back::before {
+  content: "/";
+  position: absolute;
+  left: -19px;
+  top: 2px;
+}
+
+.body--info > div {
+  margin: -8px;
+}
+
+.body--info .margin-fix {
+  margin-left: 115px;
+}
+
+.body--info .inner--grid-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 95px auto;
+  grid-template-columns: 95px auto;
+}
+
+.body--info .inner--grid-info-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 95px auto;
+  grid-template-rows: 95px auto;
+}
+
+.body--info .inner--grid-info-row-vertical {
+  -ms-grid-rows: auto 95px;
+  grid-template-rows: auto 95px;
+}
+
+.body--info .justify--end {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.body--info .info--inner-wrapper {
+  position: relative;
+}
+
+.body--info .info--inner-wrapper svg {
+  width: 242.267px;
+  height: 242.267px;
+}
+
+.body--info .info--inner-wrapper span.circle {
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.body--info .info--inner-wrapper span.circle.caseOne {
+  margin-top: 60px;
+  margin-left: -25px;
+}
+
+.body--info .info--inner-wrapper span.circle.caseTwo {
+  margin-top: -30px;
+  margin-left: 60px;
+}
+
+.body--info .info--inner-wrapper span.circle.caseThree {
+  right: 0;
+  bottom: 75px;
+}
+
+.body--info .info--inner-wrapper span.circle.caseThree + svg {
+  margin-right: 25px;
+}
+
+.body--info .info--inner-wrapper span.circle.caseFour {
+  margin-top: 60px;
+  right: 0;
+}
+
+.body--info .info--inner-wrapper span.circle.caseFive {
+  bottom: -20px;
+  left: 65px;
+}
+
+.body--info .info--inner-wrapper span.circle.caseSix {
+  bottom: -20px;
+  right: 65px;
+}
+
+.body--info .info--inner-wrapper span.circle::before {
+  content: "";
+  display: block;
+  border: 7px solid;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 6px 1px #0000004a;
+  box-shadow: 1px 1px 6px 1px #0000004a;
+}
+
+.body--info .info--inner-wrapper.top-margin {
+  margin: 95px 0 0 0;
+}
+
+.body--info .info--inner-wrapper.right-margin {
+  margin: 0 0 0 95px;
+}
+
+.body--info > div:nth-child(1) > div:nth-child(1) svg {
+  fill: #ff9000;
+}
+
+.body--info > div:nth-child(1) > div:nth-child(1) span::before {
+  border-color: #ff9000;
+}
+
+.body--info > div:nth-child(1) > div:nth-child(2) svg {
+  fill: #ebc400;
+}
+
+.body--info > div:nth-child(1) > div:nth-child(2) span::before {
+  border-color: #ebc400;
+}
+
+.body--info > div:nth-child(2) > div:nth-child(1) svg {
+  fill: #9fc914;
+}
+
+.body--info > div:nth-child(2) > div:nth-child(1) span::before {
+  border-color: #9fc914;
+}
+
+.body--info > div:nth-child(2) > div:nth-child(2) svg {
+  fill: #12b09b;
+}
+
+.body--info > div:nth-child(2) > div:nth-child(2) span::before {
+  border-color: #12b09b;
+}
+
+.body--info > div:nth-child(3) > div:nth-child(1) svg {
+  fill: #661433;
+}
+
+.body--info > div:nth-child(3) > div:nth-child(1) span::before {
+  border-color: #661433;
+}
+
+.body--info > div:nth-child(3) > div:nth-child(2) svg {
+  fill: #a3395e;
+}
+
+.body--info > div:nth-child(3) > div:nth-child(2) span::before {
+  border-color: #a3395e;
+}
+
+.body--info > div:nth-child(4) > svg {
+  fill: #ff5100;
+}
+
+.body--info > div:nth-child(4) > span::before {
+  border-color: #ff5100 !important;
+}
+
+.body--info > div:nth-child(5) > div:nth-child(1) svg {
+  fill: #127eb0;
+}
+
+.body--info > div:nth-child(5) > div:nth-child(1) span::before {
+  border-color: #127eb0;
+}
+
+.body--info > div:nth-child(5) > div:nth-child(2) svg {
+  fill: #5053a3;
+}
+
+.body--info > div:nth-child(5) > div:nth-child(2) span::before {
+  border-color: #5053a3;
+}
+
+.body--info > div:nth-child(6) > div:nth-child(1) svg {
+  fill: #a3399e;
+}
+
+.body--info > div:nth-child(6) > div:nth-child(1) span::before {
+  border-color: #a3399e;
+}
+
+.body--info > div:nth-child(6) > div:nth-child(2) svg {
+  fill: #6939a3;
+}
+
+.body--info > div:nth-child(6) > div:nth-child(2) span::before {
+  border-color: #6939a3;
+}
+/*# sourceMappingURL=myjourneyShaps.css.map */
