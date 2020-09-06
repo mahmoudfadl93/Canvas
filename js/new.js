@@ -197,6 +197,56 @@ window.onload = () => {
   };
   ///         show sec five  ------------------------
 
+  ///         show sec Eight  ------------------------
+
+  let showsecEight = function () {
+    gsap.to("#secEight", {
+      opacity: 1,
+      top: 0,
+      delay: 1.5,
+      duration: 0,
+      position: "absolute",
+    });
+
+    gsap.to("#secEight i", {
+      opacity: 1,
+      delay: 0.5,
+      duration: 1.5,
+    });
+
+    gsap.to("#secEight .business-body-prag", {
+      opacity: 1,
+      delay: 2,
+      duration: 3,
+    });
+  };
+
+  ///         show sec Eight  ------------------------
+
+  ///         show sec Eight Second Part  ------------------------
+  let showsecEightSecondPart = function () {
+    gsap.to("#secEightSecondPart", {
+      opacity: 1,
+      top: 0,
+      delay: 1.5,
+      duration: 0,
+      position: "absolute",
+    });
+    gsap.to(".shapes-circle-body.shapes-circle-yellew .shapes-circle-content", {
+      scale: 1,
+      delay: 2.0,
+      ease: Elastic.easeOut,
+      duration: 1.5,
+    });
+    gsap.to(".shapes-circle-body.shapes-circle-orange .shapes-circle-content", {
+      scale: 1,
+      delay: 2.2,
+      ease: Elastic.easeOut,
+      duration: 1.5,
+    });
+  };
+  ///         show sec Eight Second Part  ------------------------
+
   ///         hide sec five  ------------------------
   let hidesecFive = function () {
     gsap.to(".detail-whosjourney i", {
@@ -231,6 +281,32 @@ window.onload = () => {
   };
 
   ///         hide sec five  ------------------------
+
+  ///         hide sec Eight ------------------------
+  let hidesecEight = function () {
+    gsap.to("#secEight i", {
+      opacity: 1,
+      delay: 0.5,
+      duration: 1.5,
+    });
+
+    gsap.to("#secEight .business-body-prag", {
+      opacity: 0,
+      delay: 0.2,
+      duration: 3,
+    });
+    gsap.to("#secEight", {
+      opacity: 0,
+      top: "100vh",
+      delay: 1.5,
+      duration: 0,
+    });
+  };
+  ///         hide sec Eight  ------------------------
+
+  ///         hide sec Eight Second Part  ------------------------
+  let hidesecEightSecondPart = function () {};
+  ///         hide sec Eight Second Part  ------------------------
 
   ///         hide sec five second part ------------------------
   let hidesecFivesecondpart = function () {
@@ -992,12 +1068,28 @@ window.onload = () => {
       duration: 2.5,
       top: "0",
     });
+
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
       delay: 3.6,
       duration: 0,
     });
+  });
+
+  $("#BUSINESSOFPAYING").on("click", () => {
+    showsecEight();
+    gsap.to("#secOne", {
+      opacity: 0,
+      top: "100vh",
+      delay: 3.6,
+      duration: 0,
+    });
+  });
+
+  $("#secEight i.icon--placeholder-next").on("click", () => {
+    hidesecEight();
+    showsecEightSecondPart();
   });
 
   $("#secTwo .detail-who i.icon--placeholder-home").on("click", () => {
@@ -1228,6 +1320,20 @@ window.onload = () => {
     setTimeout(() => {
       showsecone();
     }, 700);
+  });
+
+  $("#secEight i.icon--placeholder-home").on("click", () => {
+    hidesecEight();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
+  });
+
+  $("#secEightSecondPart i.icon--placeholder-home").on("click", () => {
+    hidesecEightSecondPart();
+    setTimeout(() => {
+      showsecone();
+    }, 1500);
   });
 
   //   Child Elements
