@@ -140,7 +140,7 @@ window.onload = () => {
       delay: 2.0,
       duration: 1.5,
     });
-    gsap.to(".Outsource-Payroll .details-body svg", {
+    gsap.to(".Outsource-Payroll .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -712,7 +712,7 @@ window.onload = () => {
       delay: 0.7,
       duration: 2,
     });
-    gsap.to(".Outsource-Payroll .details-body svg", {
+    gsap.to(".Outsource-Payroll .details-body .Outsource-img-svg", {
       delay: 0.3,
       duration: 0.5,
       opacity: 0,
@@ -750,7 +750,7 @@ window.onload = () => {
       delay: 1.2,
       duration: 1.5,
     });
-    gsap.to(".Outsource-Payrolls-container  .details-body svg", {
+    gsap.to(".Outsource-Payrolls-container  .details-body .Outsource-img-svg", {
       delay: 0.3,
       duration: 0.5,
       opacity: 0,
@@ -1881,7 +1881,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#OutsourcePayrollFirst .details-body svg", {
+    gsap.to("#OutsourcePayrollFirst .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -1926,7 +1926,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#OutsourcePayrollSecond .details-body svg", {
+    gsap.to("#OutsourcePayrollSecond .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -1971,7 +1971,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#OutsourcePayrollThird .details-body svg", {
+    gsap.to("#OutsourcePayrollThird .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -2016,7 +2016,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#OutsourcePayrollFourth .details-body svg", {
+    gsap.to("#OutsourcePayrollFourth .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -2061,7 +2061,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
-    gsap.to("#OutsourcePayrollFifth .details-body svg", {
+    gsap.to("#OutsourcePayrollFifth .details-body .Outsource-img-svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
