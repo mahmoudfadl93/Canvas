@@ -34,7 +34,7 @@ window.onload = () => {
       delay: 1.6,
       scale: 1,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.empty", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
       delay: 1.7,
       scale: 1,
     });
@@ -232,18 +232,138 @@ window.onload = () => {
       duration: 0,
       position: "absolute",
     });
+
+    gsap.to("#secEightSecondPart i", {
+      opacity: 1,
+      delay: 0.5,
+      duration: 1.5,
+    });
     gsap.to(".shapes-circle-body.shapes-circle-yellew .shapes-circle-content", {
       scale: 1,
-      delay: 2.0,
+      delay: 1.7,
       ease: Elastic.easeOut,
       duration: 1.5,
     });
     gsap.to(".shapes-circle-body.shapes-circle-orange .shapes-circle-content", {
       scale: 1,
-      delay: 2.2,
+      delay: 1.9,
       ease: Elastic.easeOut,
       duration: 1.5,
     });
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle",
+      {
+        opacity: 1,
+        scale: 1,
+        delay: 2,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.2,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.4,
+        duration: 2.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle",
+      {
+        opacity: 1,
+        scale: 1,
+        delay: 2.4,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.4,
+        duration: 2.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.6,
+        duration: 2.5,
+      }
+    );
+
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle",
+      {
+        opacity: 1,
+        scale: 1,
+        delay: 2.6,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.6,
+        duration: 2.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.8,
+        duration: 2.5,
+      }
+    );
+
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle",
+      {
+        opacity: 1,
+        scale: 1,
+        delay: 2.8,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 2.8,
+        duration: 2.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point",
+      {
+        opacity: 1,
+        left: 0,
+        delay: 3,
+        duration: 2.5,
+      }
+    );
   };
   ///         show sec Eight Second Part  ------------------------
 
@@ -303,10 +423,150 @@ window.onload = () => {
     });
   };
   ///         hide sec Eight  ------------------------
+  ///         hide sec Eight Second Part  ------------------------
 
+  let hidesecEightSecondPart = function () {
+    gsap.to("#secEightSecondPart i", {
+      opacity: 0,
+      delay: 0.5,
+      duration: 1.5,
+    });
+    gsap.to(".shapes-circle-body.shapes-circle-yellew .shapes-circle-content", {
+      scale: 0,
+      delay:0.1,
+      ease: Elastic.easeOut,
+      duration: 1.5,
+    });
+    gsap.to(".shapes-circle-body.shapes-circle-orange .shapes-circle-content", {
+      scale: 0,
+      delay:0.2,
+      ease: Elastic.easeOut,
+      duration: 1.5,
+    });
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle",
+      {
+        opacity: 0,
+        scale: 0,
+        delay: 0.3,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.7,
+        duration: 1.5,
+      }
+    );
+
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.6,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle",
+      {
+        opacity: 0,
+        scale: 0,
+        delay: 0.4,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.7,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.6,
+        duration: 1.5,
+      }
+    );
+
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle",
+      {
+        opacity: 0,
+        scale: 0,
+        delay: 0.5,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.7,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.6,
+        duration: 1.5,
+      }
+    );
+
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle",
+      {
+        opacity: 0,
+        scale: 0,
+        delay: 0.6,
+        ease: Elastic.easeOut,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.7,
+        duration: 1.5,
+      }
+    );
+    gsap.to(
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point",
+      {
+        opacity: 0,
+        left: "150%",
+        delay: 0.6,
+        duration: 1.5,
+      }
+    );
+    gsap.to("#secEightSecondPart", {
+      opacity: 0,
+      top: "100vh",
+      delay: 1.5,
+      duration: 0,
+    });
+  };
   ///         hide sec Eight Second Part  ------------------------
-  let hidesecEightSecondPart = function () {};
-  ///         hide sec Eight Second Part  ------------------------
+
 
   ///         hide sec five second part ------------------------
   let hidesecFivesecondpart = function () {
@@ -626,7 +886,7 @@ window.onload = () => {
       delay: 1.6,
       scale: 1,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.empty", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
       delay: 1.7,
       scale: 1,
     });
@@ -677,7 +937,7 @@ window.onload = () => {
       delay: 0.6,
       scale: 0,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.empty", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
       delay: 0.7,
       scale: 0,
     });
@@ -1033,11 +1293,7 @@ window.onload = () => {
       delay: 4,
       duration: 0.5,
     });
-    gsap.to("#secSeven p.title-back", {
-      opacity: 1,
-      delay: 4,
-      duration: 0.5,
-    });
+   
     gsap.to("#secSeven .contact-us h1", {
       opacity: "1",
       delay: 2,
@@ -1062,10 +1318,10 @@ window.onload = () => {
       duration: 2.5,
       top: "0",
     });
-    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(4)", {
+    gsap.to("#secSeven .contact-us .map-body", {
       opacity: "1",
-      delay: 3.5,
-      duration: 2.5,
+      delay: 2,
+      duration: 3,
       top: "0",
     });
 
@@ -1090,6 +1346,13 @@ window.onload = () => {
   $("#secEight i.icon--placeholder-next").on("click", () => {
     hidesecEight();
     showsecEightSecondPart();
+  });
+
+  $("#secEightSecondPart i.icon--placeholder-pre").on("click", () => {
+    hidesecEightSecondPart();
+    setTimeout(() => {
+      showsecEight();
+    }, 1000);
   });
 
   $("#secTwo .detail-who i.icon--placeholder-home").on("click", () => {
@@ -1281,11 +1544,6 @@ window.onload = () => {
       delay: 0.2,
       duration: 1.5,
     });
-    gsap.to("#secSeven p.title-back", {
-      opacity: 0,
-      delay: 0.2,
-      duration: 1.5,
-    });
     gsap.to("#secSeven .contact-us h1", {
       opacity: 0,
       delay: 0.4,
@@ -1310,9 +1568,9 @@ window.onload = () => {
       duration: 1.5,
       top: "155%",
     });
-    gsap.to("#secSeven .contact-us .contact-us-item:nth-child(4)", {
+    gsap.to("#secSeven .contact-us .map-body", {
       opacity: 0,
-      delay: 0.6,
+      delay: 1.2,
       duration: 1.5,
       top: "155%",
     });

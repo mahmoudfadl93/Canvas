@@ -673,6 +673,27 @@
       justify-content: center;
       align-items: center;
       z-index: 11;
+      position: relative;
+      > i {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+
+        opacity: 0;
+        fill: #fff;
+        cursor: pointer;
+
+        &.icon--placeholder-home {
+          top: 15px;
+          left: 15px;
+        }
+
+        &.icon--placeholder-pre {
+          bottom: 15px;
+          left: 15px;
+          transform: rotate(180deg);
+        }
+      }
 
       .shapes-circle-body {
         &.shapes-circle-yellew {
@@ -751,6 +772,8 @@
               border-radius: 50%;
               border: 10px solid gray;
               padding: 15px;
+              transform: scale(0);
+              opacity: 0;
 
               .Post-Processing-container {
                 background-color: #fff;
@@ -769,6 +792,9 @@
               display: flex;
               justify-content: flex-start;
               align-items: center;
+              opacity: 0;
+              left: 150%;
+              position: relative;
               .line {
                 width: 100px;
                 height: 3px;
@@ -787,8 +813,10 @@
               padding: 20px;
               width: 310px;
               height: 110px;
-              opacity: 1;
+              opacity: 0;
+              left: 150%;
               margin-left: 50px;
+              position: relative;
               > div {
                 opacity: 1;
               }
@@ -840,7 +868,6 @@
             }
             &.Statutory {
               align-self: center;
-           
               left: 90px;
               top: -6px;
               .Post-Processing-circle {
@@ -861,7 +888,7 @@
             }
             &.Employee {
               align-self: flex-end;
-            
+
               left: 70px;
               .Post-Processing-circle {
                 border-color: #661433;
@@ -1181,39 +1208,93 @@
         position: relative;
         left: 113%;
       }
-
-      .contact-us-list {
+      .contact-us-with-map {
         display: flex;
-        flex-direction: column;
-        padding: 5px;
-        width: 35vw;
+        align-items: center;
+        .contact-us-list {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          width: 35vw;
 
-        .contact-us-item {
-          padding: 20px 15px;
-          margin-bottom: 1.9vh;
-          position: relative;
+          .contact-us-item {
+            padding: 20px 15px;
+            margin-bottom: 1.9vh;
+            position: relative;
+            top: 155%;
+            opacity: 0;
+            .contactusitem-content {
+              margin: 0;
+              position: relative;
+              &::before {
+                font-family: "Font Awesome 5 Free";
+                display: block;
+                font-weight: 700;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 30px;
+                color: #fff;
+                margin: 0 20px 40px 0;
+                position: absolute;
+                top: 5px;
+                left: 0;
+              }
+              .contactusitem-body {
+                padding-left: 50px;
+                h3 {
+                  color: #fff;
+                  font-size: 40px;
+                }
+                a {
+                  color: #fff;
+                  font-size: 25x;
+                }
+              }
+            }
+            .Find-us {
+              &::before {
+                content: "\f3c5";
+                background: #ea4435;
+              }
+            }
+            .Call-us {
+              &::before {
+                content: "\f095";
+                background: #42a047;
+                transform: rotate(90deg);
+              }
+            }
+            .Email-us {
+              &::before {
+                background: #f78f1e;
+                content: "\f0e0";
+              }
+            }
+
+            &:nth-child(1) {
+              background-color: #ea4435;
+            }
+
+            &:nth-child(2) {
+              background-color: #42a047;
+            }
+
+            &:nth-child(3) {
+              background-color: #f78f1e;
+            }
+          }
+        }
+
+        .map-body {
+          height: 100%;
           top: 155%;
+          position: relative;
           opacity: 0;
-
-          p {
-            color: #fff;
-            font-size: 1.5vw;
-          }
-
-          &:nth-child(1) {
-            background-color: #fcdf21;
-          }
-
-          &:nth-child(2) {
-            background-color: #9fc914;
-          }
-
-          &:nth-child(3) {
-            background-color: #a3395e;
-          }
-
-          &:nth-child(4) {
-            background-color: #661433;
+          iframe {
+            height: 100%;
+            padding: 5px 5px 18px 5px;
           }
         }
       }
