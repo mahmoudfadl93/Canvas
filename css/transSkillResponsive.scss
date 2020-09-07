@@ -1,0 +1,145 @@
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1384px) and (min-width: 1025px) {
+  .container-canvas {
+    .body-content {
+      .trans-shapes {
+    grid-template-columns: 15% 17% 16% 17% 15%;
+        .hexagon-shape {
+          .hexagon {
+            &.hexagon-large {
+              width: 205px;
+              height: 180px;
+            }
+            &.hexagon-median {
+              width: 100px;
+              height: 90px;
+            }
+            &.hexagon-small {
+              width: 80px;
+              height: 70px;
+            }
+          }
+          &.hexagon-orange{
+            padding-top: 3vh;
+          }
+          &.hexagon-green{
+                 padding-bottom: 20vh; 
+          }
+          &.hexagon-blue{
+            padding-top: 3vh;
+          }
+          &.hexagon-red{
+            padding-bottom: 15vh;
+            .hexagon-small{
+              right: 5%;
+            }
+          }
+          .hexagon-large.with-prag {
+            padding: 8px !important;
+            .hexagon-content {
+              p {
+                font-size: 20px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 900px) {
+  .container-canvas {
+    .body-content {
+      .trans-shapes {
+        grid-template-columns: 15% 17% 19% 18% 22%;
+        .hexagon-shape {
+          .hexagon {
+            &.hexagon-large {
+              width: 155px;
+              height: 150px;
+            }
+            &.hexagon-median {
+              width: 75px;
+              height: 70px;
+            }
+            &.hexagon-small {
+              width: 50px;
+              height: 40px;
+            }
+          }
+          .hexagon-large.with-prag {
+            padding: 8px !important;
+            .hexagon-content {
+              p {
+                font-size: 15px !important;
+              }
+            }
+          }
+        }
+      }
+      div.Outsource-Payroll {
+        div.details-body {
+          grid-template-columns: 180px 180px 180px 180px 180px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container-canvas {
+    .body-content {
+      .trans-shapes {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        overflow-y: auto;
+        grid-row-gap: 25px;
+        .hexagon-shape {
+          padding: 0 !important;
+          .hexagon {
+            &.hexagon-median {
+              display: none;
+            }
+            &.hexagon-small {
+              display: none;
+            }
+            &.empty {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 899px) and (min-width: 769px) {
+  .container-canvas {
+    .body-content {
+      .trans-shapes {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        overflow-y: auto;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+
+        .hexagon-shape {
+          padding: 0 !important;
+          .hexagon {
+            &.hexagon-median {
+              display: none;
+            }
+            &.hexagon-small {
+              display: none;
+            }
+            &.empty {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

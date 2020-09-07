@@ -31,37 +31,15 @@
           transform: scale(0);
 }
 
-.hexagon-yellew .hexagon.hexagon-large.with-prag {
-  width: 310px;
-  height: 275px;
-}
-
 .hexagon-yellew .hexagon.hexagon-median {
-  width: 140px;
-  height: 125px;
   -webkit-transform: scale(0);
   transform: scale(0);
   justify-self: flex-end;
 }
 
 .hexagon-yellew .hexagon.hexagon-small {
-  width: 104px;
-  height: 92px;
   -ms-grid-column-align: end;
       justify-self: end;
-}
-
-.hexagon-red .hexagon.hexagon-large, .hexagon-red .hexagon.hexagon-large.with-prag,
-.hexagon-blue .hexagon.hexagon-large,
-.hexagon-blue .hexagon.hexagon-large.with-prag,
-.hexagon-green .hexagon.hexagon-large,
-.hexagon-green .hexagon.hexagon-large.with-prag,
-.hexagon-orange .hexagon.hexagon-large,
-.hexagon-orange .hexagon.hexagon-large.with-prag {
-  width: 275px;
-  height: 250px;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 .hexagon-red .with-prag,
@@ -72,17 +50,13 @@
 }
 
 .hexagon-red .hexagon.hexagon-median {
-  width: 140px;
-  height: 125px;
   justify-self: baseline;
   margin: -11px 15px 16px 34px;
 }
 
 .hexagon-red .hexagon.hexagon-small {
-  width: 100px;
   -ms-grid-column-align: end;
       justify-self: end;
-  height: 90px;
 }
 
 .hexagon-content p {

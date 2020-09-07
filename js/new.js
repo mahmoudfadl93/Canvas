@@ -140,7 +140,7 @@ window.onload = () => {
       delay: 2.0,
       duration: 1.5,
     });
-    gsap.to(".Outsource-Payroll .details-body img", {
+    gsap.to(".Outsource-Payroll .details-body svg", {
       delay: 2.0,
       duration: 1.5,
       opacity: 1,
@@ -151,11 +151,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 0.5,
     });
-    gsap.to(".Payroll p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
+
   };
   ///         show sec Four  ------------------------
 
@@ -716,7 +712,7 @@ window.onload = () => {
       delay: 0.7,
       duration: 2,
     });
-    gsap.to(".Outsource-Payroll .details-body img", {
+    gsap.to(".Outsource-Payroll .details-body svg", {
       delay: 0.3,
       duration: 0.5,
       opacity: 0,
@@ -753,6 +749,11 @@ window.onload = () => {
       height: 0,
       delay: 1.2,
       duration: 1.5,
+    });
+    gsap.to(".Outsource-Payrolls-container  .details-body svg", {
+      delay: 0.3,
+      duration: 0.5,
+      opacity: 0,
     });
 
     gsap.to(".Outsource-Payrolls-container", {
@@ -1880,6 +1881,11 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
+    gsap.to("#OutsourcePayrollFirst .details-body svg", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
+    });
   };
   let showOutsourcePayrollSecond = function () {
     gsap.to("#OutsourcePayrollSecond", {
@@ -1919,6 +1925,11 @@ window.onload = () => {
       height: "auto",
       delay: 3.5,
       duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollSecond .details-body svg", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
     });
   };
   let showOutsourcePayrollThird = function () {
@@ -1960,6 +1971,11 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
+    gsap.to("#OutsourcePayrollThird .details-body svg", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
+    });
   };
   let showOutsourcePayrollFourth = function () {
     gsap.to("#OutsourcePayrollFourth", {
@@ -1999,6 +2015,11 @@ window.onload = () => {
       height: "auto",
       delay: 3.5,
       duration: 1.5,
+    });
+    gsap.to("#OutsourcePayrollFourth .details-body svg", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
     });
   };
   let showOutsourcePayrollFifth = function () {
@@ -2040,6 +2061,12 @@ window.onload = () => {
       delay: 3.5,
       duration: 1.5,
     });
+    gsap.to("#OutsourcePayrollFifth .details-body svg", {
+      delay: 2.0,
+      duration: 1.5,
+      opacity: 1,
+    });
+
   };
 
   $("#BusinessGrowthEnsured").on("click", () => {

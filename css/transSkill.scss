@@ -133,37 +133,9 @@
       align-items: center;
       z-index: 8;
       display: grid;
-      grid-template-columns: 220px 275px 190px 275px 190px;
-
-      .hexagon-arrow-left {
-        position: absolute;
-        left: -1.3vw;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 11;
-
-        img {
-          width: 15px;
-        }
-      }
-
-      .hexagon-arrow-right {
-        position: absolute;
-        right: -1.3vw;
-        top: 50%;
-        transform: translateY(-50%);
-
-        img {
-          width: 15px;
-        }
-      }
+      grid-template-columns: 205px 300px 205px 300px 205px;
 
       .hexagon-shape {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-start;
-        // align-items: flex-end;
-        // position: relative;
         .hexagon {
           clip-path: polygon(
             25% 0%,
@@ -210,19 +182,18 @@
             }
           }
 
-          /*
-                    &.hexagon-large {
-                        width: 17vw;
-                        height: 30vh;
-                    }
-                    &.hexagon-median {
-                        width: 8vw;
-                        height: 16vh;
-                    }
-                    &.hexagon-small {
-                        width: 5vw;
-                        height: 10vh;
-                    } */
+          &.hexagon-large {
+            width: 310px;
+            height: 275px;
+          }
+          &.hexagon-median {
+            width: 140px;
+            height: 125px;
+          }
+          &.hexagon-small {
+            width: 104px;
+            height: 92px;
+          }
         }
       }
 
@@ -291,8 +262,8 @@
 
         .hexagon-small {
           position: relative;
-          top: 5vh;
-          // margin-right: 3vw;
+          top: 25px;
+          right: 15%;
         }
 
         .hexagon-median {
@@ -553,10 +524,6 @@
     }
 
     div.Outsource-Payroll {
-      img {
-        width: 80%;
-      }
-
       div.details-body {
         height: auto;
         display: grid;
@@ -567,13 +534,14 @@
         overflow: visible !important;
 
         > div {
-          img {
+          .Outsource-svg {
             opacity: 0;
-            transform: scale(1.5);
             transition: 0.4s;
+            width: 100%;
+            height: 100%;
 
             &:hover {
-              transform: scale(1.7);
+              transform: scale(1.2);
             }
           }
 
@@ -600,8 +568,11 @@
 
         .shapes-container {
           .shapes-image {
-            img {
-              width: 280px;
+            .Outsource-svg {
+              opacity: 0;
+              transition: 0.4s;
+              width: 260px;
+              height: 150px;
             }
           }
         }
@@ -658,6 +629,7 @@
       .business-body-prag {
         width: 43vw;
         opacity: 0;
+
         h1 {
           width: 100%;
           font-size: 5vw;
@@ -674,6 +646,7 @@
       align-items: center;
       z-index: 11;
       position: relative;
+
       > i {
         width: 35px;
         height: 35px;
@@ -742,15 +715,18 @@
         width: 65%;
         position: relative;
         height: 100vh;
+
         .darw-path {
           height: 100%;
           position: absolute;
           top: 40px;
           left: -90px;
+
           svg {
             height: 90%;
           }
         }
+
         .Post-Processing-steps {
           width: 100%;
           display: flex;
@@ -765,6 +741,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+
             .Post-Processing-circle {
               width: 160px;
               height: 160px;
@@ -783,11 +760,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 p {
                   font-size: 20px;
                 }
               }
             }
+
             .line-with-dot {
               display: flex;
               justify-content: flex-start;
@@ -795,6 +774,7 @@
               opacity: 0;
               left: 150%;
               position: relative;
+
               .line {
                 width: 100px;
                 height: 3px;
@@ -802,6 +782,7 @@
                 position: relative;
                 top: -1px;
               }
+
               .dot {
                 width: 20px;
                 height: 20px;
@@ -809,6 +790,7 @@
                 display: inline-block;
               }
             }
+
             .rule-point {
               padding: 20px;
               width: 310px;
@@ -817,9 +799,11 @@
               left: 150%;
               margin-left: 50px;
               position: relative;
+
               > div {
                 opacity: 1;
               }
+
               ul {
                 li {
                   text-align: left;
@@ -828,85 +812,106 @@
                 }
               }
             }
+
             &.Postings-body {
               .Post-Processing-circle {
                 border-top-color: #9fc914;
                 transform: rotate(45deg);
+
                 .Post-Processing-container {
                   transform: rotate(-45deg);
                 }
               }
+
               .line-with-dot {
                 .line {
                   background: #9fc914;
                 }
+
                 .dot {
                   background-color: #9fc914;
                 }
               }
+
               .rule-point {
                 background-color: #9fc914;
               }
             }
+
             &.rdParty {
               margin-left: 65px;
               margin-top: 10px;
+
               .Post-Processing-circle {
                 border-right-color: #5053a3;
               }
+
               .line-with-dot {
                 .line {
                   background: #5053a3;
                 }
+
                 .dot {
                   background-color: #5053a3;
                 }
               }
+
               .rule-point {
                 background-color: #5053a3;
               }
             }
+
             &.Statutory {
               align-self: center;
               left: 90px;
               top: -6px;
+
               .Post-Processing-circle {
                 border-right-color: #a3395e;
                 border-bottom-color: #a3395e;
               }
+
               .line-with-dot {
                 .line {
                   background: #a3395e;
                 }
+
                 .dot {
                   background-color: #a3395e;
                 }
               }
+
               .rule-point {
                 background-color: #a3395e;
               }
             }
+
             &.Employee {
               align-self: flex-end;
 
               left: 70px;
+
               .Post-Processing-circle {
                 border-color: #661433;
               }
+
               .line-with-dot {
                 .line {
                   background: #661433;
                 }
+
                 .dot {
                   background-color: #661433;
                 }
               }
+
               .rule-point {
                 background-color: #661433;
               }
             }
           }
         }
+
         // img {
         //   width: 50vw;
         // }
@@ -1208,9 +1213,11 @@
         position: relative;
         left: 113%;
       }
+
       .contact-us-with-map {
         display: flex;
         align-items: center;
+
         .contact-us-list {
           display: flex;
           flex-direction: column;
@@ -1223,9 +1230,11 @@
             position: relative;
             top: 155%;
             opacity: 0;
+
             .contactusitem-content {
               margin: 0;
               position: relative;
+
               &::before {
                 font-family: "Font Awesome 5 Free";
                 display: block;
@@ -1241,24 +1250,29 @@
                 top: 5px;
                 left: 0;
               }
+
               .contactusitem-body {
                 padding-left: 50px;
+
                 h3 {
                   color: #fff;
                   font-size: 40px;
                 }
+
                 a {
                   color: #fff;
                   font-size: 25x;
                 }
               }
             }
+
             .Find-us {
               &::before {
                 content: "\f3c5";
                 background: #ea4435;
               }
             }
+
             .Call-us {
               &::before {
                 content: "\f095";
@@ -1266,6 +1280,7 @@
                 transform: rotate(90deg);
               }
             }
+
             .Email-us {
               &::before {
                 background: #f78f1e;
@@ -1292,6 +1307,7 @@
           top: 155%;
           position: relative;
           opacity: 0;
+
           iframe {
             height: 100%;
             padding: 5px 5px 18px 5px;

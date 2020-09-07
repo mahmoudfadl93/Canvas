@@ -27,21 +27,14 @@
 }
 
 .hexagon-yellew {
-  .hexagon.hexagon-large.with-prag {
-    width: 310px;
-    height: 275px;
-  }
+
   .hexagon.hexagon-median {
-    width: 140px;
-    height: 125px;
     -webkit-transform: scale(0);
     transform: scale(0);
     justify-self: flex-end;
    
   }
   .hexagon.hexagon-small {
-    width: 104px;
-    height: 92px;
     justify-self: end;
   }
 }
@@ -51,17 +44,6 @@
 .hexagon-green,
 .hexagon-orange {
   .hexagon {
-    // opacity: .8;
-    // transition: .5s;
-    &.hexagon-large,
-    &.hexagon-large.with-prag {
-      width: 275px;
-      height: 250px;
-      justify-self: center;
-    }
-    // &:hover {
-    // opacity: 1;
-    // }
   }
   .with-prag {
     opacity: 1 !important;
@@ -70,15 +52,11 @@
 
 .hexagon-red {
   .hexagon.hexagon-median {
-    width: 140px;
-    height: 125px;
     justify-self: baseline;
     margin: -11px 15px 16px 34px;
   }
   .hexagon.hexagon-small {
-    width: 100px;
     justify-self: end;
-    height: 90px;
   }
 }
 

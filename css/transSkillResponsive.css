@@ -1,0 +1,116 @@
+@media all and (max-width: 1384px) and (min-width: 1025px) {
+  .container-canvas .body-content .trans-shapes {
+    -ms-grid-columns: 15% 17% 16% 17% 15%;
+        grid-template-columns: 15% 17% 16% 17% 15%;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
+    width: 205px;
+    height: 180px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+    width: 100px;
+    height: 90px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+    width: 80px;
+    height: 70px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape.hexagon-orange {
+    padding-top: 3vh;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape.hexagon-green {
+    padding-bottom: 20vh;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape.hexagon-blue {
+    padding-top: 3vh;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape.hexagon-red {
+    padding-bottom: 15vh;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape.hexagon-red .hexagon-small {
+    right: 5%;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon-large.with-prag {
+    padding: 8px !important;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon-large.with-prag .hexagon-content p {
+    font-size: 20px !important;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 900px) {
+  .container-canvas .body-content .trans-shapes {
+    -ms-grid-columns: 15% 17% 19% 18% 22%;
+        grid-template-columns: 15% 17% 19% 18% 22%;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
+    width: 155px;
+    height: 150px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+    width: 75px;
+    height: 70px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+    width: 50px;
+    height: 40px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon-large.with-prag {
+    padding: 8px !important;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon-large.with-prag .hexagon-content p {
+    font-size: 15px !important;
+  }
+  .container-canvas .body-content div.Outsource-Payroll div.details-body {
+    -ms-grid-columns: 180px 180px 180px 180px 180px;
+        grid-template-columns: 180px 180px 180px 180px 180px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container-canvas .body-content .trans-shapes {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    overflow-y: auto;
+    grid-row-gap: 25px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape {
+    padding: 0 !important;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+    display: none;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+    display: none;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.empty {
+    display: none;
+  }
+}
+
+@media all and (max-width: 899px) and (min-width: 769px) {
+  .container-canvas .body-content .trans-shapes {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    overflow-y: auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape {
+    padding: 0 !important;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+    display: none;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+    display: none;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.empty {
+    display: none;
+  }
+}
+/*# sourceMappingURL=transSkillResponsive.css.map */

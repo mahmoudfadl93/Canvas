@@ -158,52 +158,14 @@
   z-index: 8;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 275px 190px 275px 190px;
-      grid-template-columns: 220px 275px 190px 275px 190px;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-arrow-left {
-  position: absolute;
-  left: -1.3vw;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 11;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-arrow-left img {
-  width: 15px;
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-arrow-right {
-  position: absolute;
-  right: -1.3vw;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.container-canvas .body-content .trans-shapes .hexagon-arrow-right img {
-  width: 15px;
+  -ms-grid-columns: 205px 300px 205px 300px 205px;
+      grid-template-columns: 205px 300px 205px 300px 205px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: relative;
-  /*
-                    &.hexagon-large {
-                        width: 17vw;
-                        height: 30vh;
-                    }
-                    &.hexagon-median {
-                        width: 8vw;
-                        height: 16vh;
-                    }
-                    &.hexagon-small {
-                        width: 5vw;
-                        height: 10vh;
-                    } */
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag {
@@ -241,6 +203,21 @@
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.with-prag .hexagon-content p {
   font-weight: 800;
+}
+
+.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
+  width: 310px;
+  height: 275px;
+}
+
+.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+  width: 140px;
+  height: 125px;
+}
+
+.container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+  width: 104px;
+  height: 92px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-yellew .hexagon {
@@ -307,7 +284,8 @@
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-small {
   position: relative;
-  top: 5vh;
+  top: 25px;
+  right: 15%;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-red .hexagon-median {
@@ -583,10 +561,6 @@
   width: 400px;
 }
 
-.container-canvas .body-content div.Outsource-Payroll img {
-  width: 80%;
-}
-
 .container-canvas .body-content div.Outsource-Payroll div.details-body {
   height: auto;
   display: -ms-grid;
@@ -609,17 +583,17 @@
           align-items: end;
 }
 
-.container-canvas .body-content div.Outsource-Payroll div.details-body > div img {
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div .Outsource-svg {
   opacity: 0;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  width: 100%;
+  height: 100%;
 }
 
-.container-canvas .body-content div.Outsource-Payroll div.details-body > div img:hover {
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+.container-canvas .body-content div.Outsource-Payroll div.details-body > div .Outsource-svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .container-canvas .body-content div.Outsource-Payroll div.details-body > div:nth-child(odd) {
@@ -648,8 +622,12 @@
           align-items: center;
 }
 
-.container-canvas .body-content .Outsource-Payroll-sections .details-body .shapes-container .shapes-image img {
-  width: 280px;
+.container-canvas .body-content .Outsource-Payroll-sections .details-body .shapes-container .shapes-image .Outsource-svg {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 260px;
+  height: 150px;
 }
 
 .container-canvas .body-content .Outsource-Payroll-sections .details-body .content-body {
