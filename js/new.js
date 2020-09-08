@@ -151,7 +151,6 @@ window.onload = () => {
       delay: 3.5,
       duration: 0.5,
     });
-
   };
   ///         show sec Four  ------------------------
 
@@ -429,13 +428,13 @@ window.onload = () => {
     });
     gsap.to(".shapes-circle-body.shapes-circle-yellew .shapes-circle-content", {
       scale: 0,
-      delay:0.1,
+      delay: 0.1,
       ease: Elastic.easeOut,
       duration: 1.5,
     });
     gsap.to(".shapes-circle-body.shapes-circle-orange .shapes-circle-content", {
       scale: 0,
-      delay:0.2,
+      delay: 0.2,
       ease: Elastic.easeOut,
       duration: 1.5,
     });
@@ -562,7 +561,6 @@ window.onload = () => {
     });
   };
   ///         hide sec Eight Second Part  ------------------------
-
 
   ///         hide sec five second part ------------------------
   let hidesecFivesecondpart = function () {
@@ -1294,7 +1292,7 @@ window.onload = () => {
       delay: 4,
       duration: 0.5,
     });
-   
+
     gsap.to("#secSeven .contact-us h1", {
       opacity: "1",
       delay: 2,
@@ -2066,7 +2064,6 @@ window.onload = () => {
       duration: 1.5,
       opacity: 1,
     });
-
   };
 
   $("#BusinessGrowthEnsured").on("click", () => {

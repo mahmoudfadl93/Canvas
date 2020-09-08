@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 // containers
 .container-canvas .body-content .details-content {
   background: #ffffff30;
@@ -15,7 +10,6 @@
     height: 0;
   }
 }
-
 // hexagon
 .hexagon-shape {
   display: grid;
@@ -43,13 +37,10 @@
 .hexagon-blue,
 .hexagon-green,
 .hexagon-orange {
-  .hexagon {
-  }
   .with-prag {
     opacity: 1 !important;
   }
 }
-
 .hexagon-red {
   .hexagon.hexagon-median {
     justify-self: baseline;
@@ -59,12 +50,10 @@
     justify-self: end;
   }
 }
-
 .hexagon-content p {
   font-size: 25px;
   font-weight: 800;
 }
-
 .myButt {
   outline: none;
   border: none;
