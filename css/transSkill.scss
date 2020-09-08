@@ -638,6 +638,153 @@
       }
     }
 
+    .my-journey {
+      width: 90%;
+      height: 0;
+      background: transparent;
+      z-index: 11;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      > i {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        opacity: 0;
+        fill: #fff;
+        cursor: pointer;
+        &.icon--placeholder-home {
+          top: 15px;
+          left: 15px;
+        }
+        &.icon--placeholder-pre {
+          bottom: 15px;
+          left: 15px;
+          transform: rotate(180deg);
+        }
+        &.icon--placeholder-next {
+          bottom: 15px;
+          right: 15px;
+        }
+      }
+
+      .myjourney-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        .myjourney-first {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 410px;
+          .image-svg-container {
+            position: relative;
+            width: 300px;
+            img {
+              width: 100%;
+            }
+            &.clientBasic {
+              position: absolute;
+              top: 5px;
+              left: 160px;
+
+              img {
+                width: 76%;
+              }
+            }
+            &.NDA {
+              margin-bottom: 20px;
+              margin-top: 165px;
+            }
+          }
+        }
+        .myjourney-second {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          height: 885px;
+          width: 500px;
+          .image-svg-container {
+            position: relative;
+            width: 300px;
+            img {
+              width: 100%;
+            }
+            &.monthProduce {
+              position: absolute;
+              top: 105px;
+              left: 0px;
+              img {
+                width: 76%;
+              }
+            }
+            &.monthPayroll {
+              top: 270px;
+              left: 80px;
+            }
+            &.monthpro {
+              top: 285px;
+              left: 88px;
+              img {
+                width: 92%;
+              }
+            }
+            &.wegolive {
+              position: absolute;
+              bottom: -20px;
+              right: -36px;
+              img {
+                width: 73%;
+              }
+            }
+          }
+        }
+        .myjourney-third {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          height: 885px;
+          width: 410px;
+          .image-svg-container {
+            position: relative;
+            width: 300px;
+            img {
+              width: 100%;
+            }
+            &.endresult {
+              position: absolute;
+              top: 105px;
+              left: -20px;
+              img {
+                width: 76%;
+              }
+            }
+            &.keepingup {
+              top: 270px;
+              left: 60px;
+            }
+            &.monthreview {
+              top: 285px;
+              left: 60px;
+              img {
+                width: 92%;
+              }
+            }
+            &.signcontract {
+              position: absolute;
+              bottom: -15px;
+              left: -25px;
+              img {
+                width: 73%;
+              }
+            }
+          }
+        }
+      }
+    }
     .shapes-circle {
       width: 90vw;
       height: 90vh;

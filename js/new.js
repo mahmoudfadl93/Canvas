@@ -1104,7 +1104,7 @@ window.onload = () => {
     });
 
     gsap.to("#secFiveSecondPart .my-journey", {
-      height: "85vh",
+      height: "605px",
       delay: 1.6,
       duration: 1.5,
     });
@@ -1141,11 +1141,11 @@ window.onload = () => {
       duration: 0.5,
     });
 
-    gsap.to("#secSix p.title-back", {
-      opacity: 1,
-      delay: 4,
-      duration: 0.5,
-    });
+    // gsap.to("#secSix p.title-back", {
+    //   opacity: 1,
+    //   delay: 4,
+    //   duration: 0.5,
+    // });
 
     gsap.to(".commitment-content p", {
       opacity: 1,

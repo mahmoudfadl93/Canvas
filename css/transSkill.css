@@ -687,6 +687,211 @@
   color: #fff;
 }
 
+.container-canvas .body-content .my-journey {
+  width: 90%;
+  height: 0;
+  background: transparent;
+  z-index: 11;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-canvas .body-content .my-journey > i {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  opacity: 0;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.container-canvas .body-content .my-journey > i.icon--placeholder-home {
+  top: 15px;
+  left: 15px;
+}
+
+.container-canvas .body-content .my-journey > i.icon--placeholder-pre {
+  bottom: 15px;
+  left: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container-canvas .body-content .my-journey > i.icon--placeholder-next {
+  bottom: 15px;
+  right: 15px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 410px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
+  position: relative;
+  width: 300px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container img {
+  width: 100%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
+  position: absolute;
+  top: 5px;
+  left: 160px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic img {
+  width: 76%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.NDA {
+  margin-bottom: 20px;
+  margin-top: 165px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 885px;
+  width: 500px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
+  position: relative;
+  width: 300px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container img {
+  width: 100%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthProduce {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthProduce img {
+  width: 76%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthPayroll {
+  top: 270px;
+  left: 80px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro {
+  top: 285px;
+  left: 88px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro img {
+  width: 92%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive {
+  position: absolute;
+  bottom: -20px;
+  right: -36px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive img {
+  width: 73%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 885px;
+  width: 410px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
+  position: relative;
+  width: 300px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container img {
+  width: 100%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {
+  position: absolute;
+  top: 105px;
+  left: -20px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult img {
+  width: 76%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.keepingup {
+  top: 270px;
+  left: 60px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview {
+  top: 285px;
+  left: 60px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview img {
+  width: 92%;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract {
+  position: absolute;
+  bottom: -15px;
+  left: -25px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract img {
+  width: 73%;
+}
+
 .container-canvas .body-content .shapes-circle {
   width: 90vw;
   height: 90vh;

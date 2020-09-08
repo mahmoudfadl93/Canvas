@@ -1,12 +1,11 @@
-@media all and (max-width: 1400px) {
-
+@media all and (min-width: 1385px) {
 }
 
 @media all and (max-width: 1384px) and (min-width: 1025px) {
   .container-canvas {
     .body-content {
       .trans-shapes {
-    grid-template-columns: 15% 17% 16% 17% 15%;
+        grid-template-columns: 15% 17% 16% 17% 15%;
         .hexagon-shape {
           .hexagon {
             &.hexagon-large {
@@ -22,18 +21,18 @@
               height: 70px;
             }
           }
-          &.hexagon-orange{
+          &.hexagon-orange {
             padding-top: 3vh;
           }
-          &.hexagon-green{
-                 padding-bottom: 20vh; 
+          &.hexagon-green {
+            padding-bottom: 20vh;
           }
-          &.hexagon-blue{
+          &.hexagon-blue {
             padding-top: 3vh;
           }
-          &.hexagon-red{
+          &.hexagon-red {
             padding-bottom: 15vh;
-            .hexagon-small{
+            .hexagon-small {
               right: 5%;
             }
           }
