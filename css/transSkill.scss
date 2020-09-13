@@ -81,7 +81,8 @@
           position: absolute;
           left: 50%;
           top: 40%;
-          transform: translate(-50% , -40%);
+          transform: translate(-50%, -40%);
+
           h2 {
             width: 100%;
             height: 100%;
@@ -103,7 +104,8 @@
           position: absolute;
           left: 50%;
           top: 65%;
-          transform: translate(-50% , -65%);
+          transform: translate(-50%, -65%);
+
           img {
             width: 100%;
             height: 100%;
@@ -837,14 +839,13 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 15px;
-          left: 15px;
+          top: 65px;
+          left: 25px;
         }
 
-        &.icon--placeholder-pre {
-          bottom: 15px;
-          left: 15px;
-          transform: rotate(180deg);
+        svg {
+          width: 100%;
+          height: 100%;
         }
       }
 
@@ -852,12 +853,13 @@
         &.shapes-circle-yellew {
           align-self: flex-start;
           position: relative;
-          left: 6vw;
+          left: 150px;
+          top: 65px;
 
           .shapes-circle-content {
             border: 15px solid #fcdf21;
-            width: 350px;
-            height: 350px;
+            width: 385px;
+            height: 385px;
             transform: scale(0);
           }
         }
@@ -895,25 +897,29 @@
         width: 65%;
         position: relative;
         height: 100vh;
+        align-items: center;
 
         .darw-path {
-          height: 100%;
+          height: 760px;
+          left: 0;
+          width: 600px;
           position: absolute;
-          top: 40px;
-          left: -90px;
+          top: 50%;
+          transform: translateY(-50%);
 
           svg {
-            height: 90%;
+            height: 100%;
+            width: 100%;
           }
         }
 
         .Post-Processing-steps {
-          width: 100%;
+          width: 1000px;
+          height: 760px;
           display: flex;
           align-items: flex-start;
-          justify-content: flex-start;
+          justify-content:space-evenly;
           flex-direction: column;
-          padding-top: 40px;
           z-index: 111;
 
           .Post-Processing-step-container {
@@ -973,8 +979,8 @@
 
             .rule-point {
               padding: 20px;
-              width: 310px;
-              height: 110px;
+              width: 400px;
+              height: auto;
               opacity: 0;
               left: 150%;
               margin-left: 50px;
@@ -994,6 +1000,7 @@
             }
 
             &.Postings-body {
+              left: 50px;
               .Post-Processing-circle {
                 border-top-color: #9fc914;
                 transform: rotate(45deg);
@@ -1019,8 +1026,7 @@
             }
 
             &.rdParty {
-              margin-left: 65px;
-              margin-top: 10px;
+              left: 160px;
 
               .Post-Processing-circle {
                 border-right-color: #5053a3;
@@ -1043,8 +1049,7 @@
 
             &.Statutory {
               align-self: center;
-              left: 90px;
-              top: -6px;
+              left: 65px;
 
               .Post-Processing-circle {
                 border-right-color: #a3395e;
@@ -1068,8 +1073,7 @@
 
             &.Employee {
               align-self: flex-end;
-
-              left: 70px;
+              left: -35px;
 
               .Post-Processing-circle {
                 border-color: #661433;

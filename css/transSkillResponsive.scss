@@ -1,110 +1,30 @@
-@media all and (min-width: 1385px) {
-}
-
-@media all and (max-width: 1384px) and (min-width: 1025px) {
-  .container-canvas {
-    .body-content {
-      .trans-shapes {
-        grid-template-columns: 15% 17% 16% 17% 15%;
-        .hexagon-shape {
-          .hexagon {
-            &.hexagon-large {
-              width: 205px;
-              height: 180px;
-            }
-            &.hexagon-median {
-              width: 100px;
-              height: 90px;
-            }
-            &.hexagon-small {
-              width: 80px;
-              height: 70px;
-            }
-          }
-          &.hexagon-orange {
-            padding-top: 3vh;
-          }
-          &.hexagon-green {
-            padding-bottom: 20vh;
-          }
-          &.hexagon-blue {
-            padding-top: 3vh;
-          }
-          &.hexagon-red {
-            padding-bottom: 15vh;
-            .hexagon-small {
-              right: 5%;
-            }
-          }
-          .hexagon-large.with-prag {
-            padding: 8px !important;
-            .hexagon-content {
-              p {
-                font-size: 20px !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media all and (max-width: 1024px) and (min-width: 900px) {
-  .container-canvas {
-    .body-content {
-      .trans-shapes {
-        grid-template-columns: 15% 17% 19% 18% 22%;
-        .hexagon-shape {
-          .hexagon {
-            &.hexagon-large {
-              width: 155px;
-              height: 150px;
-            }
-            &.hexagon-median {
-              width: 75px;
-              height: 70px;
-            }
-            &.hexagon-small {
-              width: 50px;
-              height: 40px;
-            }
-          }
-          .hexagon-large.with-prag {
-            padding: 8px !important;
-            .hexagon-content {
-              p {
-                font-size: 15px !important;
-              }
-            }
-          }
-        }
-      }
-      div.Outsource-Payroll {
-        div.details-body {
-          grid-template-columns: 180px 180px 180px 180px 180px;
-        }
-      }
-    }
-  }
-}
-
+////  phone
 @media all and (max-width: 768px) {
   .container-canvas {
     .body-content {
+      .paragraph-content .paragraph-body .v-payLogo img {
+        width: 60%;
+        position: relative;
+        top: -45px;
+      }
       .trans-shapes {
         grid-template-columns: none;
         grid-template-rows: auto;
         overflow-y: auto;
         grid-row-gap: 25px;
+
         .hexagon-shape {
           padding: 0 !important;
+
           .hexagon {
             &.hexagon-median {
               display: none;
             }
+
             &.hexagon-small {
               display: none;
             }
+
             &.empty {
               display: none;
             }
@@ -114,9 +34,18 @@
     }
   }
 }
+
+//// phone
+
+//// Tab
 @media all and (max-width: 899px) and (min-width: 769px) {
   .container-canvas {
     .body-content {
+      .paragraph-content .paragraph-body .v-payLogo img {
+        width: 60%;
+        position: relative;
+        top: -20px;
+      }
       .trans-shapes {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
@@ -126,13 +55,16 @@
 
         .hexagon-shape {
           padding: 0 !important;
+
           .hexagon {
             &.hexagon-median {
               display: none;
             }
+
             &.hexagon-small {
               display: none;
             }
+
             &.empty {
               display: none;
             }
@@ -142,3 +74,229 @@
     }
   }
 }
+
+//// Tab
+
+//// large Tab
+@media all and (max-width: 1023px) and (min-width: 900px) {
+  .container-canvas {
+    .body-content {
+      .paragraph-content .paragraph-body .v-payLogo img {
+        width: 60%;
+        position: relative;
+        top: -20px;
+      }
+      .trans-shapes {
+        grid-template-columns: 15% 17% 19% 18% 22%;
+
+        .hexagon-shape {
+          .hexagon {
+            &.hexagon-large {
+              width: 155px;
+              height: 150px;
+            }
+
+            &.hexagon-median {
+              width: 75px;
+              height: 70px;
+            }
+
+            &.hexagon-small {
+              width: 50px;
+              height: 40px;
+            }
+          }
+
+          .hexagon-large.with-prag {
+            padding: 8px !important;
+
+            .hexagon-content {
+              p {
+                font-size: 15px !important;
+              }
+            }
+          }
+        }
+      }
+
+      div.Outsource-Payroll {
+        div.details-body {
+          grid-template-columns: 180px 180px 180px 180px 180px;
+        }
+      }
+    }
+  }
+}
+
+//// large Tab
+
+////  min labtop
+@media all and (max-width: 1384px) and (min-width: 1024px) {
+  .container-canvas {
+    .body-content {
+      .paragraph-content {
+        .paragraph-body {
+          .v-payLogo {
+            text-align: center;
+            img {
+              width: 60%;
+              position: relative;
+              top: -20px;
+            }
+          }
+        }
+      }
+      .trans-shapes {
+        grid-template-columns: 15% 17% 16% 17% 15%;
+
+        .hexagon-shape {
+          .hexagon {
+            &.hexagon-large {
+              width: 205px;
+              height: 180px;
+            }
+
+            &.hexagon-median {
+              width: 100px;
+              height: 90px;
+            }
+
+            &.hexagon-small {
+              width: 80px;
+              height: 70px;
+            }
+          }
+
+          &.hexagon-orange {
+            padding-top: 3vh;
+          }
+
+          &.hexagon-green {
+            padding-bottom: 20vh;
+          }
+
+          &.hexagon-blue {
+            padding-top: 3vh;
+          }
+
+          &.hexagon-red {
+            padding-bottom: 15vh;
+
+            .hexagon-small {
+              right: 5%;
+            }
+          }
+
+          .hexagon-large.with-prag {
+            padding: 8px !important;
+
+            .hexagon-content {
+              p {
+                font-size: 20px !important;
+              }
+            }
+          }
+        }
+      }
+      .shapes-circle {
+        > i.icon--placeholder-home {
+          top: 15px;
+        }
+        .shapes-circle-body {
+          &.shapes-circle-yellew {
+            left: 100px;
+            top: 60px;
+            .shapes-circle-content {
+              border: 5px solid #fcdf21;
+              width: 200px;
+              height: 200px;
+            }
+          }
+          &.shapes-circle-orange {
+            left: 140px;
+            top: 100px;
+            .shapes-circle-content {
+              border: 6px solid #ff9000;
+              width: 130px;
+              height: 130px;
+            }
+          }
+          .shapes-circle-content{
+            p{
+              font-size: 13px;
+            }
+          
+          }
+        }
+        .image-content{
+          .darw-path{
+            height: 660px;
+            width: 400px;
+          }
+          .Post-Processing-steps{
+            width: 600px;
+            height: 660px;
+            .Post-Processing-step-container{
+              .Post-Processing-circle {
+                width: 125px;
+                height: 125px;
+                border: 6px solid gray;
+                .Post-Processing-container{
+                  p{
+                    font-size: 14px;
+                  }
+                }            
+              }
+              .line-with-dot{
+                 .line{
+                  width: 50px;
+                 }
+                 .dot{
+                  width: 10px;
+                  height: 10px;
+                 }
+              }
+              .rule-point{
+                width: 215px;
+                margin-left: 20px;
+              }
+              &.Postings-body{
+                left: 10px;
+                 top: 25px;
+              }
+              &.rdParty{
+                left: 100px;
+                top: 5px;
+              }
+              &.Statutory{
+                align-self: flex-end;
+                left: -5px;
+                bottom: 10px;
+              }
+              &.Employee{
+                left: 40px;
+                top: -30px;
+                .rule-point{
+                  width: 190px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+////  min labtop
+
+@media all and (max-width: 1680px) and (min-width: 1385px){
+
+}
+
+////  labtop width: 1024px)and height: 768px
+@media all and (width: 1024px) and (height: 768px) {
+}
+
+////  labtop width: 1024px)and height: 768px

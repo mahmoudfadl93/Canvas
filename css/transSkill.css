@@ -924,28 +924,27 @@
 }
 
 .container-canvas .body-content .shapes-circle > i.icon--placeholder-home {
-  top: 15px;
-  left: 15px;
+  top: 65px;
+  left: 25px;
 }
 
-.container-canvas .body-content .shapes-circle > i.icon--placeholder-pre {
-  bottom: 15px;
-  left: 15px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.container-canvas .body-content .shapes-circle > i svg {
+  width: 100%;
+  height: 100%;
 }
 
 .container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-yellew {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
-  left: 6vw;
+  left: 150px;
+  top: 65px;
 }
 
 .container-canvas .body-content .shapes-circle .shapes-circle-body.shapes-circle-yellew .shapes-circle-content {
   border: 15px solid #fcdf21;
-  width: 350px;
-  height: 350px;
+  width: 385px;
+  height: 385px;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -991,35 +990,42 @@
   width: 65%;
   position: relative;
   height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .darw-path {
-  height: 100%;
+  height: 760px;
+  left: 0;
+  width: 600px;
   position: absolute;
-  top: 40px;
-  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .container-canvas .body-content .shapes-circle .image-content .darw-path svg {
-  height: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps {
-  width: 100%;
+  width: 1000px;
+  height: 760px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 40px;
   z-index: 111;
 }
 
@@ -1100,8 +1106,8 @@
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container .rule-point {
   padding: 20px;
-  width: 310px;
-  height: 110px;
+  width: 400px;
+  height: auto;
   opacity: 0;
   left: 150%;
   margin-left: 50px;
@@ -1116,6 +1122,10 @@
   text-align: left;
   font-size: 1vw;
   color: #fff;
+}
+
+.container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Postings-body {
+  left: 50px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Postings-body .Post-Processing-circle {
@@ -1142,8 +1152,7 @@
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.rdParty {
-  margin-left: 65px;
-  margin-top: 10px;
+  left: 160px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.rdParty .Post-Processing-circle {
@@ -1166,8 +1175,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  left: 90px;
-  top: -6px;
+  left: 65px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Statutory .Post-Processing-circle {
@@ -1190,7 +1198,7 @@
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  left: 70px;
+  left: -35px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .Post-Processing-circle {

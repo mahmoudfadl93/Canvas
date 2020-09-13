@@ -203,11 +203,6 @@ window.onload = () => {
       position: "absolute",
     });
 
-    gsap.to("#secEight i", {
-      opacity: 1,
-      delay: 0.5,
-      duration: 1.5,
-    });
 
     gsap.to("#secEight .business-body-prag", {
       opacity: 1,
@@ -387,12 +382,6 @@ window.onload = () => {
 
   ///         hide sec Eight ------------------------
   let hidesecEight = function () {
-    gsap.to("#secEight i", {
-      opacity: 1,
-      delay: 0.5,
-      duration: 1.5,
-    });
-
     gsap.to("#secEight .business-body-prag", {
       opacity: 0,
       delay: 0.2,
@@ -836,6 +825,7 @@ window.onload = () => {
       transform: "translate(0)",
       duration: 1,
       delay: 1,
+      textAlign: "left",
     });
 
     gsap.to("#secMainPartTwo", {
@@ -864,12 +854,7 @@ window.onload = () => {
       duration: 0.5,
     });
 
-    gsap.to(".detail-who i", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-
+  
     gsap.to(".detail-who .myButt", {
       opacity: 1,
       delay: 3.5,
@@ -1299,19 +1284,20 @@ window.onload = () => {
       delay: 3.6,
       duration: 0,
     });
-  });
 
-  $("#secEight i.icon--placeholder-next").on("click", () => {
+  //        hidesecEight              ----------------------------------------------     showsecEightSecondPart
+  setTimeout(() =>{
     hidesecEight();
+  }, 4000);
+
+  setTimeout(() => {
     showsecEightSecondPart();
+  }, 5000);
+
+ //        hidesecEight              ----------------------------------------------     showsecEightSecondPart
   });
 
-  $("#secEightSecondPart i.icon--placeholder-pre").on("click", () => {
-    hidesecEightSecondPart();
-    setTimeout(() => {
-      showsecEight();
-    }, 1000);
-  });
+
 
   $("#secThree .detail-obtain-it i.icon--placeholder-home").on("click", () => {
     hideImageWithTitle();
@@ -1491,13 +1477,6 @@ window.onload = () => {
     setTimeout(() => {
       showsecone();
     }, 700);
-  });
-
-  $("#secEight i.icon--placeholder-home").on("click", () => {
-    hidesecEight();
-    setTimeout(() => {
-      showsecone();
-    }, 1500);
   });
 
   $("#secEightSecondPart i.icon--placeholder-home").on("click", () => {
@@ -1716,14 +1695,6 @@ window.onload = () => {
     }, 1500);
   });
 
-  //        show   obtainChildThird
-  $("#obtainChildThird i.icon--placeholder-next").on("click", () => {
-    hideObtainChildsContainer();
-    setTimeout(() => {
-      showobtainChildFirst();
-    }, 1500);
-  });
-
   //            obtain-childs-container next
   //        show   showobtainChildThird
   $("#obtainChildFirst i.icon--placeholder-pre").on("click", () => {
@@ -1734,12 +1705,6 @@ window.onload = () => {
   });
 
   //           show   showobtainChildFirst
-  $("#obtainChildSecond i.icon--placeholder-pre").on("click", () => {
-    hideObtainChildsContainer();
-    setTimeout(() => {
-      showobtainChildFirst();
-    }, 1500);
-  });
 
   //        show   showobtainChildSecond
   $("#obtainChildThird i.icon--placeholder-pre").on("click", () => {
@@ -2055,25 +2020,11 @@ window.onload = () => {
     }, 1500);
   });
 
-  //        show   showOutsourcePayrollFirst
-  $("#OutsourcePayrollFifth i.icon--placeholder-next").on("click", () => {
-    hideOutsourcePayrollChildern();
-    setTimeout(() => {
-      showOutsourcePayrollFirst();
-    }, 1500);
-  });
 
   //           show   Why Outsource Your Payroll?  next
 
   //           show   Why Outsource Your Payroll?  prev
 
-  //            showOutsourcePayrollFifth
-  $("#OutsourcePayrollFirst i.icon--placeholder-pre").on("click", () => {
-    hideOutsourcePayrollChildern();
-    setTimeout(() => {
-      showOutsourcePayrollFifth();
-    }, 1500);
-  });
 
   //           show   showOutsourcePayrollFirst
   $("#OutsourcePayrollSecond i.icon--placeholder-pre").on("click", () => {
