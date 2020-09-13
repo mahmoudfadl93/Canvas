@@ -14,7 +14,7 @@ window.onload = () => {
       delay: 1.2,
       scale: 1,
     });
-    gsap.to(".hexagon-yellew .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-yellew .hexagon.hexagon-large.empty", {
       delay: 1.3,
       scale: 1,
     });
@@ -246,8 +246,7 @@ window.onload = () => {
       duration: 1.5,
     });
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle", {
         opacity: 1,
         scale: 1,
         delay: 2,
@@ -256,8 +255,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot", {
         opacity: 1,
         left: 0,
         delay: 2.2,
@@ -265,8 +263,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point", {
         opacity: 1,
         left: 0,
         delay: 2.4,
@@ -274,8 +271,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle", {
         opacity: 1,
         scale: 1,
         delay: 2.4,
@@ -284,8 +280,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot", {
         opacity: 1,
         left: 0,
         delay: 2.4,
@@ -293,8 +288,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point", {
         opacity: 1,
         left: 0,
         delay: 2.6,
@@ -303,8 +297,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle", {
         opacity: 1,
         scale: 1,
         delay: 2.6,
@@ -313,8 +306,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot", {
         opacity: 1,
         left: 0,
         delay: 2.6,
@@ -322,8 +314,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point", {
         opacity: 1,
         left: 0,
         delay: 2.8,
@@ -332,8 +323,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle", {
         opacity: 1,
         scale: 1,
         delay: 2.8,
@@ -342,8 +332,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot", {
         opacity: 1,
         left: 0,
         delay: 2.8,
@@ -351,8 +340,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point", {
         opacity: 1,
         left: 0,
         delay: 3,
@@ -439,8 +427,7 @@ window.onload = () => {
       duration: 1.5,
     });
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .Post-Processing-circle", {
         opacity: 0,
         scale: 0,
         delay: 0.3,
@@ -449,8 +436,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .line-with-dot", {
         opacity: 0,
         left: "150%",
         delay: 0.7,
@@ -459,8 +445,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(1) .rule-point", {
         opacity: 0,
         left: "150%",
         delay: 0.6,
@@ -468,8 +453,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .Post-Processing-circle", {
         opacity: 0,
         scale: 0,
         delay: 0.4,
@@ -478,8 +462,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .line-with-dot", {
         opacity: 0,
         left: "150%",
         delay: 0.7,
@@ -487,8 +470,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(2) .rule-point", {
         opacity: 0,
         left: "150%",
         delay: 0.6,
@@ -497,8 +479,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .Post-Processing-circle", {
         opacity: 0,
         scale: 0,
         delay: 0.5,
@@ -507,8 +488,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .line-with-dot", {
         opacity: 0,
         left: "150%",
         delay: 0.7,
@@ -516,8 +496,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(3) .rule-point", {
         opacity: 0,
         left: "150%",
         delay: 0.6,
@@ -526,8 +505,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .Post-Processing-circle", {
         opacity: 0,
         scale: 0,
         delay: 0.6,
@@ -536,8 +514,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .line-with-dot", {
         opacity: 0,
         left: "150%",
         delay: 0.7,
@@ -545,8 +522,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point",
-      {
+      ".shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container:nth-child(4) .rule-point", {
         opacity: 0,
         left: "150%",
         delay: 0.6,
@@ -792,6 +768,8 @@ window.onload = () => {
     homeIcon[i].innerHTML = SVG_home;
   }
 
+  //  show First Content   ------------------------------------------------
+
   gsap.to(".paragraph-content", {
     opacity: 1,
     duration: 1,
@@ -807,24 +785,20 @@ window.onload = () => {
     delay: 0.8,
     background: "rgba(255, 255, 255, 0.200)",
   });
-  gsap.to(".paragraph-content button", {
+  gsap.to(".paragraph-content .paragraph-header", {
     opacity: 1,
     duration: 1,
     delay: 1,
   });
-  $(".paragraph-content button").on("mouseenter", () => {
-    gsap.to(".paragraph-content span", {
-      scale: 1.1,
-      background: "rgba(255, 255, 255, 0.100)",
-    });
+  gsap.to(".paragraph-content .v-payLogo", {
+    opacity: 1,
+    duration: 1,
+    delay: 1,
   });
-  $(".paragraph-content button").on("mouseleave", () => {
-    gsap.to(".paragraph-content span", {
-      scale: 1.0,
-      background: "rgba(255, 255, 255, 0.200)",
-    });
-  });
-  $(".paragraph-content button").on("click", () => {
+  //  show First Content   --------------------------------------------------
+
+  //  show second Content   --------------------------------------------------
+  setTimeout(() => {
     gsap.to(".paragraph-content span", {
       scale: 1,
       ease: Power3.easeOut,
@@ -836,87 +810,112 @@ window.onload = () => {
       duration: 1,
       background: "rgba(255, 255, 255, 0.0)",
     });
+
+    gsap.to(".paragraph-content .paragraph-header", {
+      opacity: 0.5,
+      top: 0,
+      left: "10px",
+      transform: "translate(0)",
+      duration: 1,
+      delay: 1,
+    });
     gsap.to(".paragraph-content h2", {
-      opacity: 0.1,
+      opacity: 1,
       duration: 0.5,
       ease: Power3.easeOut,
       delay: 0.5,
-      fontSize: "13vw",
+      fontSize: "4vw",
     });
-    gsap.to(".paragraph-content button", {
-      opacity: 0,
-      height: 0,
-      duration: 0.5,
-      ease: Power2.easeOut,
+
+    gsap.to(".paragraph-content .v-payLogo", {
+      opacity: 0.5,
+      position: "absolute",
+      left: 0,
+      top: "50px",
+      width: "130px",
+      transform: "translate(0)",
+      duration: 1,
       delay: 1,
     });
-    gsap.to(".paragraph-content button", {
-      delay: 1.2,
-      visibility: "hidden",
-    });
-    gsap.to("#secOne", {
+
+    gsap.to("#secMainPartTwo", {
       opacity: 1,
       top: 0,
       delay: 1.5,
       duration: 0,
+      position: "absolute",
     });
 
-    gsap.to(".hexagon-yellew .hexagon.hexagon-median", {
+    gsap.to(".detail-who", {
+      height: "80vh",
+      delay: 2,
+      duration: 0.5,
+    });
+
+    gsap.to(".detail-who .details-header", {
+      height: "auto",
+      delay: 2.5,
+      duration: 0.5,
+    });
+
+    gsap.to(".detail-who .details-body", {
+      height: "auto",
+      delay: 3.5,
+      duration: 0.5,
+    });
+
+    gsap.to(".detail-who i", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+
+    gsap.to(".detail-who .myButt", {
+      opacity: 1,
+      delay: 3.5,
+      duration: 0.5,
+    });
+  }, 3000);
+
+  $("#secMainPartTwo .myButt").on("click", () => {
+    gsap.to(".detail-who .myButt", {
+      opacity: 0,
+      duration: 0.5,
+    });
+    gsap.to(".details-body", {
+      height: 0,
+      delay: 0.6,
+      duration: 0.5,
+    });
+    gsap.to(".details-header", {
+      height: 0,
+      delay: 1.0,
+      duration: 0.5,
+    });
+    gsap.to(".detail-who", {
+      height: "0vh",
       delay: 1.2,
-      scale: 1,
+      duration: 0.5,
     });
-    gsap.to(".hexagon-yellew .hexagon.hexagon-large.with-prag", {
-      delay: 1.3,
-      scale: 1,
-    });
-    gsap.to(".hexagon-yellew .hexagon.hexagon-small", {
-      delay: 1.3,
-      scale: 1,
-    });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.empty", {
+    gsap.to("#secMainPartTwo", {
+      opacity: 0,
+      top: "100vh",
       delay: 1.5,
-      scale: 1,
+      duration: 0,
     });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag", {
-      delay: 1.4,
-      scale: 1,
-    });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
-      delay: 1.6,
-      scale: 1,
-    });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
-      delay: 1.7,
-      scale: 1,
-    });
-    gsap.to(".hexagon-blue .hexagon.hexagon-large.with-prag:nth-child(1)", {
-      delay: 1.8,
-      scale: 1,
-    });
-    gsap.to(".hexagon-blue .hexagon.hexagon-large.with-prag:nth-child(2)", {
-      delay: 1.9,
-      scale: 1,
-    });
-    gsap.to(".hexagon-red .hexagon.hexagon-median", {
-      delay: 2.0,
-      scale: 1,
-    });
-    gsap.to(".hexagon-red .hexagon.hexagon-large.with-prag", {
-      delay: 2.1,
-      scale: 1,
-    });
-    gsap.to(".hexagon-red .hexagon.hexagon-small", {
-      delay: 2.2,
-      scale: 1,
-    });
+
+    setTimeout(() => {
+      showsecone();
+    }, 500);
   });
 
+  //  show second Content   --------------------------------------------------
   $(".hexagon-large.with-prag").on("click", () => {
     gsap.to(".hexagon-yellew .hexagon.hexagon-median", {
       delay: 0.2,
       scale: 0,
     });
-    gsap.to(".hexagon-yellew .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-yellew .hexagon.hexagon-large.empty", {
       delay: 0.3,
       scale: 0,
     });
@@ -971,46 +970,15 @@ window.onload = () => {
   });
 
   // view who we are Slide
-  $("#whoWeAre").on("click", () => {
-    gsap.to("#secTwo", {
-      opacity: 1,
-      top: 0,
-      delay: 1.5,
-      duration: 0,
-      position: "absolute",
-    });
-    gsap.to(".detail-who", {
-      height: "80vh",
-      delay: 2,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who .details-header", {
-      height: "auto",
-      delay: 2.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who .details-body", {
-      height: "auto",
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who i", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to("#secOne", {
-      opacity: 0,
-      top: "100vh",
-      delay: 3.6,
-      duration: 0,
-    });
-  });
+  // $("#whoWeAre").on("click", () => {
+
+  //   gsap.to("#secOne", {
+  //     opacity: 0,
+  //     top: "100vh",
+  //     delay: 3.6,
+  //     duration: 0,
+  //   });
+  // });
 
   // view How To Obtain It Slide
   $("#HowToObtainIt").on("click", () => {
@@ -1186,8 +1154,7 @@ window.onload = () => {
     });
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: "1",
         width: "450px",
         delay: 4.7,
@@ -1195,8 +1162,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: "1",
         height: "auto",
         delay: 5.2,
@@ -1204,8 +1170,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div", {
         opacity: "1",
         width: "450px",
         delay: 5.7,
@@ -1214,8 +1179,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
         opacity: "1",
         width: "450px",
         delay: 5.0,
@@ -1223,8 +1187,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
         opacity: "1",
         height: "auto",
         delay: 5.5,
@@ -1232,8 +1195,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", {
         opacity: "1",
         width: "450px",
         delay: 6,
@@ -1242,8 +1204,7 @@ window.onload = () => {
     );
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
         opacity: "1",
         width: "450px",
         delay: 5.3,
@@ -1251,8 +1212,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
         opacity: "1",
         height: "auto",
         delay: 5.8,
@@ -1260,8 +1220,7 @@ window.onload = () => {
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div", {
         opacity: "1",
         width: "450px",
         delay: 6.3,
@@ -1354,42 +1313,6 @@ window.onload = () => {
     }, 1000);
   });
 
-  $("#secTwo .detail-who i.icon--placeholder-home").on("click", () => {
-    gsap.to(".detail-who i", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who p.title-back", {
-      opacity: 0,
-      duration: 0.5,
-    });
-    gsap.to(".details-body", {
-      height: 0,
-      delay: 0.6,
-      duration: 0.5,
-    });
-    gsap.to(".details-header", {
-      height: 0,
-      delay: 1.0,
-      duration: 0.5,
-    });
-    gsap.to(".detail-who", {
-      height: "0vh",
-      delay: 1.2,
-      duration: 0.5,
-    });
-    gsap.to("#secTwo", {
-      opacity: 0,
-      top: "100vh",
-      delay: 1.5,
-      duration: 0,
-    });
-
-    setTimeout(() => {
-      showsecone();
-    }, 500);
-  });
-
   $("#secThree .detail-obtain-it i.icon--placeholder-home").on("click", () => {
     hideImageWithTitle();
     setTimeout(() => {
@@ -1447,24 +1370,21 @@ window.onload = () => {
     });
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: 0,
         delay: 0.8,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: 0,
         delay: 0.9,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div", {
         opacity: 0,
         delay: 1,
         duration: 1.5,
@@ -1472,24 +1392,21 @@ window.onload = () => {
     );
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
         opacity: 0,
         delay: 1.1,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
         opacity: 0,
         delay: 1.2,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", {
         opacity: 0,
         delay: 1.3,
         duration: 1.5,
@@ -1497,24 +1414,21 @@ window.onload = () => {
     );
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
         opacity: 0,
         delay: 1.3,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
         opacity: 0,
         delay: 1.3,
         duration: 1.5,
       }
     );
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div",
-      {
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div", {
         opacity: 0,
         delay: 1.5,
         duration: 1.5,

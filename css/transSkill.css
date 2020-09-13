@@ -43,6 +43,10 @@
   margin-bottom: 5vh;
 }
 
+.container-canvas .body-content#secMain {
+  position: relative;
+}
+
 .container-canvas .body-content.hidden {
   overflow: hidden;
   position: absolute;
@@ -85,41 +89,17 @@
   z-index: 11;
 }
 
-.container-canvas .body-content .paragraph-content .span--wrapper {
-  display: contents;
-  animation: scale 3s 0.5s infinite linear reverse;
-}
-
-.container-canvas .body-content .paragraph-content .span--wrapper span {
-  -webkit-animation: opacity 2500ms linear infinite;
-          animation: opacity 2500ms linear infinite;
-}
-
-.container-canvas .body-content .paragraph-content div {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.container-canvas .body-content .paragraph-content div button,
-.container-canvas .body-content .paragraph-content div a {
+.container-canvas .body-content .paragraph-content .paragraph-body .paragraph-header {
   opacity: 0;
-  cursor: pointer;
-  margin: 50px auto;
-  overflow: hidden;
-  position: relative;
-  padding: 10px 20px;
-  background: transparent;
-  color: #fff;
-  border: 2px solid #ffffff;
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
 }
 
-.container-canvas .body-content .paragraph-content div button:hover,
-.container-canvas .body-content .paragraph-content div a:hover {
-  border: 2px solid #ffffff50;
-}
-
-.container-canvas .body-content .paragraph-content h2 {
+.container-canvas .body-content .paragraph-content .paragraph-body .paragraph-header h2 {
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -135,6 +115,32 @@
   color: #fff;
   font-size: 6vw;
   text-transform: uppercase;
+}
+
+.container-canvas .body-content .paragraph-content .paragraph-body .v-payLogo {
+  width: 200px;
+  height: auto;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -65%);
+          transform: translate(-50%, -65%);
+}
+
+.container-canvas .body-content .paragraph-content .paragraph-body .v-payLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-canvas .body-content .paragraph-content .span--wrapper {
+  display: contents;
+  animation: scale 3s 0.5s infinite linear reverse;
+}
+
+.container-canvas .body-content .paragraph-content .span--wrapper span {
+  -webkit-animation: opacity 2500ms linear infinite;
+          animation: opacity 2500ms linear infinite;
 }
 
 .container-canvas .body-content .paragraph-content span {

@@ -61,26 +61,26 @@
 
 .myButt {
   outline: none;
-  border: none;
   padding: 20px;
-  display: block;
-  margin: 50px auto;
   cursor: pointer;
   font-size: 20px;
   background-color: transparent;
-  position: relative;
   border: 2px solid #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-.one {
   border-color: #fff;
   overflow: hidden;
   color: #fff;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  opacity: 0;
 }
 
-.one .insider {
+.myButt .insider {
   background-color: #fff;
   width: 100%;
   height: 20px;
@@ -90,12 +90,12 @@
           transform: rotateZ(45deg);
 }
 
-.one:hover {
+.myButt:hover {
   border-color: #fff;
   color: #fff;
 }
 
-.one:hover .insider {
+.myButt:hover .insider {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   left: 135px;
