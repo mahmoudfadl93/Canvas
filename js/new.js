@@ -22,19 +22,19 @@ window.onload = () => {
       delay: 1.3,
       scale: 1,
     });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.empty", {
+    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag:nth-child(1)", {
       delay: 1.5,
       scale: 1,
     });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag:nth-child(2)", {
       delay: 1.4,
       scale: 1,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag:nth-child(1)", {
       delay: 1.6,
       scale: 1,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag:nth-child(2)", {
       delay: 1.7,
       scale: 1,
     });
@@ -50,7 +50,7 @@ window.onload = () => {
       delay: 2.0,
       scale: 1,
     });
-    gsap.to(".hexagon-red .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-red .hexagon.hexagon-large.empty", {
       delay: 2.1,
       scale: 1,
     });
@@ -79,23 +79,38 @@ window.onload = () => {
       delay: 1.5,
       duration: 0.5,
     });
-    gsap.to(".content-body .image-with-title.Service", {
+    gsap.to(".content-body .image-with-title.Service .image-all-together", {
       opacity: 1,
-      height: "31vh",
+      height: "auto",
       delay: 3.0,
-      duration: 0.5,
+      duration: 1.5,
     });
-    gsap.to(".content-body .image-with-title.Software", {
+    gsap.to(".content-body .image-with-title.Service .title-body", {
       opacity: 1,
-      height: "31vh",
+      delay: 2.8,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Software .image-all-together", {
+      opacity: 1,
+      height: "auto",
       delay: 3.4,
-      duration: 0.5,
+      duration: 1.5,
     });
-    gsap.to(".content-body .image-with-title.Hybrid", {
+    gsap.to(".content-body .image-with-title.Software .title-body", {
       opacity: 1,
-      height: "31vh",
+      delay: 2.2,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Hybrid .image-all-together", {
+      opacity: 1,
+      height: "auto",
       delay: 3.8,
-      duration: 0.5,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Hybrid .title-body", {
+      opacity: 1,
+      delay: 2.6,
+      duration: 1.5,
     });
 
     gsap.to(".detail-obtain-it i", {
@@ -595,39 +610,50 @@ window.onload = () => {
   };
   ///         hide Obtain Childs Container  ------------------------
 
-  ///         hide Image With Title ------------------------
+  ///         hide Image With Title secThree ------------------------
   let hideImageWithTitle = function () {
     gsap.to("#secThree i", {
       opacity: 0,
       duration: 1.5,
     });
 
-    gsap.to("#secThree p.title-back", {
-      opacity: 0,
-      duration: 1.5,
-    });
     gsap.to(".detail-obtain-it .details-header", {
       height: "0",
       delay: 0.3,
       duration: 1.5,
     });
 
-    gsap.to("#secThree .content-body .image-with-title.Service", {
-      height: 0,
+    gsap.to(".content-body .image-with-title.Service .image-all-together", {
       opacity: 0,
-      delay: 0.6,
+      height: 0,
+      delay: 0.3,
       duration: 1.5,
     });
-    gsap.to("#secThree .content-body .image-with-title.Software", {
+    gsap.to(".content-body .image-with-title.Service .title-body", {
+      opacity: 0,
+      delay: 0.5,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Software .image-all-together", {
+      opacity: 0,
       height: 0,
+      delay: 0.7,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Software .title-body", {
       opacity: 0,
       delay: 0.9,
       duration: 1.5,
     });
-    gsap.to("#secThree .content-body .image-with-title.Hybrid", {
-      height: 0,
+    gsap.to(".content-body .image-with-title.Hybrid .image-all-together", {
       opacity: 0,
-      delay: 1.2,
+      height: 0,
+      delay: 1.1,
+      duration: 1.5,
+    });
+    gsap.to(".content-body .image-with-title.Hybrid .title-body", {
+      opacity: 0,
+      delay: 1.3,
       duration: 1.5,
     });
     gsap.to("#secThree .details-content ", {
@@ -642,7 +668,7 @@ window.onload = () => {
       duration: 1.5,
     });
   };
-  ///         hide Image With Title  ------------------------
+  ///         hide Image With Title secThree  ------------------------
 
   ///      hide   Why Outsource Your Payroll  ------------------------
   let hideOutsourcePayroll = function () {
@@ -908,19 +934,19 @@ window.onload = () => {
       delay: 0.4,
       scale: 0,
     });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.empty", {
+    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag:nth-child(1)", {
       delay: 0.5,
       scale: 0,
     });
-    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-orange .hexagon.hexagon-large.with-prag:nth-child(2)", {
       delay: 0.4,
       scale: 0,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag:nth-child(1)", {
       delay: 0.6,
       scale: 0,
     });
-    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-green .hexagon.hexagon-large.with-prag:nth-child(2)", {
       delay: 0.7,
       scale: 0,
     });
@@ -936,7 +962,7 @@ window.onload = () => {
       delay: 1.0,
       scale: 0,
     });
-    gsap.to(".hexagon-red .hexagon.hexagon-large.with-prag", {
+    gsap.to(".hexagon-red .hexagon.hexagon-large.empty", {
       delay: 1.1,
       scale: 0,
     });
@@ -967,51 +993,7 @@ window.onload = () => {
 
   // view How To Obtain It Slide
   $("#HowToObtainIt").on("click", () => {
-    gsap.to("#secThree", {
-      opacity: 1,
-      top: 0,
-      delay: 0.5,
-      duration: 0,
-    });
-    gsap.to("#secThree .details-content ", {
-      height: "80vh",
-      delay: 1,
-      duration: 0.5,
-    });
-    gsap.to(".detail-obtain-it .details-header", {
-      height: "auto",
-      delay: 1.5,
-      duration: 0.5,
-    });
-    gsap.to("#secThree .content-body .image-with-title.Service", {
-      opacity: 1,
-      height: "31vh",
-      delay: 3.0,
-      duration: 0.5,
-    });
-    gsap.to("#secThree .content-body .image-with-title.Software", {
-      opacity: 1,
-      height: "31vh",
-      delay: 3.4,
-      duration: 0.5,
-    });
-    gsap.to("#secThree .content-body .image-with-title.Hybrid", {
-      opacity: 1,
-      height: "31vh",
-      delay: 3.8,
-      duration: 0.5,
-    });
-
-    gsap.to(".detail-obtain-it i", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
-    gsap.to(".detail-obtain-it p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
+    showsecThree();
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -1535,15 +1517,15 @@ window.onload = () => {
     });
     gsap.to("#obtainChildFirst img", {
       opacity: 1,
-      width: "400px",
-      height: "380px",
+      width: "100%",
+      height: "100%",
       delay: 1.9,
       duration: 1.5,
     });
 
     gsap.to("#obtainChildFirst .side-content .content-header", {
       opacity: 1,
-      left: 0,
+      left: "3vw",
       delay: 2.6,
       duration: 1.5,
     });
@@ -1588,15 +1570,15 @@ window.onload = () => {
     });
     gsap.to("#obtainChildSecond img", {
       opacity: 1,
-      width: "400px",
-      height: "380px",
+      width: "100%",
+      height: "100%",
       delay: 1.9,
       duration: 1.5,
     });
 
     gsap.to("#obtainChildSecond .side-content .content-header", {
       opacity: 1,
-      left: 0,
+      left: "3vw",
       delay: 2.6,
       duration: 1.5,
     });
@@ -1641,15 +1623,15 @@ window.onload = () => {
     });
     gsap.to("#obtainChildThird img", {
       opacity: 1,
-      width: "400px",
-      height: "380px",
+      width: "100%",
+      height: "100%",
       delay: 1.9,
       duration: 1.5,
     });
 
     gsap.to("#obtainChildThird .side-content .content-header", {
       opacity: 1,
-      left: 0,
+      left: "3vw",
       delay: 2.6,
       duration: 1.5,
     });
@@ -1696,11 +1678,11 @@ window.onload = () => {
   });
 
   //            obtain-childs-container next
-  //        show   showobtainChildThird
-  $("#obtainChildFirst i.icon--placeholder-pre").on("click", () => {
+  //        show   showobtainChildFirst
+  $("#obtainChildSecond i.icon--placeholder-pre").on("click", () => {
     hideObtainChildsContainer();
     setTimeout(() => {
-      showobtainChildThird();
+      showobtainChildFirst();
     }, 1500);
   });
 

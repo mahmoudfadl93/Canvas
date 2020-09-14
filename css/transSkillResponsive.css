@@ -87,6 +87,18 @@
     -ms-grid-columns: 180px 180px 180px 180px 180px;
         grid-template-columns: 180px 180px 180px 180px 180px;
   }
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
+    width: 250px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-header {
+    width: 250px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-header h3 {
+    font-size: 23px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
+    font-size: 17px;
+  }
 }
 
 @media all and (max-width: 1384px) and (min-width: 1024px) {
@@ -99,8 +111,8 @@
     top: -20px;
   }
   .container-canvas .body-content .trans-shapes {
-    -ms-grid-columns: 15% 17% 16% 17% 15%;
-        grid-template-columns: 15% 17% 16% 17% 15%;
+    -ms-grid-columns: 18% 18% 19% 18% 18%;
+        grid-template-columns: 18% 18% 19% 18% 18%;
   }
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
     width: 205px;
@@ -207,6 +219,29 @@
   .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point {
     width: 190px;
   }
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
+    width: 380px;
+    height: 380px;
+  }
+  .container-canvas .body-content div.Outsource-Payroll div.details-body {
+    -ms-grid-columns: 150px 150px 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px 150px 150px;
+  }
+  .container-canvas .body-content .contact-us .contact-us-with-map .contact-us-list {
+    width: 28vw;
+  }
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
+    width: 250px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-header {
+    width: 250px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-header h3 {
+    font-size: 23px;
+  }
+  .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
+    font-size: 17px;
+  }
 }
 
 @media all and (max-width: 1680px) and (min-width: 1385px) {
@@ -244,12 +279,31 @@
 }
 
 @media all and (min-width: 2200px) {
+  .container-canvas .body-content .trans-shapes {
+    -ms-grid-columns: 238px 330px 240px 330px 295px;
+        grid-template-columns: 238px 330px 240px 330px 295px;
+  }
   .container-canvas .body-content .shapes-circle .image-content {
     width: 50%;
   }
   .container-canvas .body-content .paragraph-content .paragraph-body .v-payLogo img {
     position: relative;
     top: 20px;
+  }
+}
+
+@media all and (min-width: 1386px) and (max-height: 768px) {
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
+    width: 115px;
+    height: 100px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
+    width: 280px;
+    height: 250px;
+  }
+  .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
+    width: 90px;
+    height: 80px;
   }
 }
 /*# sourceMappingURL=transSkillResponsive.css.map */

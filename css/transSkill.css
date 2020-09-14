@@ -55,7 +55,7 @@
 
 .container-canvas .body-content .image-all-together {
   width: 100%;
-  height: 100%;
+  height: 0;
   position: relative;
 }
 
@@ -164,8 +164,8 @@
   z-index: 8;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 205px 300px 205px 300px 205px;
-      grid-template-columns: 205px 300px 205px 300px 205px;
+  -ms-grid-columns: 220px 300px 230px 330px 220px;
+      grid-template-columns: 220px 300px 230px 330px 220px;
 }
 
 .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon {
@@ -463,8 +463,7 @@
 }
 
 .container-canvas .body-content .detail-obtain-it .content-body .images-content.image-with-title {
-  height: 0;
-  opacity: 0;
+  height: auto;
   margin: 5vh 3.4vw 0 3.4vw;
   position: relative;
   cursor: pointer;
@@ -479,6 +478,7 @@
   text-align: center;
   padding: 20px 5px;
   background-color: rgba(221, 221, 221, 0.664);
+  opacity: 0;
 }
 
 .container-canvas .body-content .detail-obtain-it .content-body .images-content.image-with-title .title-body h4 {
@@ -523,48 +523,40 @@
 
 .container-canvas .body-content .details-content-with-image .side-content {
   width: 55%;
-  height: 0;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 3vw;
+  position: relative;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header {
   background: #ddd;
-  width: 250px;
+  width: 400px;
   display: inline-block;
   padding: 25px;
-  position: relative;
+  position: absolute;
   left: 150%;
   opacity: 0;
+  top: 0;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header h3 {
-  font-size: 1.5vw;
+  font-size: 40px;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-body {
-  margin-top: 70px;
   height: 0;
   opacity: 0;
   overflow: hidden;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
-  font-size: 1.6vw;
-}
-
-.container-canvas .body-content .details-content-with-image.obtain-childs .side-content {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.container-canvas .body-content .details-content-with-image.Software-as-a-service .side-content .content-header {
-  width: 400px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .container-canvas .body-content div.Outsource-Payroll div.details-body {
@@ -1254,6 +1246,7 @@
           align-items: center;
   z-index: 11;
   text-align: center;
+  position: relative;
 }
 
 .container-canvas .body-content .commitments-body > i {
@@ -1266,8 +1259,8 @@
 }
 
 .container-canvas .body-content .commitments-body > i.icon--placeholder-home {
-  top: 15px;
-  left: 15px;
+  top: 75px;
+  left: 30px;
 }
 
 .container-canvas .body-content .commitments-body p.title-back {
@@ -1432,7 +1425,7 @@
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule .commitment-content {
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 30px;
 }
 
 .container-canvas .body-content .commitments-body .right-content .commitment-rule .small-circle.commitment-circle-orange {
@@ -1483,13 +1476,13 @@
 
 .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 25px;
   margin-bottom: 1vh;
 }
 
 .container-canvas .body-content .commitments-body .right-content .rule-point ul li {
   text-align: left;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .container-canvas .body-content .contact-us {
@@ -1510,6 +1503,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 4vw;
+  position: relative;
 }
 
 .container-canvas .body-content .contact-us > i {

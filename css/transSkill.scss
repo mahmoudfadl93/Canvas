@@ -47,7 +47,7 @@
 
     .image-all-together {
       width: 100%;
-      height: 100%;
+      height: 0;
       position: relative;
 
       span {
@@ -139,7 +139,7 @@
       align-items: center;
       z-index: 8;
       display: grid;
-      grid-template-columns: 205px 300px 205px 300px 205px;
+      grid-template-columns: 220px 300px 230px 330px 220px;
 
       .hexagon-shape {
         .hexagon {
@@ -429,8 +429,7 @@
 
         .images-content {
           &.image-with-title {
-            height: 0;
-            opacity: 0;
+            height: auto;
             margin: 5vh 3.4vw 0 3.4vw;
             position: relative;
             cursor: pointer;
@@ -444,6 +443,7 @@
               text-align: center;
               padding: 20px 5px;
               background-color: rgba(221, 221, 221, 0.664);
+              opacity: 0;
 
               h4 {
                 color: #333;
@@ -483,49 +483,36 @@
 
       .side-content {
         width: 55%;
-        height: 0;
+        height: 100%;
         display: grid;
         align-items: center;
         padding: 0 3vw;
-
+        position: relative;
         .content-header {
           background: #ddd;
-          width: 250px;
+          width: 400px;
           display: inline-block;
           padding: 25px;
-          position: relative;
+          position: absolute;
           left: 150%;
           opacity: 0;
+          top: 0;
 
           h3 {
-            font-size: 1.5vw;
+            font-size: 40px;
           }
         }
 
         .content-body {
-          margin-top: 70px;
           height: 0;
           opacity: 0;
           overflow: hidden;
 
           .content-prag {
             p {
-              font-size: 1.6vw;
+              font-size: 30px;
+              color: #fff;
             }
-          }
-        }
-      }
-
-      &.obtain-childs {
-        .side-content {
-          align-items: flex-start;
-        }
-      }
-
-      &.Software-as-a-service {
-        .side-content {
-          .content-header {
-            width: 400px;
           }
         }
       }
@@ -1131,7 +1118,7 @@
       align-items: center;
       z-index: 11;
       text-align: center;
-
+      position: relative;
       > i {
         width: 35px;
         height: 35px;
@@ -1142,8 +1129,8 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 15px;
-          left: 15px;
+          top: 75px;
+          left: 30px;
         }
       }
 
@@ -1278,7 +1265,7 @@
 
           .commitment-content {
             color: #fff;
-            font-size: 1.5vw;
+            font-size: 30px;
           }
 
           .small-circle.commitment-circle-orange {
@@ -1334,14 +1321,14 @@
 
           h2 {
             text-align: left;
-            font-size: 1.2vw;
+            font-size: 25px;
             margin-bottom: 1vh;
           }
 
           ul {
             li {
               text-align: left;
-              font-size: 1vw;
+              font-size: 15px;
             }
           }
         }
@@ -1357,7 +1344,7 @@
       z-index: 11;
       flex-direction: column;
       padding: 0 4vw;
-
+      position: relative;
       > i {
         width: 35px;
         height: 35px;
