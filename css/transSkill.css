@@ -742,6 +742,18 @@
   height: auto;
 }
 
+.container-canvas .body-content .my-journey .myjourney-body .image-svg-container {
+  position: relative;
+  width: 300px;
+}
+
+.container-canvas .body-content .my-journey .myjourney-body .image-svg-container img {
+  width: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
 .container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,15 +764,6 @@
           flex-direction: column;
   position: relative;
   width: 410px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
-  position: relative;
-  width: 300px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container img {
-  width: 100%;
 }
 
 .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
@@ -789,15 +792,6 @@
   position: relative;
   height: 885px;
   width: 500px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
-  position: relative;
-  width: 300px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container img {
-  width: 100%;
 }
 
 .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthProduce {
@@ -845,15 +839,6 @@
   position: relative;
   height: 885px;
   width: 410px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
-  position: relative;
-  width: 300px;
-}
-
-.container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container img {
-  width: 100%;
 }
 
 .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {

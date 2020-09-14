@@ -674,7 +674,16 @@
         align-items: center;
         width: 100%;
         height: auto;
-        
+        .image-svg-container {
+          position: relative;
+          width: 300px;
+          
+          img {
+            width: 100%;
+            transform: scale(0);
+            opacity: 0;
+          }
+        }
         .myjourney-first {
           display: flex;
           flex-direction: column;
@@ -682,13 +691,6 @@
           width: 410px;
 
           .image-svg-container {
-            position: relative;
-            width: 300px;
-
-            img {
-              width: 100%;
-            }
-
             &.clientBasic {
               position: absolute;
               top: 5px;
@@ -714,12 +716,6 @@
           width: 500px;
 
           .image-svg-container {
-            position: relative;
-            width: 300px;
-
-            img {
-              width: 100%;
-            }
 
             &.monthProduce {
               position: absolute;
@@ -765,13 +761,6 @@
           width: 410px;
 
           .image-svg-container {
-            position: relative;
-            width: 300px;
-
-            img {
-              width: 100%;
-            }
-
             &.endresult {
               position: absolute;
               top: 105px;

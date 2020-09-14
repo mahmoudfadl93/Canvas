@@ -542,7 +542,7 @@ window.onload = () => {
   let hidesecFivesecondpart = function () {
     gsap.to("#secFiveSecondPart .my-journey", {
       height: 0,
-      delay: 1.6,
+      delay: 2.5,
       duration: 1,
     });
 
@@ -552,10 +552,88 @@ window.onload = () => {
       duration: 1.5,
     });
 
+    
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(1) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 0.2,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(2) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 0.4,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(3) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 0.6,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(1) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 0.8,
+      duration: 1.5,
+    });
+    
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(2) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 1,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(3) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 1.2,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(4) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 1.4,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(1) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 1.6,
+      duration: 1.5,
+    });
+    
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(2) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 1.8,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(3) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 2,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(4) .image-svg-container img", {
+      opacity: 0,
+      scale:0,
+      delay: 2.2,
+      duration: 1.5,
+    });
+
     gsap.to("#secFiveSecondPart", {
       opacity: 0,
       top: "100vh",
-      delay: 1,
+      delay: 2.5,
       duration: 1.5,
     });
   };
@@ -1025,7 +1103,6 @@ window.onload = () => {
   // view How's my journey second
   $("#secFive i.icon--placeholder-next").on("click", () => {
     hidesecFive();
-
     gsap.to("#secFiveSecondPart", {
       opacity: 1,
       top: 0,
@@ -1042,9 +1119,87 @@ window.onload = () => {
 
     gsap.to("#secFiveSecondPart i", {
       opacity: 1,
-      delay: 3.5,
+      delay: 1.7,
       duration: 1.5,
     });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(1) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 1.7,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(2) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 1.9,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-first:nth-child(3) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.1,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(1) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.1,
+      duration: 1.5,
+    });
+    
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(2) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.3,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(3) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.5,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-second:nth-child(4) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.5,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(1) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.7,
+      duration: 1.5,
+    });
+    
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(2) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 2.9,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(3) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 3.1,
+      duration: 1.5,
+    });
+
+    gsap.to("#secFiveSecondPart .my-journey .myjourney-body .myjourney-third:nth-child(4) .image-svg-container img", {
+      opacity: 1,
+      scale:1,
+      delay: 3.3,
+      duration: 1.5,
+    });
+
   });
 
   $("#secFiveSecondPart i.icon--placeholder-pre").on("click", () => {
@@ -1052,7 +1207,7 @@ window.onload = () => {
 
     setTimeout(() => {
       showsecFive();
-    }, 1500);
+    }, 2500);
   });
   // view How's my journey second
 
@@ -1266,7 +1421,7 @@ window.onload = () => {
     hidesecFivesecondpart();
     setTimeout(() => {
       showsecone();
-    }, 1500);
+    }, 2500);
   });
 
   // view How's my journey
