@@ -653,8 +653,8 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 15px;
-          left: 15px;
+          top: 50px;
+          left: 35px;
         }
 
         &.icon--placeholder-pre {
@@ -675,7 +675,7 @@
         align-items: center;
         width: 100%;
         height: auto;
-
+        
         .myjourney-first {
           display: flex;
           flex-direction: column;

@@ -271,6 +271,65 @@
   .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
     font-size: 18px;
   }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
+    width: 375px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
+    top: 5px;
+    left: 105px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.NDA {
+    margin-bottom: 15px;
+    margin-top: 112px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second {
+    height: 665px;
+    width: 475px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthPayroll {
+    top: 220px;
+    left: 55px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro {
+    top: 235px;
+    left: 55px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro img {
+    width: 100%;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive {
+    bottom: 10px;
+    right: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third {
+    height: 700px;
+    width: 370px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {
+    top: 135px;
+    left: -40px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.keepingup {
+    top: 242px;
+    left: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview {
+    top: 255px;
+    left: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract {
+    bottom: 30px;
+    left: -50px;
+  }
 }
 
 @media all and (max-width: 1680px) and (min-width: 1385px) {
@@ -333,6 +392,66 @@
   }
   .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
     font-size: 18px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
+    width: 275px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
+    top: 5px;
+    left: 105px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.NDA {
+    margin-bottom: 15px;
+    margin-top: 112px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second {
+    height: 665px;
+    width: 384px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthPayroll {
+    top: 220px;
+    left: 55px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro {
+    top: 235px;
+    left: 55px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro img {
+    top: 235px;
+    left: 55px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive {
+    bottom: 10px;
+    right: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third {
+    height: 700px;
+    width: 430px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
+    width: 200px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {
+    top: 135px;
+    left: -40px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.keepingup {
+    top: 242px;
+    left: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview {
+    top: 255px;
+    left: 15px;
+  }
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract {
+    bottom: 30px;
+    left: -50px;
   }
 }
 

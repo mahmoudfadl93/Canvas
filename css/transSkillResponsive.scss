@@ -149,7 +149,6 @@
 
 //// large Tab
 
-
 ////  min labtop
 @media all and (max-width: 1384px) and (min-width: 1024px) {
   .container-canvas {
@@ -323,23 +322,27 @@
           }
         }
       }
-      
     }
   }
-  .container-canvas .body-content .details-content-with-image .images-content .image-all-together{
+
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
     width: 250px;
     height: 250px;
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
     width: 380px;
     height: 380px;
   }
-  .container-canvas .body-content div.Outsource-Payroll div.details-body{
+
+  .container-canvas .body-content div.Outsource-Payroll div.details-body {
     grid-template-columns: 150px 150px 150px 150px 150px;
   }
-  .container-canvas .body-content .contact-us .contact-us-with-map .contact-us-list{
+
+  .container-canvas .body-content .contact-us .contact-us-with-map .contact-us-list {
     width: 28vw;
   }
+
   .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
     width: 250px;
   }
@@ -355,42 +358,123 @@
   .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
     font-size: 17px;
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
     width: 380px;
     height: 380px;
     padding: 10px;
-    p{
+
+    p {
       font-size: 33px;
     }
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.small-circle{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.small-circle {
     width: 70px;
     height: 85px;
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
     width: 150px;
     height: 150px;
-    .commitment-content{
+
+    .commitment-content {
       font-size: 20px;
     }
   }
-  .container-canvas .body-content .commitments-body .right-content .rule-point{
-    
+
+  .container-canvas .body-content .commitments-body .right-content .rule-point {
     width: 350px;
 
-    h2{
+    h2 {
       font-size: 18px;
     }
-  } 
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
+    width: 375px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
+    top: 5px;
+    left: 105px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.NDA {
+    margin-bottom: 15px;
+    margin-top: 112px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second {
+    height: 665px;
+    width: 475px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthPayroll {
+    top: 220px;
+    left: 55px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro {
+    top: 235px;
+    left: 55px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive {
+    bottom: 10px;
+    right: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third {
+    height: 700px;
+    width: 370px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {
+    top: 135px;
+    left: -40px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.keepingup {
+    top: 242px;
+    left: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview {
+    top: 255px;
+    left: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract {
+    bottom: 30px;
+    left: -50px;
+  }
 }
 
 ////  min labtop
 
 @media all and (max-width: 1680px) and (min-width: 1385px) {
-  .container-canvas .body-content .details-content-with-image .images-content .image-all-together{
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
     width: 300px;
     height: 300px;
   }
+
   .container-canvas .body-content .shapes-circle .image-content .darw-path {
     width: 525px;
   }
@@ -426,35 +510,115 @@
   .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point {
     width: 260px;
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
     width: 380px;
     height: 380px;
     padding: 10px;
-    p{
+
+    p {
       font-size: 33px;
     }
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.small-circle{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.small-circle {
     width: 70px;
     height: 85px;
   }
-  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle{
+
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
     width: 150px;
     height: 150px;
-    .commitment-content{
+
+    .commitment-content {
       font-size: 20px;
     }
   }
-  .container-canvas .body-content .commitments-body .right-content .rule-point{
-    
+
+  .container-canvas .body-content .commitments-body .right-content .rule-point {
     width: 350px;
 
-    h2{
+    h2 {
       font-size: 18px;
     }
-  } 
-}
+  }
 
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first {
+    width: 275px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.clientBasic {
+    top: 5px;
+    left: 105px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-first .image-svg-container.NDA {
+    margin-bottom: 15px;
+    margin-top: 112px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second {
+    height: 665px;
+    width: 384px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthPayroll {
+    top: 220px;
+    left: 55px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.monthpro {
+    top: 235px;
+    left: 55px;
+
+    img {
+      top: 235px;
+      left: 55px;
+    }
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-second .image-svg-container.wegolive {
+    bottom: 10px;
+    right: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third {
+    height: 700px;
+    width: 430px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container {
+    width: 200px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.endresult {
+    top: 135px;
+    left: -40px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.keepingup {
+    top: 242px;
+    left: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.monthreview {
+    top: 255px;
+    left: 15px;
+  }
+
+  .container-canvas .body-content .my-journey .myjourney-body .myjourney-third .image-svg-container.signcontract {
+    bottom: 30px;
+    left: -50px;
+  }
+}
 
 @media all and (min-width: 2200px) {
   .container-canvas .body-content .trans-shapes {
@@ -470,7 +634,6 @@
     top: 20px;
   }
 }
-
 
 @media all and (min-width: 1386px) and (max-height: 768px) {
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
@@ -488,6 +651,7 @@
     height: 80px;
   }
 }
+
 ////  labtop width: 1024px)and height: 768px
 @media all and (width: 1024px) and (height: 768px) {}
 
