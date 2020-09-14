@@ -469,8 +469,8 @@
         margin: 0 2vw 0 4vw;
 
         .image-all-together {
-          width: auto;
-          height: auto;
+          width: 400px;
+          height: 400px;
 
           img {
             border-radius: 0;
@@ -499,7 +499,7 @@
           top: 0;
 
           h3 {
-            font-size: 40px;
+            font-size: 30px;
           }
         }
 
@@ -510,8 +510,9 @@
 
           .content-prag {
             p {
-              font-size: 30px;
+              font-size: 17px;
               color: #fff;
+              margin-bottom: 10px;
             }
           }
         }

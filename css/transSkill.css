@@ -510,8 +510,8 @@
 }
 
 .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 400px;
 }
 
 .container-canvas .body-content .details-content-with-image .images-content .image-all-together img {
@@ -545,7 +545,7 @@
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-header h3 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-body {
@@ -555,8 +555,9 @@
 }
 
 .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
-  font-size: 30px;
+  font-size: 17px;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .container-canvas .body-content div.Outsource-Payroll div.details-body {

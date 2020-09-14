@@ -219,6 +219,10 @@
   .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point {
     width: 190px;
   }
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
+    width: 300px;
+    height: 300px;
+  }
   .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
     width: 380px;
     height: 380px;
@@ -245,6 +249,10 @@
 }
 
 @media all and (max-width: 1680px) and (min-width: 1385px) {
+  .container-canvas .body-content .details-content-with-image .images-content .image-all-together {
+    width: 300px;
+    height: 300px;
+  }
   .container-canvas .body-content .shapes-circle .image-content .darw-path {
     width: 525px;
   }
