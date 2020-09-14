@@ -1511,6 +1511,7 @@
           flex-direction: column;
   padding: 0 4vw;
   position: relative;
+  padding-top: 40px;
 }
 
 .container-canvas .body-content .contact-us > i {
@@ -1523,8 +1524,8 @@
 }
 
 .container-canvas .body-content .contact-us > i.icon--placeholder-home {
-  top: 15px;
-  left: 15px;
+  top: 75px;
+  left: 30px;
 }
 
 .container-canvas .body-content .contact-us p.title-back {

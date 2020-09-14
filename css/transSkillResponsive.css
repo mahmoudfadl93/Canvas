@@ -68,6 +68,7 @@
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
     width: 155px;
     height: 150px;
+    padding: 8px;
   }
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
     width: 75px;
@@ -117,6 +118,7 @@
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
     width: 205px;
     height: 180px;
+    padding: 10px;
   }
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-median {
     width: 100px;
@@ -477,6 +479,7 @@
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-large {
     width: 280px;
     height: 250px;
+    padding: 10px;
   }
   .container-canvas .body-content .trans-shapes .hexagon-shape .hexagon.hexagon-small {
     width: 90px;

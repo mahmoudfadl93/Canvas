@@ -1349,6 +1349,7 @@
       flex-direction: column;
       padding: 0 4vw;
       position: relative;
+      padding-top: 40px;
       > i {
         width: 35px;
         height: 35px;
@@ -1359,8 +1360,9 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 15px;
-          left: 15px;
+          top: 75px;
+          left: 30px;
+      
         }
       }
 
