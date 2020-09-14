@@ -292,9 +292,44 @@
 ////  min labtop
 
 @media all and (max-width: 1680px) and (min-width: 1385px){
-
+  .container-canvas .body-content .shapes-circle .image-content .darw-path{
+    width: 525px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps{
+    width: 800px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Postings-body{
+    left: 25px;
+    bottom: -5px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.rdParty{
+    align-self: center;
+    left: 90px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Statutory{
+    align-self: flex-end;
+    left: 70px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Statutory .rule-point{
+    width: 300px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee{
+    left: 120px;
+    bottom: 10px;
+  }
+  .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point{
+    width: 260px;
+  }
 }
-
+@media all and  (min-width: 2200px){
+  .container-canvas .body-content .shapes-circle .image-content{
+    width: 50%;
+  }
+  .container-canvas .body-content .paragraph-content .paragraph-body .v-payLogo img{
+    position: relative;
+    top: 20px;
+  }
+}
 ////  labtop width: 1024px)and height: 768px
 @media all and (width: 1024px) and (height: 768px) {
 }

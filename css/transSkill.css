@@ -980,7 +980,7 @@
 }
 
 .container-canvas .body-content .shapes-circle .shapes-circle-body .shapes-circle-content p {
-  font-size: 1.3vw;
+  font-size: 23px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content {
@@ -1126,6 +1126,7 @@
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Postings-body {
   left: 50px;
+  bottom: 15px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Postings-body .Post-Processing-circle {
@@ -1172,10 +1173,8 @@
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Statutory {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  left: 65px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Statutory .Post-Processing-circle {
@@ -1198,7 +1197,7 @@
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  left: -35px;
+  left: 40px;
 }
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .Post-Processing-circle {
@@ -1215,6 +1214,7 @@
 
 .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point {
   background-color: #661433;
+  width: 310px;
 }
 
 .container-canvas .body-content .images-body {
