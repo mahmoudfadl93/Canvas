@@ -639,7 +639,6 @@
       height: 0;
       background: transparent;
       z-index: 11;
-      position: relative;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -653,8 +652,8 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 50px;
-          left: 35px;
+          top: 110px;
+          left: 110px;
         }
 
         &.icon--placeholder-pre {
@@ -818,7 +817,6 @@
       justify-content: center;
       align-items: center;
       z-index: 11;
-      position: relative;
 
       > i {
         width: 35px;
@@ -830,8 +828,8 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 65px;
-          left: 25px;
+          top: 100px;
+          left: 110px;
         }
 
         svg {
@@ -1347,9 +1345,7 @@
       align-items: flex-start;
       z-index: 11;
       flex-direction: column;
-      padding: 0 4vw;
-      position: relative;
-      padding-top: 40px;
+      padding: 0 0 0 80px;
       > i {
         width: 35px;
         height: 35px;
@@ -1360,9 +1356,8 @@
         cursor: pointer;
 
         &.icon--placeholder-home {
-          top: 75px;
-          left: 30px;
-      
+          top: 110px;
+          left: 110px;
         }
       }
 

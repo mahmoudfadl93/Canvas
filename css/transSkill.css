@@ -691,7 +691,6 @@
   height: 0;
   background: transparent;
   z-index: 11;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,8 +712,8 @@
 }
 
 .container-canvas .body-content .my-journey > i.icon--placeholder-home {
-  top: 50px;
-  left: 35px;
+  top: 110px;
+  left: 110px;
 }
 
 .container-canvas .body-content .my-journey > i.icon--placeholder-pre {
@@ -904,7 +903,6 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 11;
-  position: relative;
 }
 
 .container-canvas .body-content .shapes-circle > i {
@@ -917,8 +915,8 @@
 }
 
 .container-canvas .body-content .shapes-circle > i.icon--placeholder-home {
-  top: 65px;
-  left: 25px;
+  top: 100px;
+  left: 110px;
 }
 
 .container-canvas .body-content .shapes-circle > i svg {
@@ -1509,9 +1507,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 4vw;
-  position: relative;
-  padding-top: 40px;
+  padding: 0 0 0 80px;
 }
 
 .container-canvas .body-content .contact-us > i {
@@ -1524,8 +1520,8 @@
 }
 
 .container-canvas .body-content .contact-us > i.icon--placeholder-home {
-  top: 75px;
-  left: 30px;
+  top: 110px;
+  left: 110px;
 }
 
 .container-canvas .body-content .contact-us p.title-back {
