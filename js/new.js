@@ -1090,9 +1090,10 @@ window.onload = () => {
       duration: 0.5,
     });
     gsap.to("#secSix .commitments-body .small-circle", {
-      width: "85px",
+      scale:(1),
       delay: 3.5,
       duration: 0,
+   
     });
     gsap.to("#secSix .commitments-body .small-circle", {
       opacity: "1",
@@ -1100,7 +1101,7 @@ window.onload = () => {
       duration: 0.5,
     });
     gsap.to("#secSix .commitments-body .mediam-circle", {
-      width: "200px",
+      scale:(1),
       delay: 2.0,
       duration: 0,
     });
@@ -1287,11 +1288,13 @@ window.onload = () => {
     });
     gsap.to("#secSix .commitments-body .small-circle", {
       opacity: 0,
+      scale:(0),
       delay: 0.4,
       duration: 1.5,
     });
     gsap.to("#secSix .commitments-body .mediam-circle", {
       opacity: 0,
+      scale:(0),
       delay: 0.6,
       duration: 1.5,
     });

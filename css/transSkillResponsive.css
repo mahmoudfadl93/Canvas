@@ -246,6 +246,31 @@
   .container-canvas .body-content .details-content-with-image .side-content .content-body .content-prag p {
     font-size: 17px;
   }
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
+    width: 380px;
+    height: 380px;
+    padding: 10px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white p {
+    font-size: 33px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.small-circle {
+    width: 70px;
+    height: 85px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
+    width: 150px;
+    height: 150px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle .commitment-content {
+    font-size: 20px;
+  }
+  .container-canvas .body-content .commitments-body .right-content .rule-point {
+    width: 350px;
+  }
+  .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 1680px) and (min-width: 1385px) {
@@ -283,6 +308,31 @@
   }
   .container-canvas .body-content .shapes-circle .image-content .Post-Processing-steps .Post-Processing-step-container.Employee .rule-point {
     width: 260px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white {
+    width: 380px;
+    height: 380px;
+    padding: 10px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.commitment-circle-white p {
+    font-size: 33px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.small-circle {
+    width: 70px;
+    height: 85px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle {
+    width: 150px;
+    height: 150px;
+  }
+  .container-canvas .body-content .commitments-body .commitment-circle.mediam-circle .commitment-content {
+    font-size: 20px;
+  }
+  .container-canvas .body-content .commitments-body .right-content .rule-point {
+    width: 350px;
+  }
+  .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
+    font-size: 18px;
   }
 }
 
