@@ -118,11 +118,7 @@ window.onload = () => {
       delay: 3.5,
       duration: 0.5,
     });
-    gsap.to(".detail-obtain-it p.title-back", {
-      opacity: 1,
-      delay: 3.5,
-      duration: 0.5,
-    });
+
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -1076,12 +1072,6 @@ window.onload = () => {
       duration: 0.5,
     });
 
-    // gsap.to("#secSix p.title-back", {
-    //   opacity: 1,
-    //   delay: 4,
-    //   duration: 0.5,
-    // });
-
     gsap.to(".commitment-content p", {
       opacity: 1,
       delay: 3,
@@ -1119,53 +1109,33 @@ window.onload = () => {
       delay: 3.6,
       duration: 0.5,
     });
-
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: "1",
-        width: "450px",
-        delay: 4.7,
-        duration: 0.5,
-      }
-    );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
-        opacity: "1",
-        height: "auto",
-        delay: 5.2,
+        delay: 3.8,
         duration: 0.5,
       }
     );
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div", {
         opacity: "1",
-        width: "450px",
-        delay: 5.7,
-        duration: 0.5,
-      }
-    );
-
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
-        opacity: "1",
-        width: "450px",
-        delay: 5.0,
+        height:"auto",
+        delay: 3.8,
         duration: 0.5,
       }
     );
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
         opacity: "1",
-        height: "auto",
-        delay: 5.5,
+        delay: 4,
         duration: 0.5,
       }
     );
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", {
         opacity: "1",
-        width: "450px",
-        delay: 6,
+        height:"auto",
+        delay: 4,
         duration: 0.5,
       }
     );
@@ -1173,29 +1143,18 @@ window.onload = () => {
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
         opacity: "1",
-        width: "450px",
-        delay: 5.3,
-        duration: 0.5,
-      }
-    );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
-        opacity: "1",
-        height: "auto",
-        delay: 5.8,
+        delay: 4.2,
         duration: 0.5,
       }
     );
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div", {
         opacity: "1",
-        width: "450px",
-        delay: 6.3,
+        height:"auto",
+        delay: 4.2,
         duration: 0.5,
       }
     );
-    // gsap.to("#secSix .commitments-body .right-content .rule-point", { opacity: '1', delay: 4, duration: 0.5 });
-    // gsap.to(".commitments-body i", { opacity: 1, delay: 3.5, duration: 0.5 });
     gsap.to("#secOne", {
       opacity: 0,
       top: "100vh",
@@ -1341,64 +1300,47 @@ window.onload = () => {
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
         opacity: 0,
         delay: 0.8,
-        duration: 1.5,
+        duration: 0.5,
       }
     );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point", {
-        opacity: 0,
-        delay: 0.9,
-        duration: 1.5,
-      }
-    );
+
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(1) .rule-point > div", {
         opacity: 0,
+        height:0,
+        delay: 0.8,
+        duration: 1.5,
+      }
+    );
+
+    gsap.to(
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
+        opacity: 0,
+        delay: 1,
+        duration: 0.5,
+      }
+    );
+    gsap.to(
+      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", {
+        opacity: 0,
+        height:0,
         delay: 1,
         duration: 1.5,
       }
     );
 
     gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
-        opacity: 0,
-        delay: 1.1,
-        duration: 1.5,
-      }
-    );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point", {
-        opacity: 0,
-        delay: 1.2,
-        duration: 1.5,
-      }
-    );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(2) .rule-point > div", {
-        opacity: 0,
-        delay: 1.3,
-        duration: 1.5,
-      }
-    );
-
-    gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
-        opacity: 0,
-        delay: 1.3,
-        duration: 1.5,
-      }
-    );
-    gsap.to(
-      "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point", {
-        opacity: 0,
-        delay: 1.3,
-        duration: 1.5,
+        opacity: 1.2,
+        delay: 3.8,
+        duration: 0.5,
       }
     );
     gsap.to(
       "#secSix .commitments-body .right-content .commitment-rule:nth-child(3) .rule-point > div", {
         opacity: 0,
-        delay: 1.5,
+        height:0,
+        delay: 1.2,
         duration: 1.5,
       }
     );

@@ -1465,14 +1465,16 @@
 .container-canvas .body-content .commitments-body .right-content .rule-point {
   background-color: #fff;
   padding: 25px 15px;
-  width: 0;
-  height: 0;
-  opacity: 0;
+  width: 450px;
+  height: auto;
   margin-left: 2vw;
+  opacity: 0;
 }
 
 .container-canvas .body-content .commitments-body .right-content .rule-point > div {
   opacity: 0;
+  width: 100%;
+  height: 0;
 }
 
 .container-canvas .body-content .commitments-body .right-content .rule-point h2 {
